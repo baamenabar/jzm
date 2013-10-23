@@ -1,0 +1,199 @@
+/* line 1, ../sass/presupuestos.scss */
+#presupuesto {
+  overflow: hidden;
+  position: relative;
+  min-height: 400px;
+}
+/* line 5, ../sass/presupuestos.scss */
+#presupuesto .opciones {
+  width: 100%;
+  text-align: center;
+}
+/* line 8, ../sass/presupuestos.scss */
+#presupuesto .opciones .opcion {
+  width: 35%;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.3em;
+  display: inline-block;
+  cursor: pointer;
+  margin: auto 0 auto;
+  padding: 5px;
+  margin-left: 20px;
+}
+/* line 20, ../sass/presupuestos.scss */
+#presupuesto .grupos {
+  margin-top: 20px;
+}
+/* line 22, ../sass/presupuestos.scss */
+#presupuesto .grupos .grupo {
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed white;
+  padding-bottom: 5px;
+}
+/* line 27, ../sass/presupuestos.scss */
+#presupuesto .grupos .grupo hr {
+  border-top: 1px solid white;
+}
+/* line 30, ../sass/presupuestos.scss */
+#presupuesto .grupos .grupo .grupo-image {
+  float: left;
+  position: relative;
+  margin-right: 10px;
+}
+/* line 34, ../sass/presupuestos.scss */
+#presupuesto .grupos .grupo .grupo-image p {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  width: 100%;
+}
+/* line 40, ../sass/presupuestos.scss */
+#presupuesto .grupos .grupo .grupo-image span {
+  color: white;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  cursor: pointer;
+}
+/* line 51, ../sass/presupuestos.scss */
+#presupuesto .grupos .grupo .grupo-titulo {
+  font-weight: 700;
+}
+/* line 54, ../sass/presupuestos.scss */
+#presupuesto .grupos .grupo .grupo-descripcion {
+  font-size: 0.9em;
+  font-weight: normal;
+  display: block;
+}
+/* line 59, ../sass/presupuestos.scss */
+#presupuesto .grupos .grupo .grupo-seleccionar {
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 40%;
+  text-align: center;
+  margin: 0 0 auto auto;
+}
+/* line 68, ../sass/presupuestos.scss */
+#presupuesto .grupos .grupo .seleccionado {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+/* line 75, ../sass/presupuestos.scss */
+#presupuesto .rango {
+  display: none;
+  margin: 50px 0 50px 0;
+}
+/* line 78, ../sass/presupuestos.scss */
+#presupuesto .rango img {
+  float: left;
+  margin-right: 5px;
+}
+/* line 83, ../sass/presupuestos.scss */
+#presupuesto .hide {
+  display: none;
+}
+/* line 86, ../sass/presupuestos.scss */
+#presupuesto .texto-resultado {
+  margin-top: 25px;
+}
+/* line 88, ../sass/presupuestos.scss */
+#presupuesto .texto-resultado span[data-siguiente] {
+  cursor: pointer;
+  border-bottom: 1px dotted white;
+}
+/* line 93, ../sass/presupuestos.scss */
+#presupuesto .siguiente {
+  width: 40%;
+  margin: 30px auto;
+  clear: both;
+}
+/* line 97, ../sass/presupuestos.scss */
+#presupuesto .siguiente div:first-child {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+/* line 106, ../sass/presupuestos.scss */
+#presupuesto .siguiente div {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+/* line 109, ../sass/presupuestos.scss */
+#presupuesto .siguiente div span {
+  border-bottom: 1px dotted white;
+  cursor: pointer;
+}
+/* line 115, ../sass/presupuestos.scss */
+#presupuesto table {
+  width: 100%;
+  margin-top: 10px;
+}
+/* line 118, ../sass/presupuestos.scss */
+#presupuesto table th, #presupuesto table td {
+  padding: 5px;
+}
+/* line 121, ../sass/presupuestos.scss */
+#presupuesto table thead th {
+  font-weight: 700;
+  border-bottom: 1px solid white;
+}
+/* line 125, ../sass/presupuestos.scss */
+#presupuesto table tfoot td {
+  background-color: white;
+  color: black;
+  text-align: right;
+  font-weight: 700;
+}
+/* line 131, ../sass/presupuestos.scss */
+#presupuesto table .centro {
+  text-align: center;
+}
+/* line 134, ../sass/presupuestos.scss */
+#presupuesto table .derecha {
+  text-align: right;
+}
+
+/* line 141, ../sass/presupuestos.scss */
+#presupuesto_1 .tipos-fiestas {
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 145, ../sass/presupuestos.scss */
+#presupuesto_1 .tipos-fiestas .tipo-fiesta {
+  border: 1px solid white;
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding: 3px;
+}
+/* line 154, ../sass/presupuestos.scss */
+#presupuesto_1 .tipos-fiestas .tipo-fiesta div {
+  display: block;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 164, ../sass/presupuestos.scss */
+#presupuesto_8 div[data-volver] {
+  float: right;
+  text-align: right;
+  margin: 20px 20px;
+}
+/* line 168, ../sass/presupuestos.scss */
+#presupuesto_8 div[data-volver] span {
+  cursor: pointer;
+  border-bottom: 1px dotted white;
+}

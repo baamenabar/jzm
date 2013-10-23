@@ -1,0 +1,159 @@
+/* line 1, ../sass/servicios.scss */
+.body-servicios {
+  background-color: #1d1f1e;
+}
+
+/* line 4, ../sass/servicios.scss */
+.corporis {
+  margin: 0 0 0 0px;
+}
+/* line 6, ../sass/servicios.scss */
+.corporis h1 {
+  margin: 0;
+}
+/* line 9, ../sass/servicios.scss */
+.corporis h1, .corporis h2 {
+  padding-left: 20px;
+}
+/* line 12, ../sass/servicios.scss */
+.corporis h2 {
+  margin-top: 60px;
+}
+/* line 15, ../sass/servicios.scss */
+.corporis h3 {
+  font-weight: 800;
+  margin: 0;
+}
+/* line 19, ../sass/servicios.scss */
+.corporis > p {
+  padding: 10px 0 10px 0;
+  font-weight: 800;
+  padding-left: 20px;
+}
+
+/* line 25, ../sass/servicios.scss */
+.servicio {
+  padding-left: 20px;
+  border-top: 1px dashed white;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+/* line 30, ../sass/servicios.scss */
+.servicio .servicio-tipo {
+  margin-right: 30px;
+}
+/* line 32, ../sass/servicios.scss */
+.servicio .servicio-tipo .servicio-desc {
+  color: #a9a8a4;
+  font-style: italic;
+  margin-top: 0;
+}
+/* line 37, ../sass/servicios.scss */
+.servicio .servicio-tipo .servicio-cant {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/* line 42, ../sass/servicios.scss */
+.servicio .servicio-items {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 45, ../sass/servicios.scss */
+.servicio .servicio-items > p {
+  margin: 20px 10px 0 0;
+}
+/* line 49, ../sass/servicios.scss */
+.servicio .servicio-item {
+  cursor: pointer;
+  width: 200px;
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 54, ../sass/servicios.scss */
+.servicio .servicio-item img {
+  border: 3px solid #121212;
+}
+/* line 57, ../sass/servicios.scss */
+.servicio .servicio-item > p {
+  font-weight: 800;
+}
+/* line 60, ../sass/servicios.scss */
+.servicio .servicio-item .servicio-desc {
+  display: none;
+  width: 410px;
+  cursor: default;
+  background: black;
+  border: 1px solid white;
+  padding: 10px;
+}
+/* line 67, ../sass/servicios.scss */
+.servicio .servicio-item .servicio-desc p {
+  color: #a9a8a4;
+  font-style: italic;
+}
+/* line 71, ../sass/servicios.scss */
+.servicio .servicio-item .servicio-desc .servicio-desc-imgs {
+  text-align: center;
+  margin: 5px;
+}
+/* line 74, ../sass/servicios.scss */
+.servicio .servicio-item .servicio-desc .servicio-desc-imgs img {
+  display: inline-block;
+  margin-right: 2px;
+  border: none;
+}
+
+@media screen and (min-width: 640px) {
+  /* line 85, ../sass/servicios.scss */
+  .servicio .servicio-item {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 92, ../sass/servicios.scss */
+  .corporis {
+    margin: -150px 0 0 0px;
+  }
+  /* line 94, ../sass/servicios.scss */
+  .corporis h1 {
+    margin: 0;
+    border-bottom: 1px dashed white;
+  }
+  /* line 98, ../sass/servicios.scss */
+  .corporis h1, .corporis h2 {
+    padding-left: 50px;
+  }
+  /* line 101, ../sass/servicios.scss */
+  .corporis > p {
+    padding-left: 50px;
+  }
+
+  /* line 105, ../sass/servicios.scss */
+  .servicio {
+    padding-left: 50px;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  /* line 109, ../sass/servicios.scss */
+  .servicio .servicio-tipo {
+    width: 200px;
+    float: left;
+  }
+  /* line 112, ../sass/servicios.scss */
+  .servicio .servicio-tipo .servicio-cant {
+    margin-top: 30px;
+  }
+  /* line 116, ../sass/servicios.scss */
+  .servicio .servicio-items {
+    margin-left: 230px;
+    text-align: left;
+  }
+  /* line 119, ../sass/servicios.scss */
+  .servicio .servicio-items > p {
+    margin: 20px 0 0 20px;
+  }
+  /* line 123, ../sass/servicios.scss */
+  .servicio .servicio-item {
+    margin-left: 20px;
+  }
+}

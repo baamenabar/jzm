@@ -1,0 +1,724 @@
+@charset "UTF-8";
+/*BIG TEXT
+http://bigtext.org/
+tipo: univers y banner
+*/
+$azulHover:#06e;
+$negroCaco:#151515;
+$moradoCaco:#081176;
+$grisMedio:#919396;
+$grisTexto:#CFD1D2;
+$cuerpoH1:1.5625em;
+
+@import "compass/css3";
+@import "_normals";
+@import "_fonts";
+
+$defaultFontStack: "MuseoSans", Helmet, Freesans, sans-serif;
+$defaultSerifFontStack: Constantia, Georgia, "Times New Roman", Times, serif;
+
+$altoFooter : 238px;
+@import "_stickyFooter";
+
+html{
+	height:99.9%;
+}
+body {
+	font-family:$defaultFontStack;
+	background: #000;
+	color: #FFF;
+	height:99.9%;
+}
+.amictus{
+	//min-height: 779px;
+	.wrapper{
+		border-top: 1px solid #000;
+		@include single-transition(margin-left, 0.75s, ease-out);
+	}
+}
+
+/*
+
+
+88        88    88888888888           db           88888888ba,      88888888888    88888888ba
+88        88    88                   d88b          88      `"8b     88             88      "8b
+88        88    88                  d8'`8b         88        `8b    88             88      ,8P
+88aaaaaaaa88    88aaaaa            d8'  `8b        88         88    88aaaaa        88aaaaaa8P'
+88""""""""88    88"""""           d8YaaaaY8b       88         88    88"""""        88""""88'
+88        88    88               d8""""""""8b      88         8P    88             88    `8b
+88        88    88              d8'        `8b     88      .a8P     88             88     `8b
+88        88    88888888888    d8'          `8b    88888888Y"'      88888888888    88      `8b
+
+*/
+header{
+	padding-top: 1px;
+}
+#logoTop{
+	height:106px;
+	text-align: right;
+	padding-top: 0.375em;
+	float:right;
+	a{
+		display: block;
+	}
+}
+h1{
+	font-size: $cuerpoH1;
+	font-weight: 900;
+	margin-left: 0.875em;
+	margin-right: 0.5em;
+}
+.titulo{
+	min-height:102px;
+	.articulo &{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.subTitulo{
+	font-size: 1.125em;
+	font-style:italic;
+	margin-left: 1.25em;
+	margin-right: 5em;
+	margin-top: -0.5em;
+	.articulo &{
+		position: absolute;
+		top: 130px;
+		left: 0;
+	}
+}
+.placeholderTitle{
+	min-height:8em;
+}
+.temas{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height:112px !important;
+	overflow: hidden;
+}
+/*.unPicture{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:-20;
+}*/
+
+$anchoMenu:15em;
+
+nav{
+	max-width:$anchoMenu;
+	background: #000;
+	overflow:hidden;
+	height:0;
+	.navAbierto &{
+		height: 359px;
+	}
+	@include single-transition(all, 0.75s, ease-out);
+	ol{
+		//list-style-type: decimal-leading-zero;
+		counter-reset:li;
+		&>li{
+			border-bottom: 1px dashed #8A8A8A;
+			position: relative;
+			list-style:none;
+			font-weight: 900;
+			margin-top: 1.5em;
+			//margin-right: 5.625em;
+			//max-width: 185px;
+			&:before{
+				content:"0"counter(li)"."; /* Use the counter as content */
+    			counter-increment:li; /* Increment the counter by 1 */
+				font-family: $defaultSerifFontStack;
+				font-weight: normal;
+				font-size: 1.125em;
+				color: $grisMedio;
+				position: absolute;
+				top: -5px;
+				left: -1.75em;
+				pointer-events:none;
+			}
+			&:hover, &:active, &:focus{
+				border-bottom-style: solid;
+				&:before{
+					color: #DDD;
+				}
+			}
+			@include single-transition(left, 0.75s, ease-out);
+			h2{
+				display: none;
+				@include single-transition(left, 0.75s, ease-out);
+			}
+
+			a{
+				//font-family: $defaultFontStack;
+				color: $grisTexto;
+				text-decoration: none;
+				display: block;
+				line-height: 1.5em;
+				@include single-transition(color, 0.3s, ease-out);
+				&:link, &:visited{
+					color: $grisTexto;
+				}
+				&:hover, &:active, &:focus{
+					color: #FFF;
+				}
+			}
+		}
+	}
+}
+
+#abreYcierra{
+	text-decoration: none;
+	font-size: 0.875em;
+	text-align: center;
+	border: none;
+	color:#FFF;
+	display:block;
+	width: 48px;
+	height: 16px;
+	padding:3px 12px 54px 12px;
+	position: absolute;
+	top:112px;
+	left:auto;
+	right: 1em;
+	background:#262626 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAmAQMAAAC4Q4pCAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFAAAAVFRUfAMyHgAAAAF0Uk5TAEDm2GYAAAAVSURBVBjTY/gPBgzkUsQD2ltEmQ0AH3qhX1lqeoYAAAAASUVORK5CYII=) no-repeat;
+	background-position: 12px 24px;
+	border-radius: 4px;
+	.ie7 &{
+		display:none;//background: #262626 url(../imgs/icono-menu-comprimido.png) 0 0 no-repeat
+	}
+}
+
+/*
+
+
+  ,ad8888ba,     88        88    88888888888    88888888ba     88888888ba       ,ad8888ba,
+ d8"'    `"8b    88        88    88             88      "8b    88      "8b     d8"'    `"8b
+d8'              88        88    88             88      ,8P    88      ,8P    d8'        `8b
+88               88        88    88aaaaa        88aaaaaa8P'    88aaaaaa8P'    88          88
+88               88        88    88"""""        88""""88'      88""""""'      88          88
+Y8,              88        88    88             88    `8b      88             Y8,        ,8P
+ Y8a.    .a8P    Y8a.    .a8P    88             88     `8b     88              Y8a.    .a8P
+  `"Y8888Y"'      `"Y8888Y"'     88888888888    88      `8b    88               `"Y8888Y"'
+
+
+*/
+
+@import "_forms";
+@import "_presupuestos";
+@import "_clientes";//revisar si sobreescibe algo
+@import "_contacto";//revisar si sobreescibe algo
+@import "_servicios";//revisar si sobreescibe algo
+@import "_galeria";
+@import "_datePicker";
+
+.calugasHome{
+	background:#FFF;
+	padding:0.25em 0.875em 0.5em 0.875em;
+	ul{
+		padding:0;
+		li{
+			margin-bottom: 1.75em;
+		}
+	}
+	a{
+		text-decoration: none;
+		color: $negroCaco;
+		font-style: italic;
+		display: block;
+	}
+	.strip{
+		max-height: 60px;
+		overflow: hidden;
+		img{
+			max-width: 100%;
+		}
+	}
+}
+article{
+	margin-top:4em;
+	padding:0 5%;
+	.navAbierto &{
+		margin-top: 0.5em;
+	}
+}
+hr{
+	background:none;
+	border: none;
+	border-top: 1px dashed #FFF;
+}
+.destacado{
+	font-size: 1.375em;
+}
+
+.theShame{
+	display: none;
+	@include single-transition(left, 0.75s, ease-out);
+}
+.evenMoreShameful{
+	display: none;
+	@include single-transition(left, 0.75s, ease-out);
+}
+
+
+
+/*
+
+
+88888888888      ,ad8888ba,        ,ad8888ba,      888888888888    88888888888    88888888ba
+88              d8"'    `"8b      d8"'    `"8b          88         88             88      "8b
+88             d8'        `8b    d8'        `8b         88         88             88      ,8P
+88aaaaa        88          88    88          88         88         88aaaaa        88aaaaaa8P'
+88"""""        88          88    88          88         88         88"""""        88""""88'
+88             Y8,        ,8P    Y8,        ,8P         88         88             88    `8b
+88              Y8a.    .a8P      Y8a.    .a8P          88         88             88     `8b
+88               `"Y8888Y"'        `"Y8888Y"'           88         88888888888    88      `8b
+
+*/
+footer{
+	font-size: 0.938em;
+	padding-left: 0.875em;
+	//margin-bottom:-5px;
+	@include single-transition(margin-left, 0.75s, ease-out);
+}
+.vcard{
+	.tel, .extended-address, .additional-name{
+		white-space: nowrap;
+	}
+}
+.botonesAlPie{
+	color:#DDD;
+	margin-left:2em;
+	margin-top: 1em;
+	h1{
+		font-size: 1em;
+		margin-left: 0;
+	}
+	a{
+		text-decoration: none;
+		color: #DDD;
+		border-bottom: 1px dotted #555;
+	}
+	.tieneIcon{
+		position: relative;
+	}
+	.conIcon{
+		position: absolute;
+		left: -1.75em;
+	}
+}
+
+/* Media queries!
+/*-------------------------------------------------------------------------------*/
+/*
+
+  ,ad88PPP88ba,     88b           d88                  ,ad8888ba,
+ d8"  .ama.a "8a    888b         d888                 d8"'    `"8b
+d8'  ,8P"88"  88    88`8b       d8'88                d8'        `8b
+88  .8P  8P   88    88 `8b     d8' 88                88          88
+88  88   8'   8P    88  `8b   d8'  88    aaaaaaaa    88          88
+88  8B ,d8 ,ad8'    88   `8b d8'   88    """"""""    Y8,    "88,,8P
+"8a "88P"888P"      88    `888'    88                 Y8a.    Y88P
+ `Y8aaaaaaaad8P     88     `8'     88                  `"Y8888Y"Y8a
+    """""""""
+
+*/
+@media screen and (min-width: 310px) {//310 para arriba
+	nav{
+		width: $anchoMenu;
+	}
+	.temas{
+		img{
+			max-width:100%;
+		}
+	}
+}
+/*																						 #####     #            ###
+																						#          #    #      #   #
+																						#          #    #     #     #
+																						######     #    #     #     #
+																						#     #    #######    #     #
+																						#     #         #      #   #
+																						 #####          #       ###                        */
+$cuerpoH1:2.625em;
+@media screen and (min-width: 640px) {//640 para arriba
+	.amictus{
+		position: relative;
+	}
+    #logoTop{
+    	height: auto;
+    	float: none;
+    	margin-right: 36px;
+    	.svg & img{
+    		width: 160px;
+    	}
+    }
+    .titulo{
+    	font-size: $cuerpoH1;
+    	text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    	min-height: 0;
+    	.articulo &{
+    		position: static;
+    	}
+    }
+    .subTitulo{
+    	text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    	margin-left: 2.111em;
+		margin-top: -1.5em;
+		.articulo &{
+    		position: static;
+    	}
+    }
+    .placeholderTitle{
+    	display: none;
+    }
+    #principal{
+    	border-top: 1px solid #000;
+    	border-bottom: 1px solid #000;
+    }
+
+    #abreYcierra{
+    	left: 3em;
+    	right: auto;
+    	top:0;
+    	z-index: 7;
+    }
+    nav{
+		position: absolute;
+		top: 0;
+		left: -$anchoMenu;
+		padding-top: 150px;
+		overflow: visible;
+	}
+    .navAbierto{
+    	.wrapper{
+    		margin-left: $anchoMenu;
+    	}
+    	nav{
+    		left: 0;
+    		ol{
+    			&>li{
+    				h2{
+						//display: block;
+						font-family: $defaultFontStack;
+						font-weight: 900;
+						font-size: 1em;
+						position: absolute;
+						z-index: 6;
+						height: 4em;
+						margin-left: 4%;
+						width: 96%;
+						border-top: 1px dashed #FFF;
+						border-bottom: 1px dashed #FFF;
+						top:0;
+						left: -$anchoMenu - 5em;
+						&:before{
+							content:"0"counter(li)"."; /* Use the counter as content */
+							font-size: $cuerpoH1;
+							display: block;
+							margin-top: -32px;
+							margin-bottom: 1em;
+						}
+						.ie7 &{
+							display: none;
+						}
+					}
+    			}
+    			ul{
+    				font-weight: normal;
+					font-style: italic;
+					font-size: 0.9em;
+					line-height: 1em;
+					padding-left: 0;
+					li{
+						margin-bottom: 0.5em;
+						&.seleccionado{
+							padding-left: 0.5em;
+							&:before{
+								content:"\2192";
+								margin-right: 0.5em;
+							}
+						}
+					}
+    			}
+    		}
+    	}
+    	&.subNavAbierto{
+    		nav ol>li{
+	    		h2{
+					left:0;
+				}
+&.itm-acerca h2{top:16px;}
+&.itm-contacto h2{top:-33px;}
+&.itm-servicios h2{top:-82px;}
+&.itm-presupuestos h2{top:-131px;}
+&.itm-clientes h2{top:-180px;}
+&.itm-galeria h2{top:-229px;}
+&.itm-cava h2{top:-278px;}
+    		}
+    	}
+		&.subNavAbierto.allNavAbierto{
+			.wrapper{
+				margin-left: $anchoMenu;// + $anchoMenu - 2.5em;
+			}
+			nav ol>li h2{
+				left: $anchoMenu - 2.5em;
+			}
+		}
+    }
+
+    .caroufredsel_wrapper {
+    	width: 100% !important;
+    	height: 100% !important;
+	}
+
+    .temas{
+    	height: auto !important;
+    	img{
+    		width: auto;
+			height: auto;
+			min-width: 100%;
+			min-height: 100%;
+			max-width: none;
+    	}
+    }
+    .calugasHome {
+    	background: none;
+    	overflow: hidden;
+    	padding-right: 60px;
+    	ul{
+    		float: right;
+    	}
+    	li{
+    		width: 290px;
+    		height: 162px;
+    		border-right: 7px solid #FFF;
+    		border-bottom: 1px dashed #FFF;
+    		position: relative;
+    		@include single-transition(border-color, 0.5s, ease-out);
+    		&:hover, &:active, &:focus{
+    			border-color:#000;
+    		}
+    		//margin-right: 2em;
+    	}
+    	a{
+    		color: #FFF;
+    		&:hover, &:active, &:focus{
+    			h2{
+    				text-decoration: underline;
+    			}
+    		}
+    	}
+    	h2{
+    		position: absolute;
+    		bottom:0.5em;
+    		right: 1em;
+    	}
+    	.strip{
+			max-height: 100%;
+			img{
+				max-width: 100%;
+			}
+		}
+    }
+    article{
+    	margin: 0 5% 0 5%;
+    	padding: $cuerpoH1;
+    	background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAALUlEQVRYw+3OQQEAMAgAodP+TVZyMfxAAqZ6HdqOCQgICAgICAgICAgICAgIfNeIAOs5rGvlAAAAAElFTkSuQmCC');
+    	max-width: 590px;
+    	border-radius: 10px;
+    	border-top: 1px solid #000;
+    	border-bottom: 1px solid #000;
+    	.ie7 &{
+    		background:url(../imgs/fondo_0x000000AA_32x32.png);
+    	}
+    	h1{
+    		margin-left: 0;
+    	}
+    	h2, .subTitulo{
+    		margin-left: 0;
+    		border-top: 1px dashed white;
+			margin-right: -5.5%;
+			padding-top: 0.5em;
+    	}
+    }
+    .theShame{
+    	height: 100%;
+		width: $anchoMenu;
+		background: black;
+		display: block;
+		position: absolute;
+		top: 0;
+		left:-$anchoMenu;
+		z-index: -1;
+		.navAbierto &{
+			left: 0;
+		}
+    }
+    .evenMoreShameful{
+    	//display: block;
+    	height: 100%;
+		width: $anchoMenu - 2.5em;
+		position: absolute;
+		top: 0;
+		left: -$anchoMenu;
+		z-index: 5;
+		background:black;
+		border-left: 1px dashed #FFF;
+		border-right: 1px dashed #FFF;
+		.navAbierto &{
+			left: -$anchoMenu - + 2.5em;
+		}
+		.navAbierto.subNavAbierto &{
+			left: 2.5em;
+		}
+		.navAbierto.subNavAbierto.allNavAbierto &{
+			left: $anchoMenu;
+		}
+		.ie7 &{
+			display: none;
+		}
+    }
+    footer{
+    	border-top: 1px solid #000;
+    	border-bottom: 1px solid #000;
+    	max-width: $anchoMenu;
+    	background:#000;
+    	margin-left: -$anchoMenu;
+    	.navAbierto &{
+    		margin-left: 0;
+    	}
+    }
+}
+/*
+																						####### #######   ###   
+																						#    #  #        #   #  
+																						    #   #       #     # 
+																						   #    ######  #     # 
+																						  #           # #     # 
+																						  #     #     #  #   #  
+																						  #      #####    ###   
+
+ */
+@media screen and (min-width: 750px) {//750 para arriba
+	.evenMoreShameful{display: block;}
+	.navAbierto{
+		nav ol > li h2 {display: block;}
+		&.subNavAbierto.allNavAbierto{
+			.wrapper{
+				margin-left: $anchoMenu + $anchoMenu - 2.5em;
+			}
+		} 
+	}
+}
+/*																						 #####      #####       ###
+																						#     #    #           #   #
+																						#     #    #          #     #
+																						 ######    ######     #     #
+																						      #    #     #    #     #
+																						      #    #     #     #   #
+																						 #####      #####       ###                                           */
+$cuerpoH1:3.625em;
+@media screen and (min-width: 960px) {//960 para arriba
+	#logoTop{
+		float: none;
+	}
+	#abreYcierra{
+		display: none;
+	}
+	.navAbierto{
+		nav{
+    		left: 0;
+    		ol{
+    			&>li{
+					h2{
+						&:before{
+							font-size: $cuerpoH1;
+						}
+					}
+    			}
+    		}
+    	}
+	}
+    .titulo{
+    	font-size: $cuerpoH1;
+    	float: none;
+    }
+    .subTitulo{
+    	margin-left: 3em;
+    }
+    .calugasHome{
+    	position: static;
+    	padding-left: 3.188em;
+    	overflow: hidden;
+    	ul{
+    		float: right;
+    	}
+    	//right: auto;
+    	//left: 1.25em;
+    	li{
+    		//@include inline-block;
+
+    	}
+    }
+    article{
+    	.subTitulo{
+    		margin-right: 0;
+    	}
+    }
+}
+/*																				   #       #####     #######    #
+																				  ##      #     #    #          #    #
+																				 # #            #    #          #    #
+																				   #       #####     ######     #    #
+																				   #      #                #    #######
+																				   #      #                #         #
+																				 #####    #######     #####          #                                  */
+@media screen and (min-width: 1254px) {//1254 para arriba
+	.calugasHome{
+    	//position: static;
+    	padding-left: 3.188em;
+    	overflow: hidden;
+    	//right: auto;
+    	//left: 1.25em;
+    	ul{
+    		float: none;
+    	}
+    	li{
+    		@include inline-block;
+    		margin-right: 0.625em;
+    	}
+    }
+}
+@media screen and (min-width: 1390px) {//1390 para arriba
+	article{
+		.navAbierto &{
+			margin-top: -183px;
+		}
+	}
+}
+@media screen and (max-width: 960px) {//960 para abajo
+
+}
+
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+/*iPhone 4 y iPad horizontal, Samsung & HTC WVGA horizonal have at least 800*/
+@media screen and (max-width: 799px) {
+
+}
+/* max-device-width al parecer es sólo reconocido por smartphones*/
+@media screen and (max-width: 480px) {
+
+
+}
+
+@media all and (orientation: portrait) {
+
+}
+
+@media all and (orientation: landscape) {
+
+}

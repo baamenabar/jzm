@@ -1,0 +1,378 @@
+.modal {
+	position: relative;
+	background: black;
+	padding: 30px 40px;
+	width:auto;
+	max-width: 500px;
+	margin: 20px auto;
+	border: 1px solid white;
+	a {
+		color: white;
+		text-decoration: underline;
+		&:hover{
+			color: white;
+		}
+	}
+	.mfp-close {
+		color: white;
+		&:hover {
+			background-color: black;
+		}
+	}
+}
+.presupuestos{
+	.titulo{
+		margin-bottom: 0;
+		line-height: 1em;
+		margin-left: 0.125em;
+	}
+	article{
+		padding-bottom: 2em;
+		border-bottom: 1px solid #777;
+	}
+}
+#presupuesto{
+	overflow: hidden;
+	position: relative;
+	min-height: 400px;
+	.opciones {
+		//width: 100%;//¿Por qué 100%?
+		text-align: center;
+		margin-right: 22px;
+		.opcion {
+			cursor: pointer;
+			margin-bottom: 1em;
+			vertical-align: top;
+			padding: 10px;
+			font-size: 1.3em;
+			width: 100%;
+			max-width: none;
+			display: block;
+		}
+	}
+	.grupos {
+		margin-top: 20px;
+		.grupo {
+			overflow: hidden;
+			margin-bottom: 15px;
+			border-bottom: 1px dashed white;
+			padding-bottom: 5px;
+			hr {
+				border-top: 1px solid white;
+			}
+		}
+		.grupo-image { // Y video
+			float: left;
+			position: relative;
+			margin-right: 15px;
+			width: 100%;
+			height: 210px;
+			background-color: black;
+			text-align: center;
+			line-height: 210px;
+			font-size: 5em;
+			cursor: pointer;
+			p {
+				position: absolute;
+				top: 130px;
+				left: 0;
+				width: 100%;
+			}
+			span {
+				color: white;
+				background: rgb(0, 0, 0);
+				background: rgba(0, 0, 0, 0.7);
+				padding: 10px;
+				cursor: pointer;
+			}
+		}
+		.play-negro {
+			color: black;
+		}
+		.no-video {
+			cursor: default;
+		}
+		.grupo-contenido {
+			//@include inline-block;
+		}
+		.grupo-titulo {
+			font-weight: 800;
+		}
+		.grupo-descripcion {
+			font-size: 0.9em;
+			font-weight: normal;
+			display: block;
+		}
+		.grupo-seleccionar {
+			margin-bottom: 0.75em;
+			margin-right: 1em;
+			display: inline-block;
+			float: right;
+		}
+		.seleccionado {
+			button{
+				background-color: #fff;
+				color:#000;
+			}
+		}
+	}
+	.hide {
+		display: none;
+	}
+	.presupuesto-navegacion {
+		button {
+			padding: 0;
+			width: 95%;
+		}
+	}
+	.anterior {
+		float: left;
+		width: 49%;
+		.volver {
+			font-size: 0.9em;
+			margin-top: 5px;
+			margin-left: 2px;
+			a {
+				border-bottom: 1px dotted white;
+				text-decoration: none;
+				&:link, &:visited{
+				color:#FFF;
+				}
+				&:hover, &:active, &:focus{
+					color:#BBB;
+					border-bottom: 1px solid white;
+				}
+			}
+		}
+	}
+	.siguiente {
+		float:right;
+		text-align: right;
+		width: 50%;
+		button {
+			display: block;
+		}
+	}
+	.enviar {
+		float: right;
+		margin-right: 10px;
+	}
+	table {
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		th, td {
+			padding: 5px;
+		}
+		thead th {
+			font-weight: 700;
+			border-bottom: 1px solid white;
+		}
+		tfoot td {
+			background-color: white;
+			color: black;
+			text-align: right;
+			font-weight: 700;
+		}
+		.centro {
+			text-align: center;
+		}
+		.derecha {
+			text-align: right;
+		}
+	}
+	.monto-minimo {
+		padding: 1em;
+	}
+}
+.tipos-fiestas {
+	margin: 1em auto 0 auto;
+	padding: 0;
+	color: #BBB;
+	cursor: pointer;
+	li{
+		list-style: none;
+	}
+	.tipo-fiesta {
+		border-bottom: 1px dashed white;
+		margin-top: 1.75em;
+		&:hover, &:active, &:focus{
+			color:#FFF;
+			border-bottom: 1px solid white;
+			p:before { text-decoration: none; }
+		}
+		h3{
+			font-size: 1.5em;
+			font-style: italic;
+			margin-bottom: 0;
+		}
+		p {
+			font-style: italic;
+			margin-top: 0;
+			&:before {
+			    content: "Cotizar";
+			    float: right;
+			    margin-right: 1em;
+			    margin-left: 1em;
+			    text-decoration: underline;
+			}
+		}
+	}
+}
+
+.presupuesto-slide{
+	//overflow: hidden;
+	.rango {
+		display: none;
+	}
+	h2,.bajada{
+		font-style: italic;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	h2{
+		padding-top: 0;
+	}
+	h3{
+		font-size: 1.5em;
+		font-style:italic;
+		margin-right: 2em;
+		line-height: 1.3em;
+	}
+	input, button{
+		margin-top: 0.5em;
+	}
+	a{
+		color: #FFF;
+		&:link, &:visited{
+			text-decoration: underline;
+		}
+		&:hover, &:active, &:focus{
+			text-decoration: none;
+		}
+	}
+}
+#presupuesto_2 input{margin-right: 0.5em;}
+.texto-resultado{
+	border-top: 1px dashed white;
+	border-bottom: 1px dashed white;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	margin-top: 2em;
+	overflow: hidden;
+
+	p{
+		line-height: 1.5em;
+		font-style: italic;
+	}
+	.rango{
+		margin: 2em 0 0 0;
+		img {
+			float: left;
+			margin-right: 2em;
+		}
+	}
+}
+.texto-explicacion{
+	border-bottom: 1px dashed white;
+	padding-bottom: 0.75em;
+	margin-bottom: 1em;
+}
+#presupuesto_11 {
+	h2 {
+		margin-right: 0;
+		padding-top: 10px;
+	}
+}
+
+/* Media queries!
+/*-------------------------------------------------------------------------------*/
+/*
+
+  ,ad88PPP88ba,     88b           d88                  ,ad8888ba,
+ d8"  .ama.a "8a    888b         d888                 d8"'    `"8b
+d8'  ,8P"88"  88    88`8b       d8'88                d8'        `8b
+88  .8P  8P   88    88 `8b     d8' 88                88          88
+88  88   8'   8P    88  `8b   d8'  88    aaaaaaaa    88          88
+88  8B ,d8 ,ad8'    88   `8b d8'   88    """"""""    Y8,    "88,,8P
+"8a "88P"888P"      88    `888'    88                 Y8a.    Y88P
+ `Y8aaaaaaaad8P     88     `8'     88                  `"Y8888Y"Y8a
+    """""""""
+
+*/
+
+@media screen and (min-width: 560px) {
+	#presupuesto {
+		.grupos {
+			.grupo-image {
+				width: 240px;
+				margin-right: 10px;
+			}
+			.grupo-contenido{
+				clear:none;
+				.navAbierto &{
+					clear:both;
+				}
+			}
+		}
+		.presupuesto-navegacion {
+			button {
+				padding: 0 1em;
+				width: auto;
+			}
+		}
+		.siguiente {
+			width: auto;
+			margin-right: 10px;
+		}
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.presupuestos{
+		article{
+			padding-left: 14px;
+			padding-right: 0;
+			border-bottom-color: #000;
+			min-height:712px;
+		}
+	}
+	#presupuesto{
+		padding-left: 0.5em;
+		.opciones {
+			.opcion {
+				width: 80%;
+				display: inline-block;
+				margin-right: 1em;
+				padding: 10px 3px 0 3px;
+			}
+		}
+	}
+	.presupuesto-slide{
+		.bajada{
+			margin-right: 2.5em;
+		}
+		h2{
+			margin-right: 67px;
+			margin-left: -0.5em;
+			padding-left: 0.5em;
+		}
+	}
+}
+@media screen and (min-width: 750px) {
+	#presupuesto{
+		.opciones {
+			.opcion {
+				width: 40%;
+			}
+		}
+		.grupos{
+			.grupo{
+			}
+			.grupo-contenido, .navAbierto & .grupo-contenido{
+				clear:none;
+			}
+		}
+	}
+
+}

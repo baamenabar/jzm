@@ -1,0 +1,54 @@
+.galeria {
+	ul {
+		list-style: none;
+		text-align: center;
+		background: url(../imgs/separador-galeria.png);
+	}
+	li {
+		a {
+			color: white;
+			text-decoration: none;
+			display: block;
+			&:hover {
+				color: white;
+			}
+		}
+		display: inline-block;
+		margin-right: 20px;
+		position: relative;
+		padding: 30px 0 20px;
+		cursor: pointer;
+		vertical-align: top;
+		width: 200px;
+		.imagen-hover {
+			top: 0;
+			position: absolute;
+			margin-top: 30px;
+			text-align: center;
+			width: 200px;
+			height: 120px;
+			@include single-transition(opacity, 0.5s, ease-in-out);
+			background-image: url(http://jzmusic.cl/stage/_/imgs/zoom.png);
+			background-position: center center;
+			@include opacity(0);
+		}
+		&:hover {
+			.imagen-hover {
+				@include opacity(1);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.galeria {
+		ul {
+			text-align: left;
+			padding-right: 12.5em;
+			@include single-transition(padding, 0.75s, ease-out);
+			.allNavAbierto &{
+				padding-right: 0;
+			}
+		}
+	}
+}

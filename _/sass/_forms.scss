@@ -1,0 +1,128 @@
+.form-error {
+	margin-top: 10px;
+	padding-top: 10px;
+	display: none;
+}
+
+.form-enviado {
+	margin: 10px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#form-contacto {
+	.row {
+		overflow: hidden;
+	}
+	.column {
+		display: block;
+		//width: 49%;
+		margin-bottom: 1em;
+
+		label {
+			display: block;
+		}
+		input, select {
+			display: block;
+			width: 90%;
+			height: 30px;
+			padding-left: 10px;
+		}
+		select {
+			width: 95%;
+		}
+	}
+	textarea {
+		width: 95%;
+		height: 150px;
+		padding-left: 5px;
+	}
+	input[type=submit]{
+		color: white;
+		background: none;
+		border: none;
+		font-weight: bold;
+		width: inherit;
+		margin: 10px 0 10px 5px;
+		font-size: 2em;
+		&:hover {
+			color: darken(white, 10%);
+		}
+	}
+}
+
+.clientes form {//ESTO ES DE CLIENTES, REVISAR
+	a {
+		font-weight: bold;
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px dotted #555;
+		&:hover {
+			color: white;
+		}
+	}
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="tel"]{
+	min-height: 1.778em;
+	font-size: 1.125em;
+	line-height: 1.778em;
+	padding: 0 0.375em;
+	min-width:200px;
+}
+button, 
+a.boton,
+label.boton{
+	font-family: $defaultFontStack;
+	font-size: 1.375em;
+	font-weight: 900;
+	line-height: 1.778em;
+	min-height: 1.778em;
+	padding: 0 1em;
+	border: 1px solid #6D6E70;
+	background:#000;
+	color:#DDD;
+	border-radius: 5px;
+	&:hover{
+		color:#FFF;
+		background:#333;
+	}
+	&:active, &:focus{
+		color:#000;
+		background:#FFF;
+	}
+}
+label.boton {
+	display: inline-block;
+	max-width: 40%;
+	padding: 0 2.4%;
+	line-height: 1.25em;
+}
+
+@media screen and (min-width: 1080px) {//1080 para arriba
+	#form-contacto{
+		.column {
+		display: inline-block;
+		width: 49%;
+		//margin-bottom: 1em;
+
+		label {
+			display: block;
+		}
+		input, select {
+			display: block;
+			width: 90%;
+			height: 30px;
+			padding-left: 10px;
+		}
+		select {
+			width: 95%;
+		}
+	}
+	}
+}

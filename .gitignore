@@ -1,0 +1,10 @@
+*.sublime-project
+*.sublime-workspace
+/.sass-cache
+/assets-jzmusic
+/gallery/images
+/gallery/dom.html
+/gallery/images.txt
+/gallery/log.txt
+gitpull.php
+email-config.php

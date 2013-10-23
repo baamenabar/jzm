@@ -1,0 +1,64 @@
+.form-error {
+  margin-top: 10px;
+  padding-top: 10px;
+  display: none;
+}
+
+.form-enviado {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#form-contacto .row {
+  overflow: hidden;
+}
+#form-contacto .column {
+  display: inline-block;
+  width: 49%;
+  margin-bottom: 5px;
+}
+#form-contacto .column label {
+  display: block;
+}
+#form-contacto .column input, #form-contacto .column select {
+  display: block;
+  width: 90%;
+  height: 30px;
+  padding-left: 10px;
+}
+#form-contacto .column select {
+  width: 95%;
+}
+#form-contacto textarea {
+  width: 95%;
+  height: 150px;
+  padding-left: 5px;
+}
+#form-contacto input[type=submit] {
+  color: white;
+  background: none;
+  border: none;
+  font-weight: bold;
+  width: inherit;
+  margin: 10px 0 10px 5px;
+  font-size: 2em;
+}
+#form-contacto input[type=submit]:hover {
+  color: #e6e6e6;
+}
+
+form a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted #555;
+}
+form a:hover {
+  color: white;
+}
+
+.recuperar {
+  text-align: right;
+  margin-right: 5%;
+}
