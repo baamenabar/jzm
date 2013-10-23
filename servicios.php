@@ -124,7 +124,7 @@ include "_/inc/datos-globales.php";
 						<p>Proyectores</p>
 						<div class="servicio-desc">
 							<p>( Cerrar )</p>
-							<p>Contamos con diferentes tipos de proyectores para todo tipo de necesidades, desde los 2.500 Lúmenes ANSI hasta los 10.000 Lúmenes ANSI, con tamaños de proyeción desde los 3 x 4 metros hasta 5 x 4 metros.</p>
+							<p>Contamos con diferentes tipos de proyectores para todo tipo de necesidades, desde los 2.500 Lúmenes ANSI hasta los 10.000 Lúmenes ANSI.</p>
 						</div>
 					</div>
 					<div class="servicio-item">
@@ -161,7 +161,7 @@ include "_/inc/datos-globales.php";
 								<li>3.66 x 2.73 metros</li>
 								<li>5.00 x 3.75 metros</li>
 							</ul>
-							<p>Desarrollamos proyectos de telones personalizados para <i lang="en">mapping</i> y <i lang="en">watchout</i></p>
+							<p>Desarrollamos proyectos de telones personalizados para <i lang="en">mapping</i> y <i lang="en">watchout.</i></p>
 						</div>
 					</div>
 					<div class="servicio-item">
@@ -1236,7 +1236,7 @@ include "_/inc/datos-globales.php";
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="servicio-item">
 						<img src="imgs/servicios/efecto-power-dimmer-lite-putter.jpg" width="200" height="120">
 						<p>Power Dimmer Lite Putter</p>
