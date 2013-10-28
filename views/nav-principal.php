@@ -33,7 +33,7 @@ $esteUrl = array_pop($apurl);
 						<li class="itmp-eventos">EVENTOS Y PRODUCCIONES ESPECIALES</li>
 					</ul></h2>
 				<?php endif;	?></li>
-				<li class="itm-clientes"><a href="clientes">CLIENTES</a><?php if($esteUrl == 'clientes'): ?>
+				<li class="itm-clientes"><a href="clientes">ACCESO CLIENTES</a><?php if($esteUrl == 'clientes'): ?>
 					<h2>CLIENTES</h2>
 				<?php endif;	?></li>
 				<li class="itm-galeria"><a href="galeria">GALERÍA</a><?php if($esteUrl == 'galeria'): ?>
