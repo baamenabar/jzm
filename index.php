@@ -15,6 +15,11 @@ include "_/inc/datos-globales.php";
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 	<?php include "views/viewport-fav-setup.php"; ?>
 	<link rel="stylesheet" href="_/css/styles.css">
+	<?php
+		$openGraph['titulo'] = 'JZMusic.cl';
+		$openGraph['descripcion'] = 'Dedicados a la producción, musicalización, amplificación e iluminación de eventos, fiestas y matrimonios. Empresa de Joaquín Zanolli De Solminhac';
+		include 'views/open-graph.php';
+	?>
 	<?php include "views/modernizr.php"; ?>
 
 </head>
