@@ -36,7 +36,6 @@
 	position: relative;
 	min-height: 400px;
 	.opciones {
-		//width: 100%;//¿Por qué 100%?
 		text-align: center;
 		margin-right: 22px;
 		.opcion {
@@ -48,6 +47,18 @@
 			width: 100%;
 			max-width: none;
 			display: block;
+		}
+		input[type="radio"]{
+			display: none;
+			& + label{
+				background-image: url(../imgs/radios.png);
+				background-repeat: no-repeat;
+				background-position: 3px center;
+				padding-left: 32px;
+			}
+			&:checked + label{
+				background-position: -846px center;
+			}
 		}
 	}
 	.grupos {
@@ -158,7 +169,7 @@
 		margin-right: 10px;
 	}
 	table {
-		width: 98%;
+		width: 100%;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		th, td {
@@ -364,6 +375,9 @@ d8'  ,8P"88"  88    88`8b       d8'88                d8'        `8b
 		.opciones {
 			.opcion {
 				width: 40%;
+				&.ancho{
+					width: 80%;
+				}
 			}
 		}
 		.grupos{
