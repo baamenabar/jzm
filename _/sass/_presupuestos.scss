@@ -37,14 +37,13 @@
 	min-height: 400px;
 	.opciones {
 		text-align: center;
-		margin-right: 22px;
 		.opcion {
 			cursor: pointer;
 			margin-bottom: 1em;
 			vertical-align: top;
 			padding: 10px;
 			font-size: 1.3em;
-			width: 100%;
+			width: auto;
 			max-width: none;
 			display: block;
 		}
@@ -352,7 +351,6 @@ d8'  ,8P"88"  88    88`8b       d8'88                d8'        `8b
 		padding-left: 0.5em;
 		.opciones {
 			.opcion {
-				width: 80%;
 				display: inline-block;
 				margin-right: 1em;
 				padding: 10px 3px 0 3px;
@@ -374,7 +372,6 @@ d8'  ,8P"88"  88    88`8b       d8'88                d8'        `8b
 	#presupuesto{
 		.opciones {
 			.opcion {
-				width: 40%;
 				&.ancho{
 					width: 80%;
 				}

@@ -271,11 +271,11 @@ include "_/inc/datos-globales.php";
 					<div class="texto-explicacion">Muchas veces para en los matrimonios la gente reclama porque quedó cerca de un parlante y le molesta la música y otros quedaron lejos , por lo cual no escuchan… Esto se soluciona instalando varios parlantes pequeños en el perímetro de las mesas con un volumen independiente al de la pista de baile</div>
 					<div class="opciones">
 						<input type="radio" name="presupuesto-4-radio" id="presupuesto-4-radio-si" value="si">
-						<label class="opcion boton" data-si for="presupuesto-4-radio-si">
+						<label class="opcion ancho boton" data-si for="presupuesto-4-radio-si">
 							 Sí, es lo que busco
 						</label>
 						<input type="radio" name="presupuesto-4-radio" id="presupuesto-4-radio-no" value="no">
-						<label class="opcion boton" data-no for="presupuesto-4-radio-no">
+						<label class="opcion ancho boton" data-no for="presupuesto-4-radio-no">
 							 No es importante para mi
 						</label>
 					</div>
@@ -332,11 +332,11 @@ include "_/inc/datos-globales.php";
 					<div class="texto-explicacion">Los sub-bajos son parlantes que sólo emiten sonidos de baja frecuencia, haciendo la música más envolvente y produciendo en las personas que la música se sienta en la piel. Importante: Hay centros de eventos, donde estos equipos están prohibidos.</div>
 					<div class="opciones">
 						<input type="radio" name="presupuesto-5-radio" id="presupuesto-5-radio-si" value="si">
-						<label class="opcion boton" data-si for="presupuesto-5-radio-si">
+						<label class="opcion ancho boton" data-si for="presupuesto-5-radio-si">
 							 Sí, me encantaría
 						</label>
 						<input type="radio" name="presupuesto-5-radio" id="presupuesto-5-radio-no" value="no">
-						<label class="opcion boton" data-no for="presupuesto-5-radio-no">
+						<label class="opcion ancho boton" data-no for="presupuesto-5-radio-no">
 							 No, gracias
 						</label>
 					</div>
