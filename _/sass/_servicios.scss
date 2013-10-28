@@ -139,34 +139,6 @@
 		width: auto;
 	}
 }
-.go-top {
-	position: fixed;
-	bottom: 0;
-	right: 5px;
-	background-color: black;
-	background-color: rgba(#000, .5);
-	padding: 3px;
-	cursor: pointer;
-	display: block;
-	opacity: 0;
-	height: 0;
-	overflow: hidden;
-	@include single-transition(opacity, 1s, ease-out);
-	&.active {
-		opacity: 1;
-		height: 25px;
-	}
-}
-
-.sub-categoria {
-	li {
-		cursor: pointer;
-		&:hover {
-			color: #ECECEC;
-		}
-	}
-}
-
 @media screen and (min-width: 640px) {
 	.body-gris {
 		.corporis {
@@ -282,9 +254,9 @@
 			}
 		}
 		.servicio-items {
-			margin-left: 230px;
+			margin-left: -25px;
 			text-align: left;
-			margin-right: 12.5em;
+			//margin-right: 12.5em;
 			@include single-transition(margin, 0.75s, ease-out);
 			.allNavAbierto &{
 				margin-right: 0;

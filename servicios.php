@@ -25,7 +25,7 @@ include "_/inc/datos-globales.php";
 
 </head>
 
-<body class="articulo navAbierto subNavAbierto body-gris">
+<body class="articulo navAbierto subNavAbierto body-gris servicios-jzm">
 
 <div class="amictus">
 	<div class="wrapper">
