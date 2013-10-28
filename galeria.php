@@ -46,7 +46,11 @@ include "_/inc/datos-globales.php";
 			Fiestas, Presentaciones, Iglesia, Exposiciones, Coros, Congresos, Desfiles, Discurso, Festivales, Reuniones.
 		</p>
 		<div class="galeria">
-			<?php include('gallery/dom.html'); ?>
+			<?php
+			if(file_exists('gallery/dom.html')){
+				include('gallery/dom.html');
+			}
+			?>
 		</div>
 	</div>
 
