@@ -59,6 +59,11 @@ include "_/inc/datos-globales.php";
 	<?php include "views/viewport-fav-setup.php"; ?>
 	<link rel="stylesheet" href="_/css/magnificPopup.css">
 	<link rel="stylesheet" href="_/css/styles.css">
+	<?php
+		$openGraph['titulo'] = 'Presupuestos JZMusic.cl';
+		$openGraph['descripcion'] = 'Nuestro equipo está disponible para cualquier comentario relacionado con la satisfacción de nuestros clientes y para escuchar sus necesidades.';
+		include 'views/open-graph.php';
+	?>
 	<?php include "views/modernizr.php"; ?>
 
 </head>

@@ -17,6 +17,11 @@ include "_/inc/datos-globales.php";
 	<?php include "views/viewport-fav-setup.php"; ?>
 	<link rel="stylesheet" href="_/css/styles.css">
 	<link rel="stylesheet" href="_/css/magnificPopup.css">
+	<?php
+		$openGraph['titulo'] = 'Galería JZMusic.cl';
+		$openGraph['descripcion'] = 'Una imagen que da confianza. Conoce en los últimos eventos en los cuales hemos participado.';
+		include 'views/open-graph.php';
+	?>
 	<?php include "views/modernizr.php"; ?>
 
 </head>
