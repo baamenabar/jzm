@@ -45,7 +45,7 @@ include "_/inc/datos-globales.php";
 			Fiestas, Presentaciones, Iglesia, Exposiciones, Coros, Congresos, Desfiles, Discurso, Festivales, Reuniones.
 		</p>
 		<div class="servicios">
-			<div class="servicio servicio-padre">
+			<div class="servicio servicio-padre" id="generadores-fiesta">
 				<div class="servicio-tipo">
 					<h3>GENERADORES &amp; FIESTA SEGURA</h3>
 					<p class="servicio-desc">Contamos con equipos electrógenos insonoros trifásicos de diferentes capacidades para suministrar de energía a todos los servicios que trabajan normalmente en nuestros eventos.</p>
@@ -80,7 +80,7 @@ include "_/inc/datos-globales.php";
 					</div>
 				</div>
 			</div>
-			<div class="servicio servicio-padre">
+			<div class="servicio servicio-padre" id="calefactores">
 				<div class="servicio-tipo">
 					<h3>CALEFACTORES</h3>
 					<p class="servicio-desc">Disponemos de una amplia gama de turbocalefactores para temperar sus eventos.</p>
@@ -102,7 +102,7 @@ include "_/inc/datos-globales.php";
 					</div>
 				</div>
 			</div>
-			<div class="servicio servicio-padre">
+			<div class="servicio servicio-padre" id="pantallas-video">
 				<div class="servicio-tipo">
 					<h3>PANTALLAS &amp; VIDEO</h3>
 					<p class="servicio-desc">Tenemos una gran variedad de equipos</p>
@@ -223,7 +223,7 @@ include "_/inc/datos-globales.php";
 					</div>
 				</div>
 			</div>
-			<div class="servicio servicio-padre">
+			<div class="servicio servicio-padre" id="servicios-adjuntos">
 				<div class="servicio-tipo">
 					<h3>SERVICIOS ADJUNTOS</h3>
 					<p class="servicio-desc">Tenemos una gran variedad de equipos</p>
@@ -891,7 +891,7 @@ include "_/inc/datos-globales.php";
 					<p>*JZ MUSIC recomienda estas empreseas por reiteradas experiencias positivas, pero no se hace responsable por su desempeño profesional. Las fotos son referenciales.</p>
 				</div>
 			</div>
-			<div class="servicio servicio-padre">
+			<div class="servicio servicio-padre" id="efectos-iluminacion">
 				<div class="servicio-tipo">
 					<h3>EFECTOS &amp; ILUMINACIÓN</h3>
 					<p class="servicio-desc">Tenemos una gran variedad de equipos</p>
@@ -1299,7 +1299,7 @@ include "_/inc/datos-globales.php";
 					</div>
 				</div>
 			</div>
-			<div class="servicio servicio-padre">
+			<div class="servicio servicio-padre" id="amplificacion">
 				<div class="servicio-tipo">
 					<h3>AMPLIFICACIÓN</h3>
 					<p class="servicio-desc">Tenemos una gran variedad de equipos</p>
@@ -1621,8 +1621,9 @@ Hasta 16 módulos por lado usando el <em>FLY BAR<em></p>
 			</div>
 		</div>
 	</div>
-
-
+	<div id="go-top" class="go-top">
+		<span>&#x25B2; Ir arriba</span>
+	</div>
 </div>
 <a href="#" id="abreYcierra" class="">MENÚ</a>
 <div class="theShame"></div>
