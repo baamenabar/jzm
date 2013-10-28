@@ -16,6 +16,11 @@ include "_/inc/datos-globales.php";
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 	<?php include "views/viewport-fav-setup.php"; ?>
 	<link rel="stylesheet" href="_/css/styles.css">
+	<?php
+		$openGraph['titulo'] = 'Servicios JZMusic.cl';
+		$openGraph['descripcion'] = 'Cubrimos una amplia gama de servicios: Fiestas, Presentaciones, Iglesia, Exposiciones, Coros, Congresos, Desfiles, Discurso, Festivales, Reuniones.';
+		include 'views/open-graph.php';
+	?>
 	<?php include "views/modernizr.php"; ?>
 
 </head>
@@ -1342,7 +1347,7 @@ include "_/inc/datos-globales.php";
 							<p>( Cerrar )</p>
 <p>RCF HDL20-A<br>
 Perfecto para recitales masivos y presentaciones de bandas en vivo.<br>
-Hasta 16 módulos por lado usando el <em>FLY BAR<em></p>
+Hasta 16 módulos por lado usando el <em>FLY BAR</em></p>
 <ul><li>700 Watt RMS</li>
 <li>135dBmaxSPL</li>
 <li>55Hz - 20kHz</li>
