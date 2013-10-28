@@ -13,7 +13,16 @@ $esteUrl = array_pop($apurl);
 					<h2>CONTACTO</h2>
 				<?php endif;	?></li>
 				<li class="itm-servicios"><a href="servicios">SERVICIOS</a><?php if($esteUrl == 'servicios'): ?>
-					<h2>SERVICIOS</h2>
+					<h2>SERVICIOS
+						<ul class="sub-categoria">
+						<li data-section="generadores-fiesta">GENERADORES & FIESTA SEGURA</li>
+						<li data-section="calefactores">CALEFACTORES</li>
+						<li data-section="pantallas-video">PANTALLAS & VIDEO</li>
+						<li data-section="servicios-adjuntos">SERVICIOS ADJUNTOS</li>
+						<li data-section="efectos-iluminacion">EFECTOS & ILUMINACIÓN</li>
+						<li data-section="amplificacion">AMPLIFICACIÓN</li>
+					</ul></h2>
+
 				<?php endif;	?></li>
 				<li class="itm-presupuestos"><a href="presupuestos">PRESUPUESTOS</a><?php if($esteUrl == 'presupuestos'): ?>
 					<h2>PRESUPUESTOS<ul>
