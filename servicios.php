@@ -239,26 +239,95 @@ include "_/inc/datos-globales.php";
 							<p>( Cerrar )</p>
 							<ul>
 								<li>
-									<h3>Carpas Luis Palacios</h3>
+									<h3>Carpas Marfil</h3>
 									<p>
-										Tél.: 2740 90 52 <br>
-										E-mail: <a href="mailto:eventos@carpaspalacios.cl">eventos@carpaspalacios.cl</a> <br>
-										Web: <a href="http://www.carpasluispalacios.cl" target="_blank">www.carpasluispalacios.cl</a>
+										Contacto: Melvin Zwick <br>
+										Tél.: 9 345 20 76<br>
+										E-mail: <a href="mailto:melvin@carpasmarfil.cl">melvin@carpasmarfil.cl</a>
 									</p>
 								</li>
 								<li>
-									<h3>Carpas Eliaser Gutierrez</h3>
+									<h3>Carpas Nicolás</h3>
 									<p>
-										Cel.: 9 773 60 88
+										Contacto: Eliacer Alberto Gutierrez <br>
+										Tél.: 9 773 60 88<br>
+										E-mail: <a href="mailto:contacto@carpasnicolas.cl">contacto@carpasnicolas.cl</a>
 									</p>
 								</li>
 								<li>
-									<h3>Carpas Arocha</h3>
+									<h3>Carpas R. Mena</h3>
 									<p>
-										Tél.: 2360 18 49 <br>
-										Fax: 2360 18 47 <br>
-										E-mail: <a href="mailto:info@eventosrocha.cl">info@eventosrocha.cl</a> <br>
-										Web: <a href="http://www.eventosrocha.cl" target="_blank">www.eventosrocha.cl</a>
+										Contacto: René Mena <br>
+										Tél.: 5 781 54 59<br>
+										E-mail: <a href="mailto:carpasrmena@gmail.com">carpasrmena@gmail.com</a>
+									</p>
+								</li>
+								<li>
+									<h3>Carpas Top Tent</h3>
+									<p>
+										Contacto: Diego Huidobro <br>
+										Tél.: 9 658 41 78<br>
+										E-mail: <a href="mailto:dhuidobro@toptent.cl">dhuidobro@toptent.cl</a>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="servicio-item">
+						<img src="imgs/servicios/adjuntos-arriendo-mobiliario.jpg" width="200" height="120">
+						<p>Ambientaciones</p>
+						<div class="servicio-desc">
+							<p>( Cerrar )</p>
+							<ul>
+								<li>
+									<h3>Ambients</h3>
+									<p>
+										Contacto: Felipe García Huidobro<br>
+										Cel.: 8 889 18 75<br>
+										E-mail: <a href="mailto:felipe@ambients.cl">felipe@ambients.cl</a><br>
+										Web: <a href="http://www.ambients.cl" target="_blank">www.ambients.cl</a>
+									</p>
+								</li>
+								<li>
+									<h3>Fantuzzi & Grisanti</h3>
+									<p>
+										Contacto: Constanza Fantuzzi<br>
+										Cel.: 7 333 00 09<br>
+										E-mail: <a href="mailto:coni@fantuzzigrisanti.com">coni@fantuzzigrisanti.com</a><br>
+										Web: <a href="http://www.fantuzzigrisanti.com" target="_blank">www.fantuzzigrisanti.com</a>
+									</p>
+								</li>
+								<li>
+									<h3>De Company</h3>
+									<p>
+										Contacto: Marcelo Jarpa<br>
+										Cel.: 9 337 88 79<br>
+										E-mail: <a href="mailto:mjarpa@decompany.cl">mjarpa@decompany.cl</a><br>
+										Web: <a href="http://www.decompany.cl" target="_blank">www.decompany.cl</a>
+									</p>
+								</li>
+								<li>
+									<h3>Trilogía</h3>
+									<p>
+										Contacto: Patricio Zanca<br>
+										Cel.: 9 920 27 82<br>
+										E-mail: <a href="mailto:pzanca@3logia.cl">pzanca@3logia.cl</a><br>
+										Web: <a href="http://www.3logia.cl" target="_blank">www.3logia.cl</a>
+									</p>
+								</li>
+								<li>
+									<h3>Steward (arriendos)</h3>
+									<p>
+										Tél.: 2756 60 81<br>
+										E-mail: <a href="mailto:info@steward.cl">info@steward.cl</a><br>
+										Web: <a href="http://www.steward.cl" target="_blank">www.steward.cl</a>
+									</p>
+								</li>
+								<li>
+									<h3>IREGUA (arriendos)</h3>
+									<p>
+										Tél.: 2229 71 33<br>
+										Web: <a href="http://www.iregua.cl" target="_blank">www.iregua.cl</a>
 									</p>
 								</li>
 							</ul>
@@ -266,43 +335,32 @@ include "_/inc/datos-globales.php";
 					</div>
 					<div class="servicio-item">
 						<img src="imgs/servicios/adjuntos-banquetero.jpg" width="200" height="120">
-						<p>Banquetero</p>
+						<p>Banquetería</p>
 						<div class="servicio-desc">
 							<p>( Cerrar )</p>
 							<ul>
 								<li>
-									<h3>Maida Vial</h3>
+									<h3>Martita Serani</h3>
 									<p>
-										Cel.: 9 837 73 74 <br>
-										E-mail: <a href="mailto:maidavial@yahoo.com">maidavial@yahoo.com</a>
+										Cel.: 9 579 37 67<br>
+										E-mail: <a href="mailto:martita.serani.d@gmail.com">martita.serani.d@gmail.com</a><br>
+										Web: <a href="http://www.martitaserani.cl" target="_blank">www.martitaserani.cl</a>
 									</p>
 								</li>
 								<li>
-									<h3>Martita Cerani</h3>
+									<h3>Magdalena Vial</h3>
 									<p>
-										Cel.: 9 579 37 67 <br>
+										Cel.: 9 837 73 74<br>
+										E-mail: <a href="mailto:magdalena@maidavial.cl">magdalena@maidavial.cl</a><br>
+										Web: <a href="http://www.maidavial.cl" target="_blank">www.maidavial.cl</a>
 									</p>
 								</li>
 								<li>
-									<h3>Manuel Segura</h3>
+									<h3>Surya</h3>
 									<p>
-										Tél.: 2518 25 60 <br>
-									</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="servicio-item">
-						<img src="imgs/servicios/adjuntos-banqueteria-grandes-eventos.jpg" width="200" height="120">
-						<p>Banquetería Grandes Eventos</p>
-						<div class="servicio-desc">
-							<p>( Cerrar )</p>
-							<ul>
-								<li>
-									<h3>Francesca Margozzini & Pablo Bagnara</h3>
-									<p>
-										Tél.: 2211 48 44 <br>
-										E-mail: <a href="mailto:bma@vtr.net">bma@vtr.net</a> <br>
+										Contacto: Claudio Torrealba<br>
+										Cel.: 9 324 77 45<br>
+										E-mail: <a href="mailto:ctorrealbal@gmail.com">ctorrealbal@gmail.com</a><br>
 									</p>
 								</li>
 							</ul>
@@ -351,10 +409,30 @@ include "_/inc/datos-globales.php";
 							<p>( Cerrar )</p>
 							<ul>
 								<li>
-									<h3>Carolina Astaburuaga</h3>
+									<h3>Egobox</h3>
 									<p>
-										Fax: 2360 18 47 <br>
-										E-mail: <a href="mailto:fotografiascarolinaastaburuaga@gmail.com">fotografiascarolinaastaburuaga@gmail.com</a>
+										Contacto: Christian McManus
+										Cel.: 7 777 17 66<br>
+										E-mail: <a href="mailto:contacto@egobox.cl">contacto@egobox.cl</a>
+										Web: <a href="http://www.egobox.cl" target="_blank">www.egobox.cl</a>
+									</p>
+								</li>
+								<li>
+									<h3>Instant Photo</h3>
+									<p>
+										Contacto: Susana Díaz
+										Cel.: 8 501 18 72 <br>
+										E-mail: <a href="mailto:susana.diaz@instantphoto.cl ">susana.diaz@instantphoto.cl</a>
+										Web: <a href="http://www.instantphoto.cl" target="_blank">www.instantphoto.cl</a>
+									</p>
+								</li>
+								<li>
+									<h3>Weddi</h3>
+									<p>
+										Contacto: María José Campamá
+										Cel.: 7 532 25 95<br>
+										E-mail: <a href="mailto:mariajose@weddi.cl">mariajose@weddi.cl</a>
+										Web: <a href="http://www.weddi.cl" target="_blank">www.weddi.cl</a>
 									</p>
 								</li>
 							</ul>
@@ -382,6 +460,15 @@ include "_/inc/datos-globales.php";
 							<p>( Cerrar )</p>
 							<ul>
 								<li>
+									<h3>CH Studios</h3>
+									<p>
+										César Chacana - Cel.: 7 608 26 06<br>
+										María José Puyol - Cel.: 7 808 67 79<br>
+										E-mail: <a href="mailto:contacto@chstudio.cl">contacto@chstudio.cl</a><br>
+										Web: <a href="http://www.chstudio.cl" target="_blank">www.chstudio.cl</a>
+									</p>
+								</li>
+								<li>
 									<h3>Esteban Yañez</h3>
 									<p>
 										Camarógrafo Profesional<br>
@@ -400,15 +487,6 @@ include "_/inc/datos-globales.php";
 										Web: <a href="http://www.panaitescucomunicaciones.cl" target="_blank">www.panaitescucomunicaciones.cl</a>
 									</p>
 								</li>
-								<li>
-									<h3>CH Studios</h3>
-									<p>
-										César Chacana - Cel.: 7 608 26 06<br>
-										María José Puyol - Cel.: 7 808 67 79<br>
-										E-mail: <a href="mailto:contacto@chstudio.cl">contacto@chstudio.cl</a><br>
-										Web: <a href="http://www.chstudio.cl" target="_blank">www.chstudio.cl</a>
-									</p>
-								</li>
 							</ul>
 						</div>
 					</div>
@@ -419,20 +497,20 @@ include "_/inc/datos-globales.php";
 							<p>( Cerrar )</p>
 							<ul>
 								<li>
+									<h3>Peluquero y Estilista</h3>
+									<p>
+										Luciano Dorero<br>
+										Cel.: 8 385 39 91<br>
+										E-mail: <a href="mailto:lucianofunp@hotmail.com">lucianofunp@hotmail.com</a>
+									</p>
+								</li>
+								<li>
 									<h3>Cosmetología y Maquillaje</h3>
 									<p>
 										María Cecilia Richter<br>
 										Tél.: 2214 26 01 <br>
 										Cel.: 9 224 68 88<br>
 										E-mail: <a href="mailto:mcrichter@terra.cl">mcrichter@terra.cl</a>
-									</p>
-								</li>
-								<li>
-									<h3>Peluquero y Estilista</h3>
-									<p>
-										Luciano Dorero<br>
-										Cel.: 8 385 39 91<br>
-										E-mail: <a href="mailto:lucianofunp@hotmail.com">lucianofunp@hotmail.com</a>
 									</p>
 								</li>
 								<li>
@@ -448,32 +526,25 @@ include "_/inc/datos-globales.php";
 						</div>
 					</div>
 					<div class="servicio-item">
-						<img src="imgs/servicios/adjuntos-vestidos.jpg" width="200" height="120">
-						<p>Vestidos</p>
-						<div class="servicio-desc">
-							<p>( Cerrar )</p>
-							<ul>
-								<li>
-									<h3>GEA</h3>
-									<p>
-										Vestidos para fiestas<br>
-										María Fernanda Troncoso O.
-									</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="servicio-item">
 						<img src="imgs/servicios/adjuntos-guardias.jpg" width="200" height="120">
 						<p>Guardias</p>
 						<div class="servicio-desc">
 							<p>( Cerrar )</p>
 							<ul>
 								<li>
-									<h3>Álvaro Contreras</h3>
+									<h3>Guardias AC</h3>
 									<p>
-										Persona encargada de organizar los staff<br>
+										Contacto: Álvaro Contreras<br>
 										Cel.: 8 259 52 05
+										E-mail: <a href="mailto:hinricksen1974@yahoo.es">hinricksen1974@yahoo.es</a><br>
+									</p>
+								</li>
+								<li>
+									<h3>Guardias WL</h3>
+									<p>
+										Contacto: Walter López<br>
+										Cel.: 8 479 69 87
+										E-mail: <a href="mailto:sup.walterlopez@hotmail.com">sup.walterlopez@hotmail.com</a><br>
 									</p>
 								</li>
 							</ul>
@@ -605,6 +676,7 @@ include "_/inc/datos-globales.php";
 									<h3>Tortas de Cuchuflies</h3>
 									<p>
 										Patricia Muñoz<br>
+										Cel.: 8 139 85 22<br>
 										Reparto a domicilio
 									</p>
 								</li>
@@ -638,14 +710,17 @@ include "_/inc/datos-globales.php";
 					</div>
 					<div class="servicio-item">
 						<img src="imgs/servicios/adjuntos-baile-entretenido.jpg" width="200" height="120">
-						<p>Baile Entretenido</p>
+						<p>Animación, Shows en Vivo y Dobles</p>
 						<div class="servicio-desc">
 							<p>( Cerrar )</p>
 							<ul>
 								<li>
-									<h3>Marcelo Osorio</h3>
+									<h3>Dobles Chilenos</h3>
 									<p>
-										Cel.: 9 534 33 13
+										Contacto: Marcelo Segovia<br>
+										Cel.: 9 332 87 70<br>
+										E-mail: <a href="mailto:produccion@dobleschilenos.cl">produccion@dobleschilenos.cl</a><br>
+										Web: <a href="http://www.dobleschilenos.cl" target="_blank">www.dobleschilenos.cl</a>
 									</p>
 								</li>
 							</ul>
@@ -653,7 +728,7 @@ include "_/inc/datos-globales.php";
 					</div>
 					<div class="servicio-item">
 						<img src="imgs/servicios/adjuntos-mago.jpg" width="200" height="120">
-						<p>Mago</p>
+						<p>Magos</p>
 						<div class="servicio-desc">
 							<p>( Cerrar )</p>
 							<ul>
@@ -678,22 +753,6 @@ include "_/inc/datos-globales.php";
 										Cel.: 9 825 67 54<br>
 										Web: <a href="http://www.magoarce.com" target="_blank">www.magoarce.com</a><br>
 										Director
-									</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="servicio-item">
-						<img src="imgs/servicios/adjuntos-diseno-invitaciones.jpg" width="200" height="120">
-						<p>Diseño de Invitaciones</p>
-						<div class="servicio-desc">
-							<p>( Cerrar )</p>
-							<ul>
-								<li>
-									<h3>Alicia de la Fuente</h3>
-									<p>
-										Padre Alfredo Arteaga, La Dehesa<br>
-										Tél.: 2216 79 05
 									</p>
 								</li>
 							</ul>
@@ -740,28 +799,46 @@ include "_/inc/datos-globales.php";
 							<p>( Cerrar )</p>
 							<ul>
 								<li>
-									<h3>Violinista</h3>
+									<h3>Grupo Calle Vieja</h3>
 									<p>
-										Francisco Mattar<br>
-										Cel.: 9 822 00 02
+										Contacto: Francisco Mattar<br>
+										Cel.: 9 822 00 02<br>
+										E-mail: <a href="mailto:grupocallevieja@yahoo.com">grupocallevieja@yahoo.com</a><br>
+										Web: <a href="http://www.callevieja.cl" target="_blank">www.callevieja.cl</a>
 									</p>
 								</li>
 								<li>
-									<h3>Música Celta</h3>
+									<h3>Cantante Cocktail & Comidas</h3>
 									<p>
-										Sergio Gomez<br>
-										Tél: 2253 22 53<br>
-										Cel.: 8 637 73 71<br>
-										E-mail: <a href="mailto:celtalachilena@gmail.com">celtalachilena@gmail.com</a>
+										Contacto: Nicole Bunout<br>
+										Cel.: 9 475 71 712<br>
+										E-mail: <a href="mailto:nicolebunout@gmail.com">nicolebunout@gmail.com</a><br>
+										Web: <a href="http://www.myspace.com/nicolebunout" target="_blank">www.myspace.com/nicolebunout</a>
 									</p>
 								</li>
 								<li>
-									<h3>Show Brasileño - Batucadas</h3>
+									<h3>Cantante Jazz & Bossa Nova</h3>
 									<p>
-										Luciano Amatuzo<br>
-										Tél: 22356 51 62<br>
-										Cel.: 9 334 34 41<br>
-										E-mail: <a href="mailto:luamatuzo@gmail.com">luamatuzo@gmail.com</a>
+										Contacto: Francisca Santa María<br>
+										Cel.: 7 870 64 03<br>
+										E-mail: <a href="francisca_santamaria@yahoo.es">francisca_santamaria@yahoo.es</a><br>
+										Web: <a href="www.myspace.com/franciscasantamaria" target="_blank">www.myspace.com/franciscasantamaria</a>
+									</p>
+								</li>
+								<li>
+									<h3>Banda Rufián Fuego y Las Balas de Plata</h3>
+									<p>
+										Contacto: Matías Radic<br>
+										Cel.: 8 513 57 72<br>
+										E-mail: <a href="matiasradic@gmail.com">matiasradic@gmail.com</a><br>
+									</p>
+								</li>
+								<li>
+									<h3>Banda Armando Jarana</h3>
+									<p>
+										Contacto: Francisco Vives<br>
+										Cel.: 9 335 61 36<br>
+										E-mail: <a href="franvivesa@gmail.com">franvivesa@gmail.com</a><br>
 									</p>
 								</li>
 							</ul>
@@ -786,42 +863,6 @@ include "_/inc/datos-globales.php";
 						</div>
 					</div>
 					<div class="servicio-item">
-						<img src="imgs/servicios/adjuntos-arriendo-mobiliario.jpg" width="200" height="120">
-						<p>Arriendo de Mobiliario</p>
-						<div class="servicio-desc">
-							<p>( Cerrar )</p>
-							<ul>
-								<li>
-									<h3>Arriendos y Ambientaciones</h3>
-									<p>
-										Felipe García Huidobro<br>
-										Cel.: 8 889 18 75<br>
-										E-mail: <a href="mailto:felipe@ambients.cl">felipe@ambients.cl</a><br>
-										Web: <a href="http://www.ambients.cl" target="_blank">www.ambients.cl</a>
-									</p>
-								</li>
-								<li>
-									<h3>Arriendos y Ambientaciones</h3>
-									<p>
-										María José Merino<br>
-										Tél.: 2453 77 67<br>
-										E-mail: <a href="mailto:mjmerino@3logia.cl">mjmerino@3logia.cl</a><br>
-										Web: <a href="http://www.3logia.cl" target="_blank">www.3logia.cl</a>
-									</p>
-								</li>
-								<li>
-									<h3>Mesones y Vajilla</h3>
-									<p>
-										Marcelo Jarpa<br>
-										Cel.: 9 337 88 79<br>
-										E-mail: <a href="mailto:mjarpa@decompany.cl">mjarpa@decompany.cl</a><br>
-										Web: <a href="http://www.decompany.cl" target="_blank">www.decompany.cl</a>
-									</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="servicio-item">
 						<img src="imgs/servicios/adjuntos-vinos.jpg" width="200" height="120">
 						<p>Vinos</p>
 						<div class="servicio-desc">
@@ -830,10 +871,18 @@ include "_/inc/datos-globales.php";
 								<li>
 									<h3>Armonía Wines</h3>
 									<p>
-										Nicolás Lisoni Benoit (Enólogo)<br>
-										Tél.: 2919 18 66<br>
+										Contacto: Nicolás Lisoni (Enólogo)<br>
 										Cel.: 9 383 69 10<br>
 										E-mail: <a href="mailto:nlisoni@armoniawines.cl">nlisoni@armoniawines.cl</a>
+										Web: <a href="http://www.armoniawines.cl" target="_blank">www.armoniawines.cl</a>
+									</p>
+								</li>
+								<li>
+									<h3>Distribuidora El Cielo</h3>
+									<p>
+										Tél.: 2556 95 04 /  2551 14 18<br>
+										E-mail: <a href="mailto:ventas@elcielo.cl">ventas@elcielo.cl</a>
+										Web: <a href="http://www.elcielo.cl" target="_blank">www.elcielo.cl</a>
 									</p>
 								</li>
 							</ul>
