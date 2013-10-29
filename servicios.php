@@ -1313,7 +1313,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio">
 				<div class="servicio-tipo">
 					<h3>EQUIPOS DE POTENCIA</h3>
-					<p class="servicio-cant">5 ITEMS</p>
+					<p class="servicio-cant">7 ITEMS</p>
 				</div>
 				<div class="servicio-items">
 					<div class="servicio-item">
