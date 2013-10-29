@@ -9,7 +9,7 @@ include "_/inc/datos-globales.php";
 <!--[if gt IE 9]><!--><html class="no-js" lang="es"><!--<![endif]-->
 
 <head>
-	<title>Galería <?php echo $nombreMarca; ?> &ndash; <?php echo $sloganMarca; ?> :)</title>
+	<title>Galería <?php echo $nombreMarca; ?> &ndash; <?php echo $sloganMarca; ?></title>
 
 	<meta name="description" content="Dedicados a la producción, musicalización, amplificación e iluminación de eventos, fiestas y matrimonios. Empresa de Joaquín Zanolli De Solminhac.">
 	<meta name="author" content="<?php echo $nombreMarca.' '.$webDelAutor; ?>">
