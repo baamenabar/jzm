@@ -58,6 +58,8 @@ header{
 	text-align: right;
 	padding-top: 0.375em;
 	float:right;
+	z-index: 500;
+	position: relative;
 	a{
 		display: block;
 	}
@@ -433,6 +435,7 @@ $cuerpoH1:2.625em;
 					font-size: 0.9em;
 					line-height: 1em;
 					padding-left: 0;
+					cursor: pointer;
 					li{
 						margin-bottom: 0.5em;
 						&.seleccionado{
@@ -453,14 +456,21 @@ $cuerpoH1:2.625em;
 				}
 &.itm-acerca h2{top:16px;}
 &.itm-contacto h2{top:-33px;}
-&.itm-servicios h2{top:-82px;}
+&.itm-servicios h2{
+	//top:-82px;
+	top: 191px;
+	position: fixed;
+	width: 12em;
+	margin-left: 42px;
+	padding-left: 0.5em;
+}
 &.itm-presupuestos h2{top:-131px;}
 &.itm-clientes h2{top:-180px;}
 &.itm-galeria h2{top:-229px;}
 &.itm-cava h2{top:-278px;}
     		}
     	}
-		&.subNavAbierto.allNavAbierto{
+		&.subNavAbierto.allNavAbierto, &.subNavAbierto.servicios-jzm{
 			.wrapper{
 				margin-left: $anchoMenu;// + $anchoMenu - 2.5em;
 			}
@@ -578,6 +588,9 @@ $cuerpoH1:2.625em;
 		.navAbierto.subNavAbierto.allNavAbierto &{
 			left: $anchoMenu;
 		}
+		.navAbierto.subNavAbierto.servicios-jzm &{
+			left: $anchoMenu;
+		}
 		.ie7 &{
 			display: none;
 		}
@@ -608,6 +621,11 @@ $cuerpoH1:2.625em;
 	.navAbierto{
 		nav ol > li h2 {display: block;}
 		&.subNavAbierto.allNavAbierto{
+			.wrapper{
+				margin-left: $anchoMenu + $anchoMenu - 2.5em;
+			}
+		} 
+		&.subNavAbierto.servicios-jzm{
 			.wrapper{
 				margin-left: $anchoMenu + $anchoMenu - 2.5em;
 			}

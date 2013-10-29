@@ -15,8 +15,13 @@ include "_/inc/datos-globales.php";
 	<meta name="author" content="<?php echo $nombreMarca.' '.$webDelAutor; ?>">
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 	<?php include "views/viewport-fav-setup.php"; ?>
-	<link rel="stylesheet" href="_/css/styles.css">
+	<link rel="stylesheet" href="_/css/styles.min.css">
 	<link rel="stylesheet" href="_/css/magnificPopup.css">
+	<?php
+		$openGraph['titulo'] = 'Galería JZMusic.cl';
+		$openGraph['descripcion'] = 'Una imagen que da confianza. Conoce en los últimos eventos en los cuales hemos participado.';
+		include 'views/open-graph.php';
+	?>
 	<?php include "views/modernizr.php"; ?>
 
 </head>
@@ -46,7 +51,11 @@ include "_/inc/datos-globales.php";
 			Fiestas, Presentaciones, Iglesia, Exposiciones, Coros, Congresos, Desfiles, Discurso, Festivales, Reuniones.
 		</p>
 		<div class="galeria">
-			<?php include('gallery/dom.html'); ?>
+			<?php
+			if(file_exists('gallery/dom.html')){
+				include('gallery/dom.html');
+			}
+			?>
 		</div>
 	</div>
 

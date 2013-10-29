@@ -57,8 +57,12 @@ include "_/inc/datos-globales.php";
 	<meta name="author" content="<?php echo $nombreMarca.' '.$webDelAutor; ?>">
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 	<?php include "views/viewport-fav-setup.php"; ?>
-	<link rel="stylesheet" href="_/css/magnificPopup.css">
-	<link rel="stylesheet" href="_/css/styles.css">
+	<link rel="stylesheet" href="_/css/styles.min.css">
+	<?php
+		$openGraph['titulo'] = 'Presupuestos JZMusic.cl';
+		$openGraph['descripcion'] = 'Nuestro equipo está disponible para cualquier comentario relacionado con la satisfacción de nuestros clientes y para escuchar sus necesidades.';
+		include 'views/open-graph.php';
+	?>
 	<?php include "views/modernizr.php"; ?>
 
 </head>
@@ -196,17 +200,21 @@ include "_/inc/datos-globales.php";
 					<h3>¿Quieres que amplifiquemos la zona de cocktail?</h3>
 					<div class="texto-explicacion">Nos adecuamos a todas las alternativas de amplificación que usted necesite para el momento del cóctail, ya sea en música envasada como en música en vivo. Para esta última necesitamos la ficha técnica del grupo para ajustarnos a ella.</div>
 					<div class="opciones">
-						<label class="opcion boton" data-si>
-							<input type="radio" name="presupuesto-3-radio" value="si"> Sí, pero el cocktail estará a menos de 25 metros del lugar de la comida
+						<input type="radio" name="presupuesto-3-radio" id="presupuesto-3-radio-si" value="si">
+						<label class="opcion ancho boton" data-si for="presupuesto-3-radio-si">
+							 Sí, pero el cocktail estará a menos de 25 metros del lugar de la comida
 						</label>
-						<label class="opcion boton" data-si>
-							<input type="radio" name="presupuesto-3-radio" value="si"> Sí, pero el cocktail estará a más de 25 metros del lugar de la comida
+						<input type="radio" name="presupuesto-3-radio" id="presupuesto-3-radio-si2" value="si">
+						<label class="opcion ancho boton" data-si for="presupuesto-3-radio-si2">
+							 Sí, pero el cocktail estará a más de 25 metros del lugar de la comida
 						</label>
-						<label class="opcion boton" data-no>
-							<input type="radio" name="presupuesto-3-radio" value="no"> No es necesario, el cocktail será en el mismo lugar de la comida
+						<input type="radio" name="presupuesto-3-radio" id="presupuesto-3-radio-no" value="no">
+						<label class="opcion ancho boton" data-no for="presupuesto-3-radio-no">
+							 No es necesario, el cocktail será en el mismo lugar de la comida
 						</label>
-						<label class="opcion boton" data-no>
-							<input type="radio" name="presupuesto-3-radio" value="no"> No voy a necesitar que JZMusic amplifique el cocktail
+						<input type="radio" name="presupuesto-3-radio" id="presupuesto-3-radio-no2" value="no">
+						<label class="opcion ancho boton" data-no for="presupuesto-3-radio-no2">
+							 No voy a necesitar que JZMusic amplifique el cocktail
 						</label>
 
 					</div>
@@ -261,11 +269,13 @@ include "_/inc/datos-globales.php";
 					<h3>¿Te gustaría que se escuchara bien la música en todas las mesas durante la comida?</h3>
 					<div class="texto-explicacion">Muchas veces para en los matrimonios la gente reclama porque quedó cerca de un parlante y le molesta la música y otros quedaron lejos , por lo cual no escuchan… Esto se soluciona instalando varios parlantes pequeños en el perímetro de las mesas con un volumen independiente al de la pista de baile</div>
 					<div class="opciones">
-						<label class="opcion boton" data-si>
-							<input type="radio" name="presupuesto-4-radio" value="si"> Sí, es lo que busco
+						<input type="radio" name="presupuesto-4-radio" id="presupuesto-4-radio-si" value="si">
+						<label class="opcion ancho boton" data-si for="presupuesto-4-radio-si">
+							 Sí, es lo que busco
 						</label>
-						<label class="opcion boton" data-no>
-							<input type="radio" name="presupuesto-4-radio" value="no"> No es importante para mi
+						<input type="radio" name="presupuesto-4-radio" id="presupuesto-4-radio-no" value="no">
+						<label class="opcion ancho boton" data-no for="presupuesto-4-radio-no">
+							 No es importante para mi
 						</label>
 					</div>
 					<div id="presupuesto_4_opcion_no" class="hide texto-resultado">
@@ -320,11 +330,13 @@ include "_/inc/datos-globales.php";
 					<h3>¿Quieres potenciar el sonido de la pista de baile con sub-bajos?</h3>
 					<div class="texto-explicacion">Los sub-bajos son parlantes que sólo emiten sonidos de baja frecuencia, haciendo la música más envolvente y produciendo en las personas que la música se sienta en la piel. Importante: Hay centros de eventos, donde estos equipos están prohibidos.</div>
 					<div class="opciones">
-						<label class="opcion boton" data-si>
-							<input type="radio" name="presupuesto-5-radio" value="si"> Sí, me encantaría
+						<input type="radio" name="presupuesto-5-radio" id="presupuesto-5-radio-si" value="si">
+						<label class="opcion ancho boton" data-si for="presupuesto-5-radio-si">
+							 Sí, me encantaría
 						</label>
-						<label class="opcion boton" data-no>
-							<input type="radio" name="presupuesto-5-radio" value="no"> No, gracias
+						<input type="radio" name="presupuesto-5-radio" id="presupuesto-5-radio-no" value="no">
+						<label class="opcion ancho boton" data-no for="presupuesto-5-radio-no">
+							 No, gracias
 						</label>
 					</div>
 					<div id="presupuesto_5_opcion_no" class="hide texto-resultado">
@@ -644,11 +656,13 @@ include "_/inc/datos-globales.php";
 					<h3>¿Te gustaría que instaláramos un racimo de bolas disco en el centro de pista de baile?</h3>
 					<div class="texto-explicacion">Las bolas disco refleja la luz dirigida a ella en múltiples direcciones. Los Mobile Color cambian de color al ritmo de la música.</div>
 					<div class="opciones">
-						<label class="opcion boton" data-si>
-							<input type="radio" name="presupuesto-8-radio" value="si"> Sí, ¡genial!
+						<input type="radio" name="presupuesto-8-radio" id="presupuesto-8-radio-si" value="si">
+						<label class="opcion boton" data-si for="presupuesto-8-radio-si">
+							 Sí, ¡genial!
 						</label>
-						<label class="opcion boton" data-no>
-							<input type="radio" name="presupuesto-8-radio" value="no"> No, gracias
+						<input type="radio" name="presupuesto-8-radio" id="presupuesto-8-radio-no" value="no">
+						<label class="opcion boton" data-no for="presupuesto-8-radio-no">
+							 No, gracias
 						</label>
 					</div>
 					<div id="presupuesto_8_opcion_no" class="hide texto-resultado">
@@ -703,11 +717,13 @@ include "_/inc/datos-globales.php";
 					<h3>¿Quieres que JZMusic se haga cargo de los videos de tu fiesta?</h3>
 					<div class="texto-explicacion"><p>Tenemos una gran variedad de pantallas , telones y proyectores que permiten mostrar los videos , fotos y presentaciones en tu fiesta.</p><p>En esta pregunta buscamos conocer tu necesidad y no tiene un producto/valor asociado a tu respuesta, ya que se necesita realizar un estudio de factibilidad previo.</p></div>
 					<div class="opciones">
-						<label class="opcion boton" data-si>
-							<input type="radio" name="presupuesto-9-radio" value="si"> Sí
+						<input type="radio" name="presupuesto-9-radio" id="presupuesto-9-radio-si" value="si">
+						<label class="opcion boton" data-si for="presupuesto-9-radio-si">
+							 Sí
 						</label>
-						<label class="opcion boton" data-no>
-							<input type="radio" name="presupuesto-9-radio" value="no"> No
+						<input type="radio" name="presupuesto-9-radio" id="presupuesto-9-radio-no" value="no">
+						<label class="opcion boton" data-no for="presupuesto-9-radio-no">
+							 No
 						</label>
 					</div>
 					<div id="presupuesto_9_opcion_no" class="hide texto-resultado"></div>
@@ -737,11 +753,13 @@ include "_/inc/datos-globales.php";
 					<h3>¿Quieres que JZMusic se haga cargo de la iluminación ambiental de tu fiesta?</h3>
 					<div class="texto-explicacion"><p>Tenemos una gran cantidad y variedad de focos que nos permitirán iluminar y destacar todos los elementos de tu matrimonio.</p><p>En esta pregunta buscamos conocer tu necesidad y no tiene un producto/valor asociado a tu respuesta, ya que se necesita realizar un estudio de factibilidad previo.</p></div>
 					<div class="opciones">
-						<label class="opcion boton" data-si>
-							<input type="radio" name="presupuesto-10-radio" value="si"> Sí
+						<input type="radio" name="presupuesto-10-radio" id="presupuesto-10-radio-si" value="si">
+						<label class="opcion boton" data-si for="presupuesto-10-radio-si">
+							 Sí
 						</label>
-						<label class="opcion boton" data-no>
-							<input type="radio" name="presupuesto-10-radio" value="no"> No
+						<input type="radio" name="presupuesto-10-radio" id="presupuesto-10-radio-no" value="no">
+						<label class="opcion boton" data-no for="presupuesto-10-radio-no">
+							 No
 						</label>
 					</div>
 					<div id="presupuesto_10_opcion_no" class="hide texto-resultado"></div>
@@ -860,6 +878,7 @@ include "_/inc/datos-globales.php";
 </footer>
 <?php require("views/javascript-al-pie.php"); ?>
 <script src="_/js/libs/magnificPopup.min.js"></script>
-<script src="_/js/presupuestos.js"></script>
+<script src="_/js/min/presupuestos.min.js"></script>
+<script src="_/js/libs/jquery-ui-1.10.3.custom.min.js"></script>
 </body>
 </html>

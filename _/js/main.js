@@ -36,20 +36,20 @@ $(document).ready(function(){
                         $cuerpo.removeClass('subNavAbierto');
                         $cuerpo.removeClass('allNavAbierto');
                     }else{
-                        $cuerpo.addClass('allNavAbierto');   
+                        $cuerpo.addClass('allNavAbierto');
                     }
                 }else{
                     $cuerpo.addClass('subNavAbierto');
                 }
             }else{
-			     $cuerpo.removeClass('navAbierto');
+                $cuerpo.removeClass('navAbierto');
             }
 		}else{
 			$cuerpo.addClass('navAbierto');
             if($cuerpo.hasClass('articulo'))$cuerpo.addClass('subNavAbierto');
 		}
 	});
-    $('.evenMoreShameful').mouseover(abreShame).mouseout(preCierraShame)
+    $('.evenMoreShameful').mouseover(abreShame).mouseout(preCierraShame);
    /* $('body').swipe({
         swipeLeft: function() { cierraShame(); },
         swipeRight: function() { abreShame(); }
@@ -84,17 +84,17 @@ $(function() {
                     $('#carousel').parent().css( newCss );
                     $('#carousel div').css( newCss );
                 }).resize();
-            });  
+            });
 
 /* Tercero: ejecutamos acciones no-escenciales y llamados a contenido externo adicional (como publicidad)
    Third: we execute the non-escential actions and extra content calls (like adds)*/
 $(window).load(function(){
-		
+
 });
 
 function abreShame(){
     if(!window.matchMedia("(min-width: 960px)").matches)return;
-    $cuerpo = $('body'); 
+    $cuerpo = $('body');
     if($cuerpo.hasClass('articulo')){
         $cuerpo.addClass('subNavAbierto');
         $cuerpo.addClass('allNavAbierto');
@@ -108,7 +108,7 @@ function preCierraShame(){
     }, 5000);
 }
 function cierraShame(){
-    $cuerpo = $('body'); 
+    $cuerpo = $('body');
     if($cuerpo.hasClass('articulo')){
         //$cuerpo.addClass('subNavAbierto');
         $cuerpo.removeClass('allNavAbierto');

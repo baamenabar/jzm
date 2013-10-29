@@ -14,7 +14,12 @@ include "_/inc/datos-globales.php";
 	<meta name="author" content="<?php echo $nombreMarca.' '.$webDelAutor; ?>">
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 	<?php include "views/viewport-fav-setup.php"; ?>
-	<link rel="stylesheet" href="_/css/styles.css">
+	<link rel="stylesheet" href="_/css/styles.min.css">
+	<?php
+		$openGraph['titulo'] = 'Acerca de JZMusic.cl';
+		$openGraph['descripcion'] = 'Somos una empresa seria dedicada al negocio de la entretención a través de la producción integral de todos sus eventos con más de 21 años de experiencia.';
+		include 'views/open-graph.php';
+	?>
 	<?php include "views/modernizr.php"; ?>
 
 </head>
