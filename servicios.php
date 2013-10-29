@@ -110,7 +110,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="pantallas-video">
 				<div class="servicio-tipo">
 					<h3>PANTALLAS &amp; VIDEO</h3>
-					<p class="servicio-desc">Tenemos una gran variedad de equipos</p>
+					<p class="servicio-desc">Todo el equipamiento multimedia necesario para tu evento</p>
 					<p class="servicio-cant">12 ITEMS</p>
 				</div>
 			</div>
@@ -231,8 +231,8 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="servicios-adjuntos">
 				<div class="servicio-tipo">
 					<h3>SERVICIOS ADJUNTOS</h3>
-					<p class="servicio-desc">Tenemos una gran variedad de equipos</p>
-					<p class="servicio-cant">26 ITEMS</p>
+					<p class="servicio-desc">Contamos con socios estratégicos para cubrir todas tus necesidades</p>
+					<p class="servicio-cant">22 ITEMS</p>
 				</div>
 			</div>
 			<div class="servicio">
@@ -899,7 +899,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="efectos-iluminacion">
 				<div class="servicio-tipo">
 					<h3>EFECTOS &amp; ILUMINACIÓN</h3>
-					<p class="servicio-desc">Tenemos una gran variedad de equipos</p>
+					<p class="servicio-desc">Tenemos la más amplia variedad de equipos</p>
 					<p class="servicio-cant">34 ITEMS</p>
 				</div>
 			</div>
@@ -1307,7 +1307,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="amplificacion">
 				<div class="servicio-tipo">
 					<h3>AMPLIFICACIÓN</h3>
-					<p class="servicio-desc">Tenemos una gran variedad de equipos</p>
+					<p class="servicio-desc">Disponemos equipamiento profesional para tu evento</p>
 				</div>
 			</div>
 			<div class="servicio">
