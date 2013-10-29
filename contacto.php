@@ -77,7 +77,12 @@ if($_POST){
 	<meta name="author" content="<?php echo $nombreMarca.' '.$webDelAutor; ?>">
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 	<?php include "views/viewport-fav-setup.php"; ?>
-	<link rel="stylesheet" href="_/css/styles.css">
+	<link rel="stylesheet" href="_/css/styles.min.css">
+	<?php
+		$openGraph['titulo'] = 'Contacto JZMusic.cl';
+		$openGraph['descripcion'] = 'Nuestro equipo está disponible para cualquier comentario relacionado con la satisfacción de nuestros clientes y para escuchar sus necesidades.';
+		include 'views/open-graph.php';
+	?>
 	<?php include "views/modernizr.php"; ?>
 
 </head>
@@ -222,6 +227,7 @@ if($_POST){
 	</div>
 </footer>
 <?php require("views/javascript-al-pie.php"); ?>
-<script type="text/javascript" src="_/js/contacto.js"></script>
+<script type="text/javascript" src="_/js/min/contacto.min.js"></script>
+<script src="_/js/libs/jquery-ui-1.10.3.custom.min.js"></script>
 </body>
 </html>

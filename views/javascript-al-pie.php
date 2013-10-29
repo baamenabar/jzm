@@ -6,8 +6,7 @@
 	uncomment only when needed
     <script src="_/js/plugins.js"></script>-->
     <script src="_/js/libs/jquery.carouFredSel-6.0.4-packed.js"></script>
-    <script src="_/js/libs/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="_/js/main.js"></script>
+    <script src="_/js/min/main.min.js"></script>
 
     <script>
         var _gaq=[['_setAccount','UA-35714363-1'],['_trackPageview']];

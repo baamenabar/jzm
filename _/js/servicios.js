@@ -102,12 +102,43 @@
 		}
 	};
 
+	var goTop = {
+		init: function(){
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('#go-top').addClass('active');
+				} else {
+					$('#go-top').removeClass('active');
+				}
+			});
+			$('#go-top').click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		}
+	};
+
+	var subCategoria = {
+		init: function(){
+			$('.sub-categoria li').each(function(){
+				var catId = $(this).data('section');
+				$(this).click(function(){
+					$('body,html').animate({ scrollTop: $('#'+catId).offset().top }, 800);
+				});
+			});
+		}
+	};
+
 	$(function(){
 		var tag = document.createElement('script');
 		tag.src = "https://www.youtube.com/iframe_api";
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 		servicios.init();
+		goTop.init();
+		subCategoria.init();
 	});
 
 }());
