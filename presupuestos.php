@@ -57,8 +57,7 @@ include "_/inc/datos-globales.php";
 	<meta name="author" content="<?php echo $nombreMarca.' '.$webDelAutor; ?>">
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 	<?php include "views/viewport-fav-setup.php"; ?>
-	<link rel="stylesheet" href="_/css/magnificPopup.css">
-	<link rel="stylesheet" href="_/css/styles.css">
+	<link rel="stylesheet" href="_/css/styles.min.css">
 	<?php
 		$openGraph['titulo'] = 'Presupuestos JZMusic.cl';
 		$openGraph['descripcion'] = 'Nuestro equipo está disponible para cualquier comentario relacionado con la satisfacción de nuestros clientes y para escuchar sus necesidades.';
@@ -879,6 +878,7 @@ include "_/inc/datos-globales.php";
 </footer>
 <?php require("views/javascript-al-pie.php"); ?>
 <script src="_/js/libs/magnificPopup.min.js"></script>
-<script src="_/js/presupuestos.js"></script>
+<script src="_/js/min/presupuestos.min.js"></script>
+<script src="_/js/libs/jquery-ui-1.10.3.custom.min.js"></script>
 </body>
 </html>

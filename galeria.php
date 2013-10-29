@@ -15,7 +15,7 @@ include "_/inc/datos-globales.php";
 	<meta name="author" content="<?php echo $nombreMarca.' '.$webDelAutor; ?>">
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 	<?php include "views/viewport-fav-setup.php"; ?>
-	<link rel="stylesheet" href="_/css/styles.css">
+	<link rel="stylesheet" href="_/css/styles.min.css">
 	<link rel="stylesheet" href="_/css/magnificPopup.css">
 	<?php
 		$openGraph['titulo'] = 'Galería JZMusic.cl';

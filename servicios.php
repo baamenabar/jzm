@@ -15,7 +15,7 @@ include "_/inc/datos-globales.php";
 	<meta name="author" content="<?php echo $nombreMarca.' '.$webDelAutor; ?>">
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 	<?php include "views/viewport-fav-setup.php"; ?>
-	<link rel="stylesheet" href="_/css/styles.css">
+	<link rel="stylesheet" href="_/css/styles.min.css">
 	<?php
 		$openGraph['titulo'] = 'Servicios JZMusic.cl';
 		$openGraph['descripcion'] = 'Cubrimos una amplia gama de servicios: Fiestas, Presentaciones, Iglesia, Exposiciones, Coros, Congresos, Desfiles, Discurso, Festivales, Reuniones.';
@@ -1651,6 +1651,6 @@ Hasta 16 módulos por lado usando el <em>FLY BAR</em></p>
 	</div>
 </footer>
 <?php require("views/javascript-al-pie.php"); ?>
-<script type="text/javascript" src="_/js/servicios.js"></script>
+<script type="text/javascript" src="_/js/min/servicios.min.js"></script>
 </body>
 </html>
