@@ -58,6 +58,7 @@ include "_/inc/datos-globales.php";
 	<meta name="Copyright" content="Copyright <?php echo $nombreMarca.' '.date('Y'); ?>. All Rights Reserved.">
 	<?php include "views/viewport-fav-setup.php"; ?>
 	<link rel="stylesheet" href="_/css/styles.min.css">
+	<link rel="stylesheet" href="_/css/magnificPopup.css">
 	<?php
 		$openGraph['titulo'] = 'Presupuestos JZMusic.cl';
 		$openGraph['descripcion'] = 'Nuestro equipo está disponible para cualquier comentario relacionado con la satisfacción de nuestros clientes y para escuchar sus necesidades.';
