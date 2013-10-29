@@ -231,7 +231,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="servicios-adjuntos">
 				<div class="servicio-tipo">
 					<h3>SERVICIOS ADJUNTOS</h3>
-					<p class="servicio-desc">Contamos con socios estratégicos para cubrir todas tus necesidades</p>
+					<p class="servicio-desc">En nuestra larga experiencia, hemos hemos trabajado junto a otros expertos que te pueden brindar servicios adicionales, para que tu evento sea inolvidable.</p>
 					<p class="servicio-cant">22 ITEMS</p>
 				</div>
 			</div>
