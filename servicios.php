@@ -47,7 +47,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="generadores-fiesta">
 				<div class="servicio-tipo">
 					<h3>GENERADORES &amp; FIESTA SEGURA</h3>
-					<p class="servicio-desc">Contamos con equipos electrógenos insonoros trifásicos de diferentes capacidades para suministrar de energía a todos los servicios que trabajan normalmente en nuestros eventos. Haz click en cada foto para ver más información</p>
+					<p class="servicio-desc">Contamos con equipos electrógenos insonoros trifásicos de diferentes capacidades para suministrar de energía a todos los servicios que trabajan normalmente en nuestros eventos. Haz click en cada foto para ver más información.</p>
 					<h4>Incluye:</h4>
 						<ul>
 							<li>Petroleo</li>
@@ -80,7 +80,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="calefactores">
 				<div class="servicio-tipo">
 					<h3>CALEFACTORES</h3>
-					<p class="servicio-desc">Disponemos de una amplia gama de turbocalefactores para temperar sus eventos.</p>
+					<p class="servicio-desc">Disponemos de una amplia gama de turbocalefactores para temperar sus eventos. Haz click en cada foto para ver más información.</p>
 				</div>
 			</div>
 			<div class="servicio">
