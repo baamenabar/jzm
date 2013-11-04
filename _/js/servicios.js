@@ -74,7 +74,8 @@
 											var iframeLeft = $('#'+video).position().left + 20;
 											$(item).find('.video-controls').show().css({'left': iframeLeft+'px'});
 										}
-										window.addEventListener("orientationchange", function() {
+										// Si dio vuelta la pantalla, re-calculo la posición del control
+										window.addEventListener('orientationchange', function() {
 											var iframeLeft = $('#'+video).position().left + 20;
 											$(item).find('.video-controls').show().css({'left': iframeLeft+'px'});
 										}, false);
