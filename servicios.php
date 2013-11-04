@@ -74,12 +74,12 @@ include "_/inc/datos-globales.php";
 							<h4>Arriendo:</h4>
 
 							<ul>
-								<li>40 kva <span class="precio">$ 160.000</span></li>
-								<li>80 kva <span class="precio">$ 200.000</span></li>
+								<li>40 kva <span class="precio">$ 170.000</span></li>
+								<li>80 kva <span class="precio">$ 190.000</span></li>
 								<li>100 kva <span class="precio">$ 220.000</span></li>
-								<li>150 kva <span class="precio">$ 260.000</span></li>
-								<li>200 kva <span class="precio">$ 260.000</span></li>
-								<li>250 kva <span class="precio">$ 300.000</span></li>
+								<li>150 kva <span class="precio">$ 250.000</span></li>
+								<li>200 kva <span class="precio">$ 300.000</span></li>
+								<li>250 kva <span class="precio">$ 350.000</span></li>
 							</ul>
 						</div>
 					</div>
