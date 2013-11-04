@@ -2191,6 +2191,7 @@ article a {
 .servicio .servicio-item .servicio-desc .servicio-desc-imgs {
   text-align: center;
   margin: 5px;
+  background-color: white;
 }
 .servicio .servicio-item .servicio-desc .servicio-desc-imgs img {
   display: inline-block;
