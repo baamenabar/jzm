@@ -504,7 +504,7 @@ include "_/inc/datos-globales.php";
 								<li>
 									<h3>Peluquero y Estilista</h3>
 									<p>
-										Luciano Dorero<br>
+										Luciano Dodero<br>
 										Cel.: 8 385 39 91<br>
 										E-mail: <a href="mailto:lucianofunp@hotmail.com">lucianofunp@hotmail.com</a>
 									</p>
