@@ -162,7 +162,8 @@
 				font-weight: bold;
 				text-align: center;
 				padding: 2px;
-				@include border-radius(9px);
+				margin-top: 4px;
+				border-radius: 9px;
 			}
 		}
 	}
