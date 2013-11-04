@@ -1571,7 +1571,7 @@ Hasta 16 módulos por lado usando el <em>FLY BAR</em></p>
 						<p>Sennheiser G3</p>
 						<div class="servicio-desc">
 							<p>( Cerrar )</p>
-							<p>Micrófono inalámbrico de gran versatilidad en distintos estilos musicales, entregando gran calidad de sonido en todos ellos. Por su gran alcance y amplia selección de frecuencias es uno de los favoritos de todos los músicos.</p>
+							<p>Micrófono inalámbrico de gran versatilidad en distintos estilos musicales, entregando gran calidad de sonido en todos ellos. Por su gran alcance y amplia selección de frecuencias es uno de los favoritos de todos los músicos. Éstos cuentan con kits de microfonía LavaLavalier, Headset y Mano.</p>
 						</div>
 					</div>
 					<div class="servicio-item">
