@@ -67,8 +67,35 @@
 							events: {
 								'onStateChange': function(event){
 									if (event.data == YT.PlayerState.PLAYING && !done) {
+										console.log(YT.PlayerState.PLAYING);
 										player.mute();
 										done = true;
+										if($('html.touch').length){
+											var iframeLeft = $('#'+video).position().left + 20;
+											$(item).find('.video-controls').show().css({'left': iframeLeft+'px'});
+										}
+										window.addEventListener("orientationchange", function() {
+											var iframeLeft = $('#'+video).position().left + 20;
+											$(item).find('.video-controls').show().css({'left': iframeLeft+'px'});
+										}, false);
+									}
+									if(event.data == YT.PlayerState.PLAYING){
+										if($('html.touch').length){
+											$(item).find('.video-controls').html('&#9612;&#9612;').removeClass('playing').off('click').on('click', function(){
+													player.pauseVideo();
+											}).show();
+										}
+									}
+									else if(event.data == YT.PlayerState.PAUSED){
+										if($('html.touch').length){
+											$(item).find('.video-controls').html('&#9658;').addClass('playing').off('click').on('click', function(){
+												player.playVideo();
+											});
+										}
+									} else if(event.data == YT.PlayerState.ENDED){
+										if($('html.touch').length){
+											$(item).find('.video-controls').hide();
+										}
 									}
 								}
 							}
@@ -98,7 +125,7 @@
 			}
 		},
 		video: function(video){
-			return '<iframe id="'+ video +'" width="300" height="200" src="http://www.youtube.com/embed/' + video + '?rel=0&controls=0&enablejsapi=1&origin=http://'+ document.domain +'" frameborder="0" allowfullscreen></iframe>';
+			return '<div class="video-controls">&#9612;&#9612;</div><iframe id="'+ video +'" width="300" height="200" src="http://www.youtube.com/embed/' + video + '?rel=0&controls=0&enablejsapi=1&origin=http://'+ document.domain +'" frameborder="0" allowfullscreen></iframe>';
 		}
 	};
 

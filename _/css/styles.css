@@ -2385,106 +2385,113 @@ article a {
 }
 
 /* line 1, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */
+}
+
+/* line 6, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .body-gris {
   background-color: #1d1f1e;
 }
-/* line 3, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 8, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .body-gris .corporis {
   margin: 0 0 0 0px;
 }
-/* line 5, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 10, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .body-gris .corporis h1 {
   margin: 0;
 }
-/* line 8, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 13, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .body-gris .corporis h1, .body-gris .corporis h2 {
   padding-left: 20px;
 }
-/* line 11, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 16, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .body-gris .corporis h2 {
   margin-top: 60px;
 }
-/* line 14, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 19, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .body-gris .corporis h3 {
   font-weight: 800;
   margin: 0;
 }
-/* line 18, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 23, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .body-gris .corporis > p {
   padding: 10px 0 10px 0;
   font-weight: 800;
   padding-left: 20px;
 }
 
-/* line 25, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 30, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio {
   padding-left: 20px;
   margin-top: 20px;
   padding-top: 20px;
   clear: left;
 }
-/* line 30, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 35, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio.servicio-padre {
   border-top: 1px dashed white;
 }
-/* line 32, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 37, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio.servicio-padre h3 {
   font-size: 1.17em;
 }
-/* line 35, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 40, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio.servicio-padre .servicio-tipo {
   width: auto;
 }
-/* line 39, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 44, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio h3 {
   font-size: 1em;
 }
-/* line 42, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 47, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .precio {
   text-align: right;
   margin-right: 5%;
   float: right;
 }
-/* line 47, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 52, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-tipo {
   margin-right: 30px;
 }
-/* line 49, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 54, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-tipo .servicio-desc {
   color: #a9a8a4;
   font-style: italic;
   margin-top: 0;
 }
-/* line 54, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 59, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-tipo .servicio-cant {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-/* line 59, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 64, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-items {
   margin: 0 auto;
   text-align: center;
 }
-/* line 62, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 67, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-items > p {
   margin: 20px 10px 0 0;
 }
-/* line 66, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 71, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item {
   cursor: pointer;
   display: inline-block;
   margin-right: 20px;
   vertical-align: top;
 }
-/* line 71, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 76, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item img {
   border: 3px solid #121212;
 }
-/* line 74, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 79, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item > p {
   font-weight: 800;
 }
-/* line 77, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 82, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc {
   display: none;
   cursor: default;
@@ -2494,49 +2501,53 @@ article a {
   margin: 10px 0 10px 0;
   z-index: 99;
 }
-/* line 85, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 90, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc p {
   color: #a9a8a4;
   font-style: italic;
   text-align: left;
 }
-/* line 90, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 95, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc ul {
   list-style: none;
   padding: 0;
 }
-/* line 93, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 98, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc ul li {
   margin-bottom: 20px;
   word-wrap: break-word;
 }
-/* line 97, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 102, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc ul h3 {
   font-size: 1em;
 }
-/* line 100, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 105, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc ul a, .servicio .servicio-item .servicio-desc ul a:visited {
   color: white;
   text-decoration: none;
   border-bottom: 1px dotted #EEE;
 }
-/* line 104, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 109, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc ul a:hover, .servicio .servicio-item .servicio-desc ul a:visited:hover {
   color: #BBB;
 }
-/* line 109, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 114, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc .servicio-desc-imgs {
   text-align: center;
   margin: 5px;
   background-color: white;
 }
-/* line 113, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 118, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc .servicio-desc-imgs img {
   display: inline-block;
   margin-right: 2px;
   border: none;
 }
-/* line 120, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 124, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+.servicio .servicio-item .servicio-desc .servicio-video {
+  position: relative;
+}
+/* line 126, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc .servicio-video p {
   color: white;
   font-style: normal;
@@ -2545,7 +2556,28 @@ article a {
   padding-top: 80px;
   margin: 0;
 }
-/* line 129, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 135, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+.servicio .servicio-item .servicio-desc .video-controls {
+  display: none;
+  position: absolute;
+  bottom: 25px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  width: 52px;
+  height: 42px;
+  text-align: center;
+  padding-left: 3px;
+  line-height: 42px;
+  border-radius: 5px;
+}
+/* line 148, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+.servicio .servicio-item .servicio-desc .video-controls.playing {
+  font-size: 1.5em;
+  width: 55px;
+  padding-left: 0;
+}
+/* line 154, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item .servicio-desc .close {
   float: right;
   cursor: pointer;
@@ -2563,13 +2595,13 @@ article a {
   -o-border-radius: 9px;
   border-radius: 9px;
 }
-/* line 144, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 169, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .servicio .servicio-item-abierto {
   display: block;
   width: auto;
 }
 
-/* line 150, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 175, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .go-top {
   position: fixed;
   bottom: 0;
@@ -2587,43 +2619,43 @@ article a {
   -o-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
 }
-/* line 163, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 188, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .go-top.active {
   opacity: 1;
   height: 25px;
 }
 
-/* line 170, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 195, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .sub-categoria li {
   cursor: pointer;
 }
-/* line 172, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+/* line 197, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
 .sub-categoria li:hover {
   color: #ECECEC;
 }
 
 @media screen and (min-width: 640px) {
-  /* line 180, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 205, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .body-gris .corporis h2 {
     margin-top: 10px;
   }
 
-  /* line 186, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 211, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item {
     width: 200px;
     margin-left: 20px;
     position: relative;
   }
-  /* line 190, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 215, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item .servicio-desc {
     width: 310px;
     left: -65px;
   }
-  /* line 194, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 219, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item .servicio-desc .servicio-video p {
     display: block;
   }
-  /* line 200, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 225, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item .servicio-arrow-up:before, .servicio .servicio-item .servicio-arrow-up:after {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
@@ -2635,7 +2667,7 @@ article a {
     position: absolute;
     z-index: 2;
   }
-  /* line 211, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 236, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item .servicio-arrow-up:after {
     border-left: 23px solid transparent;
     border-right: 23px solid transparent;
@@ -2645,7 +2677,7 @@ article a {
     margin-left: -23px;
     z-index: 1;
   }
-  /* line 222, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 247, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item .servicio-arrow-down:after, .servicio .servicio-item .servicio-arrow-down:before {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
@@ -2656,7 +2688,7 @@ article a {
     margin-left: -20px;
     position: absolute;
   }
-  /* line 232, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 257, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item .servicio-arrow-down:before {
     border-left: 23px solid transparent;
     border-right: 23px solid transparent;
@@ -2665,19 +2697,19 @@ article a {
     bottom: -23px;
     margin-left: -23px;
   }
-  /* line 242, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 267, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item .servicio-arrow-pull-right:before, .servicio .servicio-item .servicio-arrow-pull-right:after {
     left: 70%;
   }
-  /* line 246, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 271, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item .servicio-desc-abierto {
     position: absolute;
   }
-  /* line 249, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 274, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item .servicio-desc-abierto-borde {
     left: -80px;
   }
-  /* line 253, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 278, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item-abierto {
     display: inline-block;
     margin-right: 20px;
@@ -2685,45 +2717,45 @@ article a {
   }
 }
 @media screen and (min-width: 960px) {
-  /* line 263, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 288, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .body-gris .corporis {
     margin: -150px 0 0 0px;
   }
-  /* line 265, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 290, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .body-gris .corporis h1 {
     margin: 0;
     border-bottom: 1px dashed white;
   }
-  /* line 269, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 294, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .body-gris .corporis h1, .body-gris .corporis h2 {
     padding-left: 50px;
   }
-  /* line 272, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 297, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .body-gris .corporis > p {
     padding-left: 50px;
   }
 
-  /* line 277, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 302, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio {
     padding-left: 50px;
     margin-top: 20px;
     padding-top: 20px;
   }
-  /* line 281, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 306, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-tipo {
     border-top: 1px solid #444;
     padding-top: 0.5em;
   }
-  /* line 286, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 311, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-tipo .servicio-cant {
     margin-top: 0.5em;
     color: #777;
   }
-  /* line 291, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 316, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio.servicio-padre .servicio-tipo {
     border-top: none;
   }
-  /* line 294, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 319, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-items {
     margin-left: -25px;
     text-align: left;
@@ -2732,19 +2764,19 @@ article a {
     -o-transition: margin 0.75s ease-out;
     transition: margin 0.75s ease-out;
   }
-  /* line 299, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 324, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .allNavAbierto .servicio .servicio-items {
     margin-right: 0;
   }
-  /* line 302, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 327, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-items > p {
     margin: 20px 0 0 20px;
   }
-  /* line 306, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 331, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item {
     margin-left: 20px;
   }
-  /* line 309, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
+  /* line 334, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_servicios.scss */
   .servicio .servicio-item-abierto {
     display: inline-block;
     margin-left: 20px;
