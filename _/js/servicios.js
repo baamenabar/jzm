@@ -79,7 +79,7 @@
 				e.stopPropagation();
 			}).parent().addClass('servicio-item-abierto');
 			// Boton cerrar
-			$(item).find('p:eq(0)').one('click', function(){
+			$(item).find('.close').one('click', function(){
 				that.esconder();
 			});
 		},

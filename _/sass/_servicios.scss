@@ -87,13 +87,6 @@
 				font-style: italic;
 				text-align: left;
 			}
-			p:first-child {
-				text-align: right;
-				font-style: normal;
-				font-weight: bold;
-				color: white;
-				cursor: pointer;
-			}
 			ul {
 				list-style: none;
 				padding: 0;
@@ -132,6 +125,19 @@
 					padding-top: 80px;
 					margin: 0;
 				}
+			}
+			.close {
+				float: right;
+				cursor: pointer;
+				color: black;
+				background-color: white;
+				width: 16px;
+				height: 16px;
+				padding: 2px;
+				font-weight: bold;
+				text-align: center;
+				padding: 2px;
+				@include border-radius(9px);
 			}
 		}
 	}
@@ -184,9 +190,6 @@
 			.servicio-desc {
 				width: 310px;
 				left: -65px;
-				p:first-child {
-					display: none;
-				}
 				.servicio-video {
 					p {
 						display: block;
