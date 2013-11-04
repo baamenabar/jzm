@@ -53,7 +53,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="generadores-fiesta">
 				<div class="servicio-tipo">
 					<h3>GENERADORES &amp; FIESTA SEGURA</h3>
-					<p class="servicio-desc">Contamos con equipos electrógenos insonoros trifásicos de diferentes capacidades para suministrar de energía a todos los servicios que trabajan normalmente en nuestros eventos.</p>
+					<p class="servicio-desc">Contamos con equipos electrógenos insonoros trifásicos de diferentes capacidades para suministrar de energía a todos los servicios que trabajan normalmente en nuestros eventos. Haz click en cada foto para ver más información</p>
 					<h4>Incluye:</h4º>
 						<ul>
 							<li>Petroleo</li>
@@ -110,7 +110,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="pantallas-video">
 				<div class="servicio-tipo">
 					<h3>PANTALLAS &amp; VIDEO</h3>
-					<p class="servicio-desc">Todo el equipamiento multimedia necesario para tu evento</p>
+					<p class="servicio-desc">Todo el equipamiento multimedia necesario para tu evento. Haz click en cada foto para ver más información.</p>
 					<p class="servicio-cant">12 ITEMS</p>
 				</div>
 			</div>
@@ -231,7 +231,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="servicios-adjuntos">
 				<div class="servicio-tipo">
 					<h3>SERVICIOS ADJUNTOS</h3>
-					<p class="servicio-desc">En nuestra larga experiencia, hemos hemos trabajado junto a otros expertos que te pueden brindar servicios adicionales, para que tu evento sea inolvidable.</p>
+					<p class="servicio-desc">En nuestra larga experiencia, hemos hemos trabajado junto a otros expertos que te pueden brindar servicios adicionales, para que tu evento sea inolvidable. Haz click en cada foto para ver más información.</p>
 					<p class="servicio-cant">22 ITEMS</p>
 				</div>
 			</div>
@@ -899,7 +899,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="efectos-iluminacion">
 				<div class="servicio-tipo">
 					<h3>EFECTOS &amp; ILUMINACIÓN</h3>
-					<p class="servicio-desc">Tenemos la más amplia variedad de equipos</p>
+					<p class="servicio-desc">Tenemos la más amplia variedad de equipos. Haz click en cada foto para ver más información.</p>
 					<p class="servicio-cant">34 ITEMS</p>
 				</div>
 			</div>
@@ -1307,7 +1307,7 @@ include "_/inc/datos-globales.php";
 			<div class="servicio servicio-padre" id="amplificacion">
 				<div class="servicio-tipo">
 					<h3>AMPLIFICACIÓN</h3>
-					<p class="servicio-desc">Disponemos equipamiento profesional para tu evento</p>
+					<p class="servicio-desc">Disponemos equipamiento profesional para tu evento. Haz click en cada foto para ver más información.</p>
 				</div>
 			</div>
 			<div class="servicio">
