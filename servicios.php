@@ -479,7 +479,7 @@ include "_/inc/datos-globales.php";
 										Camarógrafo Profesional<br>
 										Tél.: 2284 46 41<br>
 										Cel.: 9 871 44 40<br>
-										E-mail: <a href="mailto:estebanyanes@mi.cl">estebanyanes@mi.cl</a>
+										E-mail: <a href="mailto:estebanyanez@mi.cl">estebanyanez@mi.cl</a>
 									</p>
 								</li>
 								<li>
