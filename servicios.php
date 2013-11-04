@@ -102,7 +102,7 @@ include "_/inc/datos-globales.php";
 							<p>Para el arriendo de los calefactores, recomendamos desarrollar un proyecto de calefacción personalizado para cada evento.</p>
 							<h4>Arriendo:</h4>
 							<p>35.000 k/cal: <span class="precio">$50.000 c/u</span></p>
-							<p>El arriendo incluye un balón de gas de 15 Kg, que es el consumo aproximado de una noche.</p>
+							<p>El arriendo incluye un balón de gas de 15 Kg, que es el consumo aproximado de una noche, correspondienten a 8 horas aproximadamente.</p>
 						</div>
 					</div>
 				</div>
