@@ -323,6 +323,7 @@ include "_/inc/datos-globales.php";
 									<h3>IREGUA (arriendos)</h3>
 									<p>
 										Tél.: 2229 71 33<br>
+										E-mail: <a href="mailto:info@ireguaarriendos.cl">info@ireguaarriendos.cl</a><br>
 										Web: <a href="http://www.iregua.cl" target="_blank">www.iregua.cl</a>
 									</p>
 								</li>
