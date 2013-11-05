@@ -131,7 +131,7 @@ if($_POST){
 					} else {
 			?>
 			<h2 clas="subTitulo">CUÉNTANOS QUE NECESITAS</h2>
-			<p><strong>Nuestro equipo está disponible para cualquier comentario relacionado con la satisfacción de nuestros clientes y para escuchar sus necesidades.</strong></p>
+			<p><strong>Nuestro equipo esta atento para responder a sus necesidades.</strong></p>
 			<?php
 				}
 			?>

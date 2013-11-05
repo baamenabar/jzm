@@ -1,3 +1,8 @@
+* {
+	// Thanks http://phonegap-tips.com/articles/essential-phonegap-css-webkit-tap-highlight-color.html
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+}
 .body-gris {
 	background-color: #1d1f1e;
 	.corporis {
@@ -87,13 +92,6 @@
 				font-style: italic;
 				text-align: left;
 			}
-			p:first-child {
-				text-align: right;
-				font-style: normal;
-				font-weight: bold;
-				color: white;
-				cursor: pointer;
-			}
 			ul {
 				list-style: none;
 				padding: 0;
@@ -116,6 +114,7 @@
 			.servicio-desc-imgs {
 				text-align: center;
 				margin: 5px;
+				background-color: white;
 				img {
 					display: inline-block;
 					margin-right: 2px;
@@ -123,6 +122,7 @@
 				}
 			}
 			.servicio-video {
+				position: relative;
 				p {
 					color: white;
 					font-style: normal;
@@ -131,6 +131,39 @@
 					padding-top: 80px;
 					margin: 0;
 				}
+			}
+			.video-controls {
+				display: none;
+				position: absolute;
+				bottom: 25px;
+				background-color: black;
+				color: white;
+				font-weight: bold;
+				width: 52px;
+				height: 42px;
+				text-align: center;
+				padding-left: 3px;
+				line-height: 42px;
+				border-radius: 5px;
+				&.playing {
+					font-size: 1.5em;
+					width: 55px;
+					padding-left: 0;
+				}
+			}
+			.close {
+				float: right;
+				cursor: pointer;
+				color: black;
+				background-color: white;
+				width: 16px;
+				height: 16px;
+				padding: 2px;
+				font-weight: bold;
+				text-align: center;
+				padding: 2px;
+				margin-top: 4px;
+				border-radius: 9px;
 			}
 		}
 	}
@@ -158,7 +191,7 @@
      height: 25px;
    }
  }
- 
+
  .sub-categoria {
    li {
      cursor: pointer;
@@ -183,9 +216,6 @@
 			.servicio-desc {
 				width: 310px;
 				left: -65px;
-				p:first-child {
-					display: none;
-				}
 				.servicio-video {
 					p {
 						display: block;

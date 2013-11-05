@@ -56,7 +56,8 @@ include "_/inc/datos-globales.php";
 			<h1 class="titulo">JZ MUSIC</h1>
 			<h2 class="subTitulo">QUIENES SOMOS</h2>
 			<p>Somos una empresa seria dedicada al negocio de la entretención a través de la producción integral de todos sus eventos. Llevamos más de 21 años encargándonos de hacer que cada fiesta sea extraordinaria. Para esto, nuestro servicio se preocupa de conocer a cada uno de sus clientes de manera exclusiva e individual en reuniones programadas dirigidas por el mismo dueño, logrando así la mejor atención posible.</p>
-			<p class="destacado">Nuestro personal se destaca por su buena  disposición de servicio y excelente preparación en los aspectos técnicos y humanos. JZMusic se adecua a sus necesidades y posibilidades ofreciendo una gran cantidad de alternativas en presupuestos que hace posible que usted adquiera el mejor servicio por el mejor precio.</p>
+			<p class="destacado">Nuestro personal se destaca por su buena  disposición de servicio y excelente preparación en los aspectos técnicos y humanos.
+			<p>JZMusic se adecua a sus necesidades y posibilidades ofreciendo una gran cantidad de alternativas en presupuestos que hace posible que usted adquiera el mejor servicio por el mejor precio.</p>
 			<hr>
 		</article>
 	</div>
