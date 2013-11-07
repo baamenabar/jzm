@@ -1361,7 +1361,7 @@ include "_/inc/datos-globales.php";
 </footer>
 <?php require("views/javascript-al-pie.php"); ?>
 <script src="_/js/libs/magnificPopup.min.js"></script>
-<script src="_/js/presupuestos.js"></script>
+<script src="_/js/min/presupuestos.min.js"></script>
 <script src="_/js/libs/jquery-ui-1.10.3.custom.min.js"></script>
 </body>
 </html>
