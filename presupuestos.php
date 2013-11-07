@@ -142,22 +142,22 @@ include "_/inc/datos-globales.php";
 						<div class="rango" data-rango="1-100">
 							<img src="imgs/presupuestos/parlante-ev-zx4.jpg" width="148" height="148">
 							<p><span data-cantidad>2</span> <span data-item> parlantes EV ZX4 de 400 watts</span>.</p>
-							<p>Precio: <span data-precio>$50.000</span></p>
+							<p>Precio: <span data-precio>$50.000</span><span class="hide" data-precio-graduacion>$80.000</span></p>
 						</div>
 						<div class="rango" data-rango="101-150">
 							<img src="imgs/presupuestos/parlante-ev-zx5.jpg" width="148" height="148">
 							<p><span data-cantidad>2</span> <span data-item>parlantes EV ZX5 de 600 watts</span></p>
-							<p>Precio: <span data-precio>$70.000</span></p>
+							<p>Precio: <span data-precio>$70.000</span><span class="hide" data-precio-graduacion>$120.000</span></p>
 						</div>
 						<div class="rango" data-rango="151-250">
 							<img src="imgs/presupuestos/parlante-ev-zx4.jpg" width="148" height="148">
 							<p><span data-cantidad>4</span> <span data-item>parlantes EV ZX4 de 400 watts</span></p>
-							<p>Precio: <span data-precio>$100.000</span></p>
+							<p>Precio: <span data-precio>$100.000</span><span class="hide" data-precio-graduacion>$180.000</span></p>
 						</div>
 						<div class="rango" data-rango="251-400">
 							<img src="imgs/presupuestos/parlante-ev-zx5.jpg" width="148" height="148">
 							<p><span data-cantidad>4</span> <span data-item>parlantes EV ZX5 de 600 watts</span></p>
-							<p>Precio: <span data-precio>$150.000</span></p>
+							<p>Precio: <span data-precio>$150.000</span><span class="hide" data-precio-graduacion>$220.000</span></p>
 						</div>
 						<div class="rango" data-rango="401-550">
 							<img src="imgs/presupuestos/parlante-ev-zx4.jpg" width="148" height="148">
@@ -746,7 +746,7 @@ include "_/inc/datos-globales.php";
 				</div>
 <?php
 /*
-* ----------------- Slide 10 - JZMusic se haga cargo de los videos
+* ----------------- Slide 10 - JZMusic se haga cargo de iluminacion
 */
 ?>
 				<div id="presupuesto_10" class="presupuesto-slide hide">
@@ -782,10 +782,492 @@ include "_/inc/datos-globales.php";
 				</div>
 <?php
 /*
-* ----------------- Slide 11 - Presupuesto final
+* ----------------- Slide 11 - Que se escuchara bien la musica en todas las mesas (Max 400)
 */
 ?>
 				<div id="presupuesto_11" class="presupuesto-slide hide">
+					<h2 class="tipo-fiesta-seleccionada"></h2>
+					<h3>¿Te gustaría que se escuchara bien la música en todas las mesas durante la comida?</h3>
+					<div class="texto-explicacion">Muchas veces para en los matrimonios la gente reclama porque quedó cerca de un parlante y le molesta la música y otros quedaron lejos , por lo cual no escuchan… Esto se soluciona instalando varios parlantes pequeños en el perímetro de las mesas con un volumen independiente al de la pista de baile</div>
+					<div class="opciones">
+						<input type="radio" name="presupuesto-11-radio" id="presupuesto-11-radio-si" value="si">
+						<label class="opcion ancho boton" data-si for="presupuesto-11-radio-si">
+							 Sí, es lo que busco
+						</label>
+						<input type="radio" name="presupuesto-11-radio" id="presupuesto-11-radio-no" value="no">
+						<label class="opcion ancho boton" data-no for="presupuesto-11-radio-no">
+							 No es importante para mi
+						</label>
+					</div>
+					<div id="presupuesto_11_opcion_no" class="hide texto-resultado">
+						Será en un sólo ambiente o el sector de mesas no tendrá música ni amplificación.
+					</div>
+					<div id="presupuesto_11_opcion_si" class="hide texto-resultado">
+						<p>Para la cantidad de gente que tienes estimada nosotros te recomendamos:</p>
+
+						<div class="rango" data-rango="1-100">
+							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
+							<p><span data-cantidad>2</span> <span data-item>parlantes EV ZX1</span></p>
+							<p><span data-precio>$30.000</span><span class="hide" data-precio-graduacion>$30.000</span></p>
+						</div>
+						<div class="rango" data-rango="101-250">
+							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
+							<p><span data-cantidad>4</span> <span data-item>parlantes EV ZX1</span></p>
+							<p><span data-precio>$50.000</span><span class="hide" data-precio-graduacion>$50.000</span></p>
+						</div>
+						<div class="rango" data-rango="251-400">
+							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
+							<p><span data-cantidad>6</span> <span data-item>parlantes EV ZX1</span></p>
+							<p><span data-precio>$70.000</span><span class="hide" data-precio-graduacion>$80.000</span></p>
+						</div>
+					</div>
+					<div class="presupuesto-navegacion hide">
+						<div class="anterior">
+							<button>Anterior</button>
+							<div class="volver"><a href="javscript:;" class="volver">Volver a empezar</a></div>
+						</div>
+						<div class="siguiente">
+							<button>Continuar</button>
+						</div>
+					</div>
+				</div>
+<?php
+/*
+* ----------------- Slide 12 - La zona de cocktail estara cerca de la pista de baila
+* 								o haran el cockatil en otro lugar (Max 400)
+*/
+?>
+				<div id="presupuesto_12" class="presupuesto-slide hide">
+					<h2 class="tipo-fiesta-seleccionada"></h2>
+					<h3>¿Quieres que amplifiquemos la zona de cocktail?</h3>
+					<div class="texto-explicacion">Nos adecuamos a todas las alternativas de amplificación que usted necesite para el momento del cóctail, ya sea en música envasada como en música en vivo. Para esta última necesitamos la ficha técnica del grupo para ajustarnos a ella.</div>
+					<div class="opciones">
+						<input type="radio" name="presupuesto-12-radio" id="presupuesto-12-radio-si" value="si">
+						<label class="opcion ancho boton" data-si for="presupuesto-12-radio-si">
+							 Sí, pero el cocktail estará a menos de 25 metros del lugar de la comida
+						</label>
+						<input type="radio" name="presupuesto-12-radio" id="presupuesto-12-radio-si2" value="si">
+						<label class="opcion ancho boton" data-si for="presupuesto-12-radio-si2">
+							 Sí, pero el cocktail estará a más de 25 metros del lugar de la comida
+						</label>
+						<input type="radio" name="presupuesto-12-radio" id="presupuesto-12-radio-no" value="no">
+						<label class="opcion ancho boton" data-no for="presupuesto-12-radio-no">
+							 No es necesario, el cocktail será en el mismo lugar de la comida
+						</label>
+						<input type="radio" name="presupuesto-12-radio" id="presupuesto-12-radio-no2" value="no">
+						<label class="opcion ancho boton" data-no for="presupuesto-12-radio-no2">
+							 No voy a necesitar que JZMusic amplifique el cocktail
+						</label>
+
+					</div>
+					<div id="presupuesto_12_opcion_no" class="hide texto-resultado">
+						Será en un sólo ambiente o el sector de cocktail no tendrá música ni amplificación.
+					</div>
+					<div id="presupuesto_12_opcion_si" class="hide texto-resultado">
+						<p>Para la cantidad de gente que tienes estimada nosotros te recomendamos:</p>
+						<div class="rango" data-rango="1-100">
+							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
+							<p><span data-cantidad>2</span> <span data-item>parlantes EV ZX1</span></p>
+							<p><span data-precio>$30.000</span><span class="hide" data-precio-graduacion>$30.000</span></p>
+						</div>
+						<div class="rango" data-rango="101-250">
+							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
+							<p><span data-cantidad>4</span> <span data-item>parlantes EV ZX1</span></p>
+							<p><span data-precio>$50.000</span><span class="hide" data-precio-graduacion>$50.000</span></p>
+						</div>
+						<div class="rango" data-rango="251-400">
+							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
+							<p><span data-cantidad>6</span> <span data-item>parlantes EV ZX1</span></p>
+							<p><span data-precio>$70.000</span><span class="hide" data-precio-graduacion>$80.000</span></p>
+						</div>
+					</div>
+					<div class="presupuesto-navegacion hide">
+						<div class="anterior">
+							<button>Anterior</button>
+							<div class="volver"><a href="javscript:;" class="volver">Volver a empezar</a></div>
+						</div>
+						<div class="siguiente">
+							<button>Continuar</button>
+						</div>
+					</div>
+				</div>
+<?php
+/*
+* ----------------- Slide 13 - Robotizados pista de baile (Max 400)
+*/
+?>
+				<div id="presupuesto_13" class="presupuesto-slide hide">
+					<h2 class="tipo-fiesta-seleccionada"></h2>
+					<h3>¿Qué tipo de iluminación robotizada base te gustaría para animar tu fiesta?</h3>
+					<div class="texto-explicacion">
+						A continuación puedes seleccionar el tipo de robotizado que deseas para tu fiesta. Hemos seleccionado la mejor opción de acuerdo a la cantidad de personas indicadas. Si no deseas ninguno, <a href="javascript:;" data-siguiente>puedes continuar</a>.
+					</div>
+					<div class="grupos">
+						<div class="grupo">
+								<h4 class="grupo-titulo">SHA</h4>
+							<figure class="grupo-image" data-video="pq3jLGzyr_c" data-bg="sha.jpg">&#9658;</figure>
+							<div class="grupo-contenido">
+								<p class="grupo-descripcion">SHA - ELC 50 watts | $5.000 c/u</p>
+								<hr>
+								<p>Contarás con:</p>
+								<p data-equipos></p>
+								<p data-precio></p>
+								<div class="rango" data-rango="1-100">
+									30 mts2 - <span data-equipos>2  SHA</span>
+									<span data-precio>$10.000</span>
+								</div>
+								<div class="rango" data-rango="101-250">
+									60 mts2 - <span data-equipos>4 SHA</span>
+									<span data-precio>$20.000</span>
+								</div>
+								<div class="rango" data-rango="251-400">
+									120 mts2 - <span data-equipos>6 SHA</span>
+									<span data-precio>$30.000</span>
+								</div>
+								<div class="grupo-seleccionar">
+									<button>Seleccionar</button>
+								</div>
+							</div>
+						</div>
+						<div class="grupo">
+								<h4 class="grupo-titulo">Storm Bird</h4>
+							<figure class="grupo-image" data-video="pq3jLGzyr_c" data-bg="sha.jpg">&#9658;</figure>
+							<div class="grupo-contenido">
+								<p class="grupo-descripcion">STORM B - ELC 150 watts | $10.000 c/u</p>
+								<hr>
+								<p>Contarás con:</p>
+								<p data-equipos></p>
+								<p data-precio></p>
+								<div class="rango" data-rango="1-100">
+									30 mts2 - <span data-equipos>2 Storm B.</span>
+									<span data-precio>$20.000</span>
+								</div>
+								<div class="rango" data-rango="101-250">
+									60 mts2 - <span data-equipos>4 Storm B.</span>
+									<span data-precio>$40.000</span>
+								</div>
+								<div class="rango" data-rango="251-400">
+									120 mts2 - <span data-equipos>6 Storm B.</span>
+									<span data-precio>$60.000</span>
+								</div>
+								<div class="grupo-seleccionar">
+									<button>Seleccionar</button>
+								</div>
+							</div>
+						</div>
+						<div class="grupo">
+								<h4 class="grupo-titulo">Scaners</h4>
+							<figure class="grupo-image" data-video="LcVYpt7q1Ls" data-bg="scanners.jpg">&#9658;</figure>
+							<div class="grupo-contenido">
+								<p class="grupo-descripcion">SLR 114 - ELC 250 watts | $15.000 c/u</p>
+								<hr>
+								<p>Contarás con:</p>
+								<p data-equipos></p>
+								<p data-precio></p>
+								<div class="rango" data-rango="1-100">
+									30 mts2 - <span data-equipos>2 Scaners</span>
+									<span data-precio>$30.000</span>
+								</div>
+								<div class="rango" data-rango="101-200">
+									60 mts2 - <span data-equipos>4 Scaners</span>
+									<span data-precio>$60.000</span>
+								</div>
+								<div class="rango" data-rango="201-400">
+									120 mts2 - <span data-equipos>6 Scaners</span>
+									<span data-precio>$90.000</span>
+								</div>
+								<div class="grupo-seleccionar">
+									<button>Seleccionar</button>
+								</div>
+							</div>
+						</div>
+						<div class="grupo">
+								<h4 class="grupo-titulo">Cabezas Móviles</h4>
+							<figure class="grupo-image" data-video="cqsSQ5AB6Dc" data-bg="cabezas-moviles.jpg">&#9658;</figure>
+							<div class="grupo-contenido">
+								<p class="grupo-descripcion">250 Watts | $20.000 c/u</p>
+								<hr>
+								<p>Contarás con:</p>
+								<p data-equipos></p>
+								<p data-precio></p>
+								<div class="rango" data-rango="1-100">
+									30 mts2 - <span data-equipos>2 Cabezas Móviles</span>
+									<span data-precio>$40.000</span>
+								</div>
+								<div class="rango" data-rango="101-250">
+									60 mts2 - <span data-equipos>4 Cabezas Móviles</span>
+									<span data-precio>$80.000</span>
+								</div>
+								<div class="rango" data-rango="251-400">
+									120 mts2 - <span data-equipos>6 Cabezas Móviles</span>
+									<span data-precio>$120.000</span>
+								</div>
+								<div class="grupo-seleccionar">
+									<button>Seleccionar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="presupuesto-navegacion hide">
+						<div class="anterior">
+							<button>Anterior</button>
+							<div class="volver"><a href="javscript:;" class="volver">Volver a empezar</a></div>
+						</div>
+						<div class="siguiente">
+							<button>Continuar</button>
+						</div>
+					</div>
+				</div>
+<?php
+/*
+* ----------------- Slide 14 - Efectos especiales (Max 400)
+*/
+?>
+				<div id="presupuesto_14" class="presupuesto-slide hide">
+					<h2 class="tipo-fiesta-seleccionada"></h2>
+					<h3>¿Qué efectos especiales quieres agregar?</h3>
+					<div class="texto-resultado">
+						Existen efectos que sirven para potenciar momentos en la fiesta. Hemos seleccionado las mejores opciones de acuerdo a la cantidad de personas indicadas. Si no deseas ninguno, <a href="javascript:;" data-siguiente>puedes continuar</a>.
+						<p>Puedes seleccionar más de una opción.</p>
+					</div>
+					<div class="grupos">
+						<div class="grupo">
+							<h4 class="grupo-titulo">Laser</h4>
+							<figure class="grupo-image" data-video="OIvLrxRKSLU" data-bg="laser-b500.jpg">&#9658;</figure>
+								<span class="grupo-descripcion">Generalmente los efectos laser los utilizamos para potenciar los momentos de música electrónica, dance y algunos reaggetones. Los tenemos en verde , rojo, azul y multicolor.</p>
+							<div class="grupo-contenido">
+								<h4 class="grupo-titulo">Laser B500 o K600 de 150 mw </h4>
+								<hr>
+								<p>Contarás con:</p>
+								<p data-equipos></p>
+								<p data-precio></p>
+								<div class="rango" data-rango="1-100">
+									<span data-equipos>1 Laser K600 o B500</span>
+									<span data-precio>$15.000</span>
+								</div>
+								<div class="rango" data-rango="101-250">
+									<span data-equipos>2 Laser K600 o B500</span>
+									<span data-precio>$30.000</span>
+								</div>
+								<div class="rango" data-rango="201-400">
+									<span data-equipos>4 Laser K600 o B500</span>
+									<span data-precio>$60.000</span>
+								</div>
+								<div class="grupo-seleccionar">
+									<button>Seleccionar</button>
+								</div>
+							</div>
+						</div>
+						<div class="grupo">
+							<h4 class="grupo-titulo">Luz estroboscópica</h4>
+							<figure class="grupo-image play-negro" data-video="mLrBvk5HUX0" data-bg="luz-estroboscopica.jpg">&#9658;</figure>
+							<div class="grupo-contenido">
+								<span class="grupo-descripcion">Los efectos laser los utilizamos para destacar los momentos más altos de la fiesta encendiendo una luz muy poderosa que con su iterancia lp que todo se sienta como en cámara lenta.</p>
+								<hr>
+								<p>Contarás con:</p>
+								<p data-equipos></p>
+								<p data-precio></p>
+								<div class="rango" data-rango="1-100">
+									<span data-equipos>1 Strob 250 Watts</span>
+									<span data-precio>$10.000</span>
+								</div>
+								<div class="rango" data-rango="101-200">
+									<span data-equipos>1 Strob 1500 Watts</span>
+									<span data-precio>$15.000</span>
+								</div>
+								<div class="rango" data-rango="201-400">
+									<span data-equipos>1 Strob 2700 Watts</span>
+									<span data-precio>$20.000</span>
+								</div>
+								<div class="grupo-seleccionar">
+									<button>Seleccionar</button>
+								</div>
+							</div>
+						</div>
+						<div class="grupo">
+							<h4 class="grupo-titulo">Burbujas</h4>
+							<figure class="grupo-image no-video" data-bg="burbujas.jpg"></figure>
+							<div class="grupo-contenido">
+								<p class="grupo-descripcion">Dale glamour a tu fiesta con increíbles burbujas.</p>
+								<hr>
+								<p>Contarás con:</p>
+								<p data-equipos></p>
+								<p data-precio></p>
+								<div class="rango" data-rango="1-100">
+									<span data-equipos>1 Máquina de Burbujas</span>
+									<span data-precio>$30.000</span>
+								</div>
+								<div class="rango" data-rango="101-200">
+									<span data-equipos>2 Máquina de Burbujas</span>
+									<span data-precio>$60.000</span>
+								</div>
+								<div class="rango" data-rango="201-400">
+									<span data-equipos>3 Máquina de Burbujas</span>
+									<span data-precio>$90.000</span>
+								</div>
+								<div class="grupo-seleccionar">
+									<button>Seleccionar</button>
+								</div>
+							</div>
+						</div>
+						<div class="grupo">
+							<h4 class="grupo-titulo">Nieve seca</h4>
+							<figure class="grupo-image no-video" data-bg="nieve-seca.jpg"></figure>
+							<div class="grupo-contenido">
+								<p class="grupo-descripcion">Sorprende a tus invitados con esta increíble máquina que lanza nieve.</p>
+								<hr>
+								<p>Contarás con:</p>
+								<p data-equipos></p>
+								<p data-precio></p>
+								<div class="rango" data-rango="1-100">
+									<span data-equipos>2 Máquinas de nieve seca</span>
+									<span data-precio>$40.000</span>
+								</div>
+								<div class="rango" data-rango="101-200">
+									<span data-equipos>4 Máquinas de nieve seca</span>
+									<span data-precio>$80.000</span>
+								</div>
+								<div class="rango" data-rango="201-400">
+									<span data-equipos>6 Máquinas de nieve seca</span>
+									<span data-precio>$120.000</span>
+								</div>
+								<div class="grupo-seleccionar">
+									<button>Seleccionar</button>
+								</div>
+							</div>
+						</div>
+						<div class="grupo">
+							<h4 class="grupo-titulo">Cañon confeti</h4>
+							<figure class="grupo-image no-video" data-bg="canon-confeti.jpg"></figure>
+							<div class="grupo-contenido">
+								<p class="grupo-descripcion">Haz tu fiesta involvidable con un increíble cañon que dispara confeti. Cada disparo extra tiene un costo de $10.000.</p>
+								<hr>
+								<p>Contarás con:</p>
+								<p data-equipos></p>
+								<p data-precio></p>
+								<div class="rango" data-rango="1-1000">
+									<span data-equipos>1 Cañón confeti con 3 detonaciones</span>
+									<span data-precio>$50.000</span>
+								</div>
+								<div class="grupo-seleccionar">
+									<button>Seleccionar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="presupuesto-navegacion hide">
+						<div class="anterior">
+							<button>Anterior</button>
+							<div class="volver"><a href="javscript:;" class="volver">Volver a empezar</a></div>
+						</div>
+						<div class="siguiente">
+							<button>Continuar</button>
+						</div>
+					</div>
+				</div>
+<?php
+/*
+* ----------------- Slide 15 - Sub-bajos (Max 400)
+*/
+?>
+				<div id="presupuesto_15" class="presupuesto-slide hide">
+					<h2 class="tipo-fiesta-seleccionada"></h2>
+					<h3>¿Quieres potenciar el sonido de la pista de baile con sub-bajos?</h3>
+					<div class="texto-explicacion">Los sub-bajos son parlantes que sólo emiten sonidos de baja frecuencia, haciendo la música más envolvente y produciendo en las personas que la música se sienta en la piel. Importante: Hay centros de eventos, donde estos equipos están prohibidos.</div>
+					<div class="opciones">
+						<input type="radio" name="presupuesto-5-radio" id="presupuesto-15-radio-si" value="si">
+						<label class="opcion ancho boton" data-si for="presupuesto-15-radio-si">
+							 Sí, me encantaría
+						</label>
+						<input type="radio" name="presupuesto-15-radio" id="presupuesto-15-radio-no" value="no">
+						<label class="opcion ancho boton" data-no for="presupuesto-15-radio-no">
+							 No, gracias
+						</label>
+					</div>
+					<div id="presupuesto_15_opcion_no" class="hide texto-resultado">
+						<p>No habrá sub-bajos.</p>
+					</div>
+					<div id="presupuesto_15_opcion_si" class="hide texto-resultado">
+						<p>Para la cantidad de gente que tienes estimada nosotros te recomendamos:</p>
+
+						<div class="rango" data-rango="1-250">
+							<img src="imgs/presupuestos/sub-bajo-18-pulgadas.jpg" width="148" height="148">
+							<p><span data-cantidad>2</span> <span data-item>Sub Bajos 18" 1.500 Watts</span></p>
+							<p><span data-precio>$40.000</span></p>
+						</div>
+						<div class="rango" data-rango="251-400">
+							<img src="imgs/presupuestos/sub-bajo-18-pulgadas.jpg" width="148" height="148">
+							<p><span data-cantidad>4</span> <span data-item>Sub Bajos 18" 1.500 Watts</span></p>
+							<p><span data-precio>$80.000</span></p>
+						</div>
+					</div>
+					<div class="presupuesto-navegacion hide">
+						<div class="anterior">
+							<button>Anterior</button>
+							<div class="volver"><a href="javscript:;" class="volver">Volver a empezar</a></div>
+						</div>
+						<div class="siguiente">
+							<button>Continuar</button>
+						</div>
+					</div>
+				</div>
+<?php
+/*
+* ----------------- Slide 16 - Bolas de disco (Max 400)
+*/
+?>
+				<div id="presupuesto_16" class="presupuesto-slide hide">
+					<h2 class="tipo-fiesta-seleccionada"></h2>
+					<h3>¿Te gustaría que instaláramos un racimo de bolas disco en el centro de pista de baile?</h3>
+					<div class="texto-explicacion">Las bolas disco refleja la luz dirigida a ella en múltiples direcciones. Los Mobile Color cambian de color al ritmo de la música.</div>
+					<div class="opciones">
+						<input type="radio" name="presupuesto-16-radio" id="presupuesto-16-radio-si" value="si">
+						<label class="opcion boton" data-si for="presupuesto-16-radio-si">
+							 Sí, ¡genial!
+						</label>
+						<input type="radio" name="presupuesto-16-radio" id="presupuesto-16-radio-no" value="no">
+						<label class="opcion boton" data-no for="presupuesto-16-radio-no">
+							 No, gracias
+						</label>
+					</div>
+					<div id="presupuesto_16_opcion_no" class="hide texto-resultado">
+						<p>No habrán bolas de disco.</p>
+					</div>
+					<div id="presupuesto_16_opcion_si" class="hide texto-resultado">
+						<p>Para la cantidad de gente que tienes estimada nosotros te recomendamos:</p>
+
+						<div class="rango" data-rango="1-100">
+							<img src="imgs/presupuestos/bola-disco-mobile-color.jpg" width="148" height="148">
+							<p><span data-cantidad>1</span> <span data-item>Racimo de 3 bolas & 1 foco Mobile Color</span></p>
+							<p><span data-precio>$30.000</span></p>
+						</div>
+						<div class="rango" data-rango="101-250">
+							<img src="imgs/presupuestos/bola-disco-mobile-color.jpg" width="148" height="148">
+							<p><span data-cantidad>1</span> <span data-item>Racimo de 5 bolas & 1 foco Mobile Color</span></p>
+							<p><span data-precio>$40.000</span></p>
+						</div>
+						<div class="rango" data-rango="251-400">
+							<img src="imgs/presupuestos/bola-disco-mobile-color.jpg" width="148" height="148">
+							<p><span data-cantidad>1</span> <span data-item>Racimo de 7 bolas & 2 focos Mobile Color</span></p>
+							<p><span data-precio>$60.000</span></p>
+						</div>
+					</div>
+					<div class="presupuesto-navegacion hide">
+						<div class="anterior">
+							<button>Anterior</button>
+							<div class="volver"><a href="javscript:;" class="volver">Volver a empezar</a></div>
+						</div>
+						<div class="siguiente">
+							<button>Continuar</button>
+						</div>
+					</div>
+				</div>
+<?php
+/*
+* ----------------- Slide 16 - Presupuesto final
+*/
+?>
+				<div id="presupuesto_17" class="presupuesto-slide hide">
 					<p>De acuerdo a la información que nos has entregado, hemos elaborado el siguiente presupuesto preliminar para tu fiesta:</p>
 					<table>
 						<thead>
