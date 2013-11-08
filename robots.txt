@@ -1,4 +1,4 @@
-# www.robotstxt.org/
+﻿# www.robotstxt.org/
 # www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
 # Disallow: /theFolder/
 
@@ -8,3 +8,5 @@ User-agent: *
 # para evitar el indexado de páginas en desarrollo
 Disallow: /temp/
 Disallow: /2012/
+Disallow: /intranet/
+Disallow: /stage/
