@@ -22,11 +22,11 @@ var presupuesto = {
 		personas: 0
 	},
 	slides: {
-		fiesta_graduacion: [1, 2, 5, 6, 7, 11],
-		fiesta_sub20: [1, 2, 5, 6, 11],
-		fiesta_matrimonio: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-		fiesta_cumpleanos: [1, 2, 5, 6, 9, 11],
-		fiesta_evento: [1, 2, 3, 4, 5, 6, 7, 11]
+		fiesta_graduacion: [1, 2, 15, 11, 12, 13, 16, 14, 9, 10, 17], //OK
+		fiesta_sub20: [1, 2, 15, 13, 16, 14, 9, 10, 17], //OK
+		fiesta_matrimonio: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 17], //OK
+		fiesta_cumpleanos: [1, 2, 15, 11, 12, 13, 16, 14, 9, 10, 17], //OK
+		fiesta_evento: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 17] // OK
 	},
 	minimos: {
 		fiesta_graduacion: 200000,
@@ -35,6 +35,13 @@ var presupuesto = {
 		fiesta_cumpleanos: 200000,
 		fiesta_evento: 200000
 	},
+	maxPersonas: {
+		fiesta_graduacion: 400,
+		fiesta_sub20: 400,
+		fiesta_matrimonio: 1000,
+		fiesta_cumpleanos: 400,
+		fiesta_evento: 1000
+		},
 	historiaSlides: [1],
 	items: [],
 	mensaje_3: '',
@@ -148,7 +155,7 @@ var presupuesto = {
 	},
 	modal: function(msg){
 		$.magnificPopup.open({
-				items: {
+			items: {
 				src: '<div id="modal" class="modal">' + msg + '</div>',
 				type: 'inline'
 			},
@@ -169,7 +176,12 @@ var presupuesto = {
 		presupuesto_7.reset();
 		presupuesto_8.reset();
 		presupuesto_9.reset();
-		presupuesto_10.reset();
+		presupuesto_11.reset();
+		presupuesto_12.reset();
+		presupuesto_13.reset();
+		presupuesto_14.reset();
+		presupuesto_15.reset();
+		presupuesto_16.reset();
 	}
 };
 
@@ -230,7 +242,8 @@ var presupuesto_2 = {
 	items: [],
 	init: function(){
 		var that = this,
-		cantidadPersonas_ = 0;
+		cantidadPersonas_ = 0,
+		maxPersonas = presupuesto.maxPersonas[presupuesto.datosFiesta.tipoFiesta];
 		$('#cantidad-personas').focus();
 		$('#boton_calcular').off('click').on('click', function(){
 			var cantidadPersonas = $('#cantidad-personas').val();
@@ -239,9 +252,22 @@ var presupuesto_2 = {
 				$('#presupuesto_2 .rango').slideUp();
 				$('#presupuesto_2_resultado').slideUp();
 				presupuesto.ocultarNavegacion();
-				if(cantidadPersonas > 0 && cantidadPersonas <= 1000){
+				if(cantidadPersonas > 0 && cantidadPersonas <= maxPersonas){
 					var rango = presupuesto.encontrarRango(),
 					parlantes = $('#presupuesto_2 .rango[data-rango="'+ rango +'"] span[data-item]').html();
+					// Se que esto es sucio, pero hubo muchos cambios en el camino :(
+					var rango_ = $('#presupuesto_2 .rango[data-rango="'+ rango +'"]');
+					if(presupuesto.datosFiesta.tipoFiesta === 'fiesta_graduacion'){
+						var precioGraduacion = $(rango_).find('span[data-precio-graduacion]').text(),
+						precioOriginal = $(rango_).find('span[data-precio]').text();
+						$(rango_).find('span[data-precio-graduacion]').text(precioOriginal);
+						$(rango_).find('span[data-precio]').text(precioGraduacion);
+					} else {
+						var precioOriginal = $(rango_).find('span[data-precio-graduacion]').text(),
+						precioGraduacion = $(rango_).find('span[data-precio]').text();
+						$(rango_).find('span[data-precio-graduacion]').text(precioGraduacion);
+						$(rango_).find('span[data-precio]').text(precioOriginal);
+					}
 					$('#presupuesto_2_resultado span[data-personas]').html(cantidadPersonas);
 					$('#presupuesto_2_resultado span[data-item-resultado]').html(parlantes);
 					$('#presupuesto_2_resultado').slideDown('slow');
@@ -250,10 +276,8 @@ var presupuesto_2 = {
 					presupuesto.mostrarNavegacion();
 					presupuesto.agregarItem(rango, true);
 				} else {
-					if(cantidadPersonas === 0 && cantidadPersonas !== ''){
-						presupuesto.modal('<p>Debes ingresar más de 1 invitado. No harás una fiesta solo, ¿o sí?.</p>');
-					} else if(cantidadPersonas > 1000  && cantidadPersonas !== '') {
-						presupuesto.modal('<p>Nuestro formulario de presupuestos está pensado en fiestas de hasta 1.000 personas. Si estás planeando realizar un evento con más de 1.000 invitados, puedes utilizar nuestro <a href="contacto">formulario de contacto</a> para poder entregarte un presupuesto más especializado.</p><button>Ir al formulario</button>');
+					if(cantidadPersonas > maxPersonas  && cantidadPersonas !== '') {
+						presupuesto.modal('<p>Para este tipo de eventos, nuestro formulario está desarrollado para fiestas de hasta '+maxPersonas+' personas. Si estás planeando realizar un evento con más de '+maxPersonas+' invitados, puedes utilizar nuestro <a href="contacto">formulario de contacto</a> para poder entregarte un presupuesto más especializado.</p><button>Ir al formulario</button>');
 						$('#modal').find('button:eq(0)').one('click', function(){
 							document.location.href = 'contacto';
 						});
@@ -268,6 +292,7 @@ var presupuesto_2 = {
 		//Evento enter
 		$('#cantidad-personas').unbind('keypress').bind('keypress', function(e){
 			if(e.which == 13){
+				e.stopPropagation();
 				$('#boton_calcular').click();
 			}
 		});
@@ -606,8 +631,8 @@ var presupuesto_7 = {
 		}
 	},
 	removerVideos: function(){
-		$('#presupuesto_6').find('iframe').remove();
-		$('#presupuesto_6').find('figure').html('&#9658;');
+		$('#presupuesto_7').find('iframe').remove();
+		$('#presupuesto_7').find('figure').html('&#9658;');
 	},
 	exit: function(){
 		this.removerVideos();
@@ -716,11 +741,413 @@ var presupuesto_10 = {
 		$('#presupuesto_10_opcion_no').hide();
 		$('#presupuesto_10_opcion_si').hide();
 		$('#presupuesto_10 .rango').hide();
-		presupuesto.ocultarNavegacion('8');
+		presupuesto.ocultarNavegacion('10');
 	}
 };
 
 var presupuesto_11 = {
+	init: function(){
+		var that = this;
+		$('#presupuesto_11 [data-si]').off('click').on('click', function(){
+			that.opcionSi();
+			$('#presupuesto_11 [data-si]').fadeTo('slow', 1);
+			$('#presupuesto_11 [data-no]').fadeTo('slow', 0.3);
+		});
+		$('#presupuesto_11 [data-no]').off('click').on('click', function(){
+			that.opcionNo();
+			$('#presupuesto_11 [data-no]').fadeTo('slow', 1);
+			$('#presupuesto_11 [data-si]').fadeTo('slow', 0.3);
+		});
+	},
+	opcionSi: function(){
+		$('#presupuesto_11_opcion_no').slideUp();
+		$('#presupuesto_11_opcion_si').slideDown();
+		var rango = presupuesto.encontrarRango();
+		$('#presupuesto_11 .rango[data-rango="'+ rango +'"]').slideDown();
+		// Se que esto es sucio, pero hubo muchos cambios en el camino :(
+		var rango_ = $('#presupuesto_11 .rango[data-rango="'+ rango +'"]');
+		if(presupuesto.datosFiesta.tipoFiesta === 'fiesta_graduacion'){
+			var precioGraduacion = $(rango_).find('span[data-precio-graduacion]').text(),
+			precioOriginal = $(rango_).find('span[data-precio]').text();
+			$(rango_).find('span[data-precio-graduacion]').text(precioOriginal);
+			$(rango_).find('span[data-precio]').text(precioGraduacion);
+		} else {
+			var precioOriginal = $(rango_).find('span[data-precio-graduacion]').text(),
+			precioGraduacion = $(rango_).find('span[data-precio]').text();
+			$(rango_).find('span[data-precio-graduacion]').text(precioGraduacion);
+			$(rango_).find('span[data-precio]').text(precioOriginal);
+		}
+		presupuesto.mostrarNavegacion();
+		presupuesto.agregarItem(rango, true);
+	},
+	opcionNo: function(){
+		$('#presupuesto_11_opcion_si').slideUp();
+		$('#presupuesto_11 .rango').slideUp();
+		$('#presupuesto_11_opcion_no').slideDown();
+		presupuesto.mostrarNavegacion();
+	},
+	reset: function(){
+		$('#presupuesto_11 [data-si]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_11 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_11_opcion_no').hide();
+		$('#presupuesto_11_opcion_si').hide();
+		$('#presupuesto_11 .rango').hide();
+		presupuesto.ocultarNavegacion('11');
+	}
+};
+
+var presupuesto_12 = {
+	items: [],
+	init: function(){
+		var that = this;
+		$('#presupuesto_12 [data-si]').off('click').on('click', function(){
+			that.opcionSi(this);
+			var _that = this;
+			$('#presupuesto_12 [data-si]').each(function(){
+				if(this !== _that){
+					$(this).fadeTo('slow', 0.3);
+				} else {
+					$(this).fadeTo('slow', 1);
+				}
+			});
+			$('#presupuesto_12 [data-no]').fadeTo('slow', 0.3);
+			presupuesto.mensaje_3 = $.trim($(this).text());
+		});
+		$('#presupuesto_12 [data-no]').off('click').on('click', function(){
+			that.opcionNo();
+			var _that = this;
+			$('#presupuesto_12 [data-no]').each(function(){
+				if(this !== _that){
+					$(this).fadeTo('slow', 0.3);
+				} else {
+					$(this).fadeTo('slow', 1);
+				}
+			});
+			$('#presupuesto_12 [data-si]').fadeTo('slow', 0.3);
+			presupuesto.mensaje_3 = $.trim($(this).text());
+		});
+	},
+	opcionSi: function(){
+		$('#presupuesto_12_opcion_no').slideUp();
+		$('#presupuesto_12_opcion_si').slideDown();
+		var rango = presupuesto.encontrarRango();
+		$('#presupuesto_12 .rango[data-rango="'+ rango +'"]').slideDown();
+		presupuesto.mostrarNavegacion();
+		// Se que esto es sucio, pero hubo muchos cambios en el camino :(
+		var rango_ = $('#presupuesto_12 .rango[data-rango="'+ rango +'"]');
+		if(presupuesto.datosFiesta.tipoFiesta === 'fiesta_graduacion'){
+			var precioGraduacion = $(rango_).find('span[data-precio-graduacion]').text(),
+			precioOriginal = $(rango_).find('span[data-precio]').text();
+			$(rango_).find('span[data-precio-graduacion]').text(precioOriginal);
+			$(rango_).find('span[data-precio]').text(precioGraduacion);
+		} else {
+			var precioOriginal = $(rango_).find('span[data-precio-graduacion]').text(),
+			precioGraduacion = $(rango_).find('span[data-precio]').text();
+			$(rango_).find('span[data-precio-graduacion]').text(precioGraduacion);
+			$(rango_).find('span[data-precio]').text(precioOriginal);
+		}
+		presupuesto.agregarItem(rango, true);
+	},
+	opcionNo: function(){
+		$('#presupuesto_12_opcion_si').slideUp();
+		$('#presupuesto_12 .rango').slideUp();
+		$('#presupuesto_12_opcion_no').slideDown();
+		presupuesto.mostrarNavegacion();
+	},
+	reset: function(){
+		$('#presupuesto_12 [data-si]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_12 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_12_opcion_no').hide();
+		$('#presupuesto_12_opcion_si').hide();
+		$('#presupuesto_12 .rango').hide();
+		presupuesto.ocultarNavegacion('12');
+	}
+};
+
+var presupuesto_13 = {
+	init: function(){
+		var that = this;
+		$('#presupuesto_13 .grupo').each(function(){
+			that.cargarDatos(this);
+		});
+		$('#presupuesto_13 .grupo-seleccionar').off('click').on('click', function(){
+			that.seleccionar(this);
+			that.agregarItem(this);
+		});
+		$('#presupuesto_13 a[data-siguiente]').off('click').on('click', function(){
+			$('#presupuesto_13 div.siguiente').find('button').click();
+		});
+		presupuesto.mostrarNavegacion();
+	},
+	cargarDatos: function(grupo){
+		var that = this,
+		a = this.encontrarRangos(grupo),
+		rango = presupuesto.encontrarRango(a),
+		precio = $(grupo).find('.rango[data-rango="'+rango+'"] span[data-precio]').html(),
+		equipos = $(grupo).find('.rango[data-rango="'+rango+'"] span[data-equipos]').html();
+		$(grupo).find('[data-precio]').html(precio);
+		$(grupo).find('[data-equipos]').html(equipos);
+		this.cargarFondo($(grupo).find('figure'));
+		$(grupo).find('figure').off('click').on('click', function(){
+			that.cargarVideo(this);
+		});
+	},
+	cargarVideo: function(figure){
+		var idVideo = $(figure).data('video');
+		$(figure).html('<iframe id="'+ idVideo +'" width="240" height="210" src="//www.youtube.com/embed/'+ idVideo +'?rel=0&controls=0&enablejsapi=1&origin=http://'+ document.domain +'" frameborder="0" allowfullscreen></iframe>');
+		var player = new YT.Player(idVideo, {
+			events: {
+				'onReady': function(){
+					player.playVideo();
+					player.mute();
+				}
+			}
+		});
+	},
+	cargarFondo: function(figure){
+		var bg = $(figure).data('bg');
+		$(figure).css('background', 'url(imgs/presupuestos/'+ bg +') no-repeat top center');
+	},
+	seleccionar: function(grupo){
+		if($(grupo).hasClass('seleccionado')){
+			$(grupo).removeClass('seleccionado');
+			$(grupo).find('button').text('Seleccionar');
+			$('#presupuesto_13 .grupo').fadeTo('slow', 1);
+		} else {
+			$(grupo).closest('.grupo').fadeTo('slow', 1);
+			$('#presupuesto_13 .grupo-seleccionar').each(function(){
+				if(grupo != this){
+					$(this).closest('.grupo').fadeTo('slow', 0.3);
+					$(this).removeClass('seleccionado');
+					$(this).find('button').html('Seleccionar');
+				} else {
+					$(this).addClass('seleccionado');
+					$(this).find('button').html('Seleccionado');
+				}
+			});
+		}
+	},
+	encontrarRangos: function(grupo){
+		presupuesto.rangos = [];
+		$(grupo).find('.rango').each(function(){
+			presupuesto.rangos.push($(this).attr('data-rango'));
+		});
+	},
+	agregarItem: function(grupo){
+		var cantidad = 1,
+		item_ = $(grupo).siblings('p[data-equipos]').html(),
+		valor = $(grupo).siblings('p[data-precio]').html(),
+		item = {};
+		item.cantidad = cantidad;
+		item.item = item_;
+		item.precio = valor;
+		var tipoFiesta = presupuesto.datosFiesta.tipoFiesta,
+		slideActual = presupuesto.slides[tipoFiesta][presupuesto.datosFiesta.slideActual];
+		if(presupuesto.items[slideActual] instanceof Array){
+			presupuesto.items.splice(6, 1);
+		} else {
+			presupuesto.items[slideActual] = [item];
+		}
+	},
+	removerVideos: function(){
+		$('#presupuesto_13').find('iframe').remove();
+		$('#presupuesto_13').find('figure').html('&#9658;');
+	},
+	exit: function(){
+		this.removerVideos();
+	},
+	reset: function(){
+		$('#presupuesto_13 .grupo').css('opacity', 1);
+		$('#presupuesto_13 .grupo-seleccionar').removeClass('seleccionado').html('<button>Seleccionar</button>');
+		presupuesto.ocultarNavegacion('13');
+	}
+};
+
+var presupuesto_14 = {
+	init: function(){
+		var that = this;
+		$('#presupuesto_14 .grupo').each(function(){
+			that.cargarDatos(this);
+		});
+		$('#presupuesto_14 .grupo-seleccionar').off('click').on('click', function(){
+			that.seleccionar(this);
+			that.agregarItem(this);
+		});
+		$('#presupuesto_14 a[data-siguiente]').off('click').on('click', function(){
+			$('#presupuesto_14 div.siguiente').find('button').click();
+		});
+		presupuesto.mostrarNavegacion();
+	},
+	cargarDatos: function(grupo){
+		var that = this,
+		rango = presupuesto.encontrarRango(this.encontrarRangos(grupo)),
+		precio = $(grupo).find('.rango[data-rango="'+rango+'"] span[data-precio]').html(),
+		equipos = $(grupo).find('.rango[data-rango="'+rango+'"] span[data-equipos]').html();
+		$(grupo).find('[data-precio]').html(precio);
+		$(grupo).find('[data-equipos]').html(equipos);
+		this.cargarFondo($(grupo).find('figure'));
+		$(grupo).find('figure').off('click').on('click', function(){
+			that.cargarVideo(this);
+		});
+	},
+	cargarVideo: function(figure){
+		if(!$(figure).hasClass('no-video')){
+			var idVideo = $(figure).data('video');
+			$(figure).html('<iframe id="'+ idVideo +'" width="240" height="210" src="//www.youtube.com/embed/'+ idVideo +'?rel=0&controls=0&enablejsapi=1&origin=http://'+ document.domain +'" frameborder="0" allowfullscreen></iframe>');
+			var player = new YT.Player(idVideo, {
+				events: {
+					'onReady': function(){
+						player.playVideo();
+						player.mute();
+					}
+				}
+			});
+		}
+	},
+	cargarFondo: function(figure){
+		var bg = $(figure).data('bg');
+		$(figure).css('background', 'url(imgs/presupuestos/'+ bg +') no-repeat top center');
+	},
+	seleccionar: function(grupo){
+		if($(grupo).hasClass('seleccionado')){
+			$(grupo).removeClass('seleccionado');
+			$(grupo).html('<button>Seleccionar</button>');
+		} else {
+			$(grupo).addClass('seleccionado');
+			$(grupo).html('<button>Seleccionado</button>');
+		}
+	},
+	encontrarRangos: function(grupo){
+		presupuesto.rangos = [];
+		$(grupo).find('.rango').each(function(){
+			presupuesto.rangos.push($(this).attr('data-rango'));
+		});
+	},
+	agregarItem: function(grupo){
+		var desmarcado = $(grupo).hasClass('seleccionado'),
+		cantidad = 1,
+		item_ = $(grupo).siblings('p[data-equipos]').html(),
+		valor = $(grupo).siblings('p[data-precio]').html(),
+		item = {};
+		item.cantidad = cantidad;
+		item.item = item_;
+		item.precio = valor;
+		var tipoFiesta = presupuesto.datosFiesta.tipoFiesta,
+		slideActual = presupuesto.slides[tipoFiesta][presupuesto.datosFiesta.slideActual],
+		existe = false;
+		if(presupuesto.items[slideActual] instanceof Array){
+			for (var i = 0; i < presupuesto.items[slideActual].length; i++) {
+				var _item = presupuesto.items[slideActual][i];
+				if(_item.item === item.item && !desmarcado){ // Eliminar
+					presupuesto.items[slideActual].splice(i, 1);
+					existe = true;
+					break;
+				} else if(_item.item === item.item){
+					existe = true;
+					break;
+				}
+			}
+			if(presupuesto.items[slideActual].length === 0){
+				presupuesto.items.splice(7, 1);
+			} else {
+				if(!existe){
+					presupuesto.items[slideActual].push(item);
+				}
+			}
+		} else {
+			presupuesto.items[slideActual] = [item];
+		}
+	},
+	removerVideos: function(){
+		$('#presupuesto_14').find('iframe').remove();
+		$('#presupuesto_14').find('figure').html('&#9658;');
+	},
+	exit: function(){
+		this.removerVideos();
+	},
+	reset: function(){
+		$('#presupuesto_14 .grupo-seleccionar').removeClass('seleccionado').html('<button>Seleccionar</button>');
+		presupuesto.ocultarNavegacion('14');
+	}
+};
+
+var presupuesto_15 = {
+	init: function(){
+		var that = this;
+		$('#presupuesto_15 [data-si]').off('click').on('click', function(){
+			that.opcionSi();
+			$('#presupuesto_15 [data-si]').fadeTo('slow', 1);
+			$('#presupuesto_15 [data-no]').fadeTo('slow', 0.3);
+		});
+		$('#presupuesto_15 [data-no]').off('click').on('click', function(){
+			that.opcionNo();
+			$('#presupuesto_15 [data-no]').fadeTo('slow', 1);
+			$('#presupuesto_15 [data-si]').fadeTo('slow', 0.3);
+		});
+	},
+	opcionSi: function(){
+		$('#presupuesto_15_opcion_no').slideUp();
+		$('#presupuesto_15_opcion_si').slideDown();
+		var rango = presupuesto.encontrarRango();
+		$('#presupuesto_15 .rango[data-rango="'+ rango +'"]').slideDown();
+		presupuesto.mostrarNavegacion();
+		presupuesto.agregarItem(rango, true);
+	},
+	opcionNo: function(){
+		$('#presupuesto_15_opcion_si').slideUp();
+		$('#presupuesto_15 .rango').slideUp();
+		$('#presupuesto_15_opcion_no').slideDown();
+		presupuesto.mostrarNavegacion();
+	},
+	reset: function(){
+		$('#presupuesto_15 [data-si]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_15 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_15_opcion_no').hide();
+		$('#presupuesto_15_opcion_si').hide();
+		$('#presupuesto_15 .rango').hide();
+		presupuesto.ocultarNavegacion('15');
+	}
+};
+
+var presupuesto_16 = {
+	init: function(){
+		var that = this;
+		$('#presupuesto_16 [data-si]').off('click').on('click', function(){
+			that.opcionSi();
+			$('#presupuesto_16 [data-si]').fadeTo('slow', 1);
+			$('#presupuesto_16 [data-no]').fadeTo('slow', 0.3);
+		});
+		$('#presupuesto_16 [data-no]').off('click').on('click', function(){
+			that.opcionNo();
+			$('#presupuesto_16 [data-no]').fadeTo('slow', 1);
+			$('#presupuesto_16 [data-si]').fadeTo('slow', 0.3);
+		});
+	},
+	opcionSi: function(){
+		$('#presupuesto_16_opcion_no').slideUp();
+		$('#presupuesto_16_opcion_si').slideDown();
+		var rango = presupuesto.encontrarRango();
+		$('#presupuesto_16 .rango[data-rango="'+ rango +'"]').slideDown();
+		presupuesto.mostrarNavegacion();
+		presupuesto.agregarItem(rango, true);
+	},
+	opcionNo: function(){
+		$('#presupuesto_16_opcion_si').slideUp();
+		$('#presupuesto_16 .rango').slideUp();
+		$('#presupuesto_16_opcion_no').slideDown();
+		presupuesto.mostrarNavegacion();
+	},
+	reset: function(){
+		$('#presupuesto_16 [data-si]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_16 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_16_opcion_no').hide();
+		$('#presupuesto_16_opcion_si').hide();
+		$('#presupuesto_16 .rango').hide();
+		presupuesto.ocultarNavegacion('16');
+	}
+};
+
+var presupuesto_17 = {
 	init: function(){
 		$( ".datepicker" ).datepicker();
 		$.datepicker.regional['es'] = {
@@ -741,25 +1168,25 @@ var presupuesto_11 = {
 			yearSuffix: ''
 			};
 		$.datepicker.setDefaults($.datepicker.regional['es']);
-		$('#presupuesto_11 span[data-volver]').off('click').on('click', function(){
+		$('#presupuesto_17 span[data-volver]').off('click').on('click', function(){
 			presupuesto.cambiarSlide(1);
 		});
 		var evento = $('#' + presupuesto.datosFiesta.tipoFiesta + ' h3[data-evento]').html();
-		$('#presupuesto_11 span[data-evento]').html(evento);
-		$('#presupuesto_11 span[data-personas]').html(presupuesto.datosFiesta.personas);
+		$('#presupuesto_17 span[data-evento]').html(evento);
+		$('#presupuesto_17 span[data-personas]').html(presupuesto.datosFiesta.personas);
 		var total = 0;
-		$('#presupuesto_11 table tbody tr').remove();
+		$('#presupuesto_17 table tbody tr').remove();
 		for (var i = 0; i < presupuesto.items.length; i++) {
 			var items = presupuesto.items[i];
 			if(items !== undefined){
 				for (var j = 0; j < items.length; j++) {
 					var item = items[j];
 					var _item = $.trim(item.item[0]).toUpperCase() + item.item.slice(1);
-					$('#presupuesto_11 table tbody').append('<tr><td class="centro">' + item.cantidad +'</td><td>' + _item +'</td><td class="derecha">' + item.precio + '</td></tr>');
+					$('#presupuesto_17 table tbody').append('<tr><td class="centro">' + item.cantidad +'</td><td>' + _item +'</td><td class="derecha">' + item.precio + '</td></tr>');
 					var precio = item.precio.replace('$', '');
 					precio = parseInt(precio.replace('.', ''), 10);
 					total = total + precio;
-					$('#presupuesto_11 td[data-total]').html('$' + total.formatMoney(0));
+					$('#presupuesto_17 td[data-total]').html('$' + total.formatMoney(0));
 				}
 			}
 		}
@@ -769,11 +1196,11 @@ var presupuesto_11 = {
 	montoMinimo: function(total){
 		var minimo = presupuesto.minimos[presupuesto.datosFiesta.tipoFiesta];
 		if(total < minimo){
-			$('#presupuesto_11').find('.monto-minimo').show().find('[data-monto-minimo]').html(minimo.formatMoney(0));
+			$('#presupuesto_17').find('.monto-minimo').show().find('[data-monto-minimo]').html(minimo.formatMoney(0));
 		}
 	},
 	loadEvent: function(){
-		$('#presupuesto_11').find('input[type="submit"]').one('click', function(){
+		$('#presupuesto_17').find('input[type="submit"]').one('click', function(){
 			return presupuesto_final.email();
 		});
 	}
@@ -787,9 +1214,9 @@ var presupuesto_final = {
 		fecha = $.trim($('#form-fecha').val()),
 		lugar = $.trim($('#form-lugar').val()),
 		mensaje = $.trim($('#form-mensaje').val()),
-		personas = $.trim($('#presupuesto_11 span[data-personas]').html()),
-		evento = $.trim($('#presupuesto_11 span[data-evento]').html()),
-		total = $('#presupuesto_11 td[data-total]').html(),
+		personas = $.trim($('#presupuesto_17 span[data-personas]').html()),
+		evento = $.trim($('#presupuesto_17 span[data-evento]').html()),
+		total = $('#presupuesto_17 td[data-total]').html(),
 		emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
 		mensaje_3 = presupuesto.mensaje_3,
 		errores = [];
@@ -813,12 +1240,12 @@ var presupuesto_final = {
 			$('#modal').find('button:eq(0)').one('click', function(){
 				$.magnificPopup.close();
 			});
-			presupuesto_11.loadEvent();
+			presupuesto_17.loadEvent();
 		} else {
-			$('#presupuesto_11 form').css('opacity', 0.5);
-			$('#presupuesto_11 input[type="submit"]').val('Enviando...').css('opacity', 1);
-			$('#presupuesto_11 input').attr('disabled', 'disabled');
-			$('#presupuesto_11 div.anterior button').off('click').on('click', function(){
+			$('#presupuesto_17 form').css('opacity', 0.5);
+			$('#presupuesto_17 input[type="submit"]').val('Enviando...').css('opacity', 1);
+			$('#presupuesto_17 input').attr('disabled', 'disabled');
+			$('#presupuesto_17 div.anterior button').off('click').on('click', function(){
 				return false;
 			});
 			var _items = '';
@@ -846,7 +1273,7 @@ var presupuesto_final = {
 										items: _items,
 										mensaje_3: mensaje_3}, function(data){
 				if(data == 1){
-					$('#presupuesto_11').fadeOut(function(){
+					$('#presupuesto_17').fadeOut(function(){
 						$('#presupuesto_enviado').fadeIn();
 					});
 				} else {
@@ -855,14 +1282,14 @@ var presupuesto_final = {
 					$('#modal').find('button:eq(0)').one('click', function(){
 						$.magnificPopup.close();
 					});
-					$('#presupuesto_11 form').css('opacity', 1);
-					$('#presupuesto_11 input[type="submit"]').val('Enviar');
-					$('#presupuesto_11 input').removeAttr('disabled');
-					$('#presupuesto_11 div.anterior button').off('click').one('click', function(e){
+					$('#presupuesto_17 form').css('opacity', 1);
+					$('#presupuesto_17 input[type="submit"]').val('Enviar');
+					$('#presupuesto_17 input').removeAttr('disabled');
+					$('#presupuesto_17 div.anterior button').off('click').one('click', function(e){
 						e.preventDefault();
 						document.location.hash = '/presupuesto/' + that.slides[tipoFiesta][slideActual-1];
 					});
-					presupuesto_11.loadEvent();
+					presupuesto_17.loadEvent();
 				}
 			});
 		}
@@ -874,7 +1301,7 @@ Path.root("#/presupuesto/1");
 Path.map("#/presupuesto/:slide").to(function(){
 	if(!presupuesto.enviado){
 		var slide = parseInt(this.params['slide'], 10);
-		if(!isNaN(slide) && slide > 0 && slide < 12){
+		if(!isNaN(slide) && slide > 0 && slide < 18){
 			var slideActual = presupuesto.datosFiesta.slideActual,
 			tipoFiesta = presupuesto.datosFiesta.tipoFiesta;
 			// Que no sea el slide principal y que ya haya definido un tipo de evento
@@ -913,7 +1340,6 @@ Path.map("#/presupuesto/:slide").to(function(){
 });
 
 function onPlayerReady(event) {
-	alert(1);
 	event.target.playVideo();
 }
 
