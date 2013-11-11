@@ -32,6 +32,12 @@
   Twitter: @ImINaBAR (en) / @baamenabar (es)
   Location: Santiago, Chile
 
+  Sous Chef: Nikolas Peralta Rumié
+  Site: http://fuubar.wordpress.com
+  Twitter: @nikoskip
+  Location: Santiago, Chile
+
+
 /* THANKS */
   Names (& URL): 
   ASCII image generator: ( http://www.text-image.com/convert/pic2ascii.cgi )
