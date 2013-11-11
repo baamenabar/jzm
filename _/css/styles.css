@@ -2794,6 +2794,8 @@ article a {
   cursor: pointer;
   vertical-align: top;
   width: 200px;
+  height: 195px;
+  overflow: hidden;
 }
 /* line 8, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_galeria.scss */
 .galeria li a {
@@ -2805,7 +2807,7 @@ article a {
 .galeria li a:hover {
   color: white;
 }
-/* line 23, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_galeria.scss */
+/* line 25, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_galeria.scss */
 .galeria li .imagen-hover {
   top: 0;
   position: absolute;
@@ -2822,14 +2824,14 @@ article a {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 36, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_galeria.scss */
+/* line 38, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_galeria.scss */
 .galeria li:hover .imagen-hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 45, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_galeria.scss */
+  /* line 47, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_galeria.scss */
   .galeria ul {
     text-align: left;
     padding-right: 12.5em;
@@ -2838,7 +2840,7 @@ article a {
     -o-transition: padding 0.75s ease-out;
     transition: padding 0.75s ease-out;
   }
-  /* line 49, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_galeria.scss */
+  /* line 51, C:/xampp/htdocs/medula/jzmusic.cl/_/sass/_galeria.scss */
   .allNavAbierto .galeria ul {
     padding-right: 0;
   }
