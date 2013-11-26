@@ -164,9 +164,9 @@ var presupuesto = {
 	},
 	reset: function(sinPresupuesto_2){
 		sinPresupuesto_2 = sinPresupuesto_2 || false;
-		presupuesto.items = [];
-		presupuesto.historiaSlides = [];
 		if(!sinPresupuesto_2){
+			presupuesto.items = [];
+			presupuesto.historiaSlides = [];
 			presupuesto_2.reset();
 		}
 		presupuesto_3.reset();
@@ -176,6 +176,7 @@ var presupuesto = {
 		presupuesto_7.reset();
 		presupuesto_8.reset();
 		presupuesto_9.reset();
+		presupuesto_10.reset();
 		presupuesto_11.reset();
 		presupuesto_12.reset();
 		presupuesto_13.reset();
@@ -258,15 +259,13 @@ var presupuesto_2 = {
 					// Se que esto es sucio, pero hubo muchos cambios en el camino :(
 					var rango_ = $('#presupuesto_2 .rango[data-rango="'+ rango +'"]');
 					if(presupuesto.datosFiesta.tipoFiesta === 'fiesta_graduacion'){
-						var precioGraduacion = $(rango_).find('span[data-precio-graduacion]').text(),
-						precioOriginal = $(rango_).find('span[data-precio]').text();
-						$(rango_).find('span[data-precio-graduacion]').text(precioOriginal);
+						var precioGraduacion = $(rango_).find('span[data-precio-graduacion]').text();
 						$(rango_).find('span[data-precio]').text(precioGraduacion);
 					} else {
-						var precioOriginal = $(rango_).find('span[data-precio-graduacion]').text(),
-						precioGraduacion = $(rango_).find('span[data-precio]').text();
-						$(rango_).find('span[data-precio-graduacion]').text(precioGraduacion);
-						$(rango_).find('span[data-precio]').text(precioOriginal);
+						if($(rango_).find('span[data-precio-original]').length){
+							var precioOriginal = $(rango_).find('span[data-precio-original]').text();
+							$(rango_).find('span[data-precio]').text(precioOriginal);
+						}
 					}
 					$('#presupuesto_2_resultado span[data-personas]').html(cantidadPersonas);
 					$('#presupuesto_2_resultado span[data-item-resultado]').html(parlantes);
@@ -348,11 +347,13 @@ var presupuesto_3 = {
 		$('#presupuesto_3_opcion_si').slideUp();
 		$('#presupuesto_3 .rango').slideUp();
 		$('#presupuesto_3_opcion_no').slideDown();
+		presupuesto.items.splice(3, 1);
 		presupuesto.mostrarNavegacion();
 	},
 	reset: function(){
-		$('#presupuesto_3 [data-si]').css('opacity', 1).find('input').prop('checked', false);
-		$('#presupuesto_3 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_3').find('input').prop('checked', false);
+		$('#presupuesto_3 [data-si]').css('opacity', 1);
+		$('#presupuesto_3 [data-no]').css('opacity', 1);
 		$('#presupuesto_3_opcion_no').hide();
 		$('#presupuesto_3_opcion_si').hide();
 		$('#presupuesto_3 .rango').hide();
@@ -386,11 +387,13 @@ var presupuesto_4 = {
 		$('#presupuesto_4_opcion_si').slideUp();
 		$('#presupuesto_4 .rango').slideUp();
 		$('#presupuesto_4_opcion_no').slideDown();
+		presupuesto.items.splice(4, 1);
 		presupuesto.mostrarNavegacion();
 	},
 	reset: function(){
-		$('#presupuesto_4 [data-si]').css('opacity', 1).find('input').prop('checked', false);
-		$('#presupuesto_4 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_4').find('input').prop('checked', false);
+		$('#presupuesto_4 [data-si]').css('opacity', 1);
+		$('#presupuesto_4 [data-no]').css('opacity', 1);
 		$('#presupuesto_4_opcion_no').hide();
 		$('#presupuesto_4_opcion_si').hide();
 		$('#presupuesto_4 .rango').hide();
@@ -424,11 +427,13 @@ var presupuesto_5 = {
 		$('#presupuesto_5_opcion_si').slideUp();
 		$('#presupuesto_5 .rango').slideUp();
 		$('#presupuesto_5_opcion_no').slideDown();
+		presupuesto.items.splice(5, 1);
 		presupuesto.mostrarNavegacion();
 	},
 	reset: function(){
-		$('#presupuesto_5 [data-si]').css('opacity', 1).find('input').prop('checked', false);
-		$('#presupuesto_5 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_5').find('input').prop('checked', false);
+		$('#presupuesto_5 [data-si]').css('opacity', 1);
+		$('#presupuesto_5 [data-no]').css('opacity', 1);
 		$('#presupuesto_5_opcion_no').hide();
 		$('#presupuesto_5_opcion_si').hide();
 		$('#presupuesto_5 .rango').hide();
@@ -669,11 +674,13 @@ var presupuesto_8 = {
 		$('#presupuesto_8_opcion_si').slideUp();
 		$('#presupuesto_8 .rango').slideUp();
 		$('#presupuesto_8_opcion_no').slideDown();
+		presupuesto.items.splice(8, 1);
 		presupuesto.mostrarNavegacion();
 	},
 	reset: function(){
-		$('#presupuesto_8 [data-si]').css('opacity', 1).find('input').prop('checked', false);
-		$('#presupuesto_8 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_8').find('input').prop('checked', false);
+		$('#presupuesto_8 [data-si]').css('opacity', 1);
+		$('#presupuesto_8 [data-no]').css('opacity', 1);
 		$('#presupuesto_8_opcion_no').hide();
 		$('#presupuesto_8_opcion_si').hide();
 		$('#presupuesto_8 .rango').hide();
@@ -701,15 +708,17 @@ var presupuesto_9 = {
 		presupuesto.agregarItem(rango, true);
 	},
 	opcionNo: function(){
+		presupuesto.items.splice(9, 1);
 		presupuesto.mostrarNavegacion();
 	},
 	reset: function(){
-		$('#presupuesto_9 [data-si]').css('opacity', 1).find('input').prop('checked', false);
-		$('#presupuesto_9 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_9').find('input').prop('checked', false);
+		$('#presupuesto_9 [data-si]').css('opacity', 1);
+		$('#presupuesto_9 [data-no]').css('opacity', 1);
 		$('#presupuesto_9_opcion_no').hide();
 		$('#presupuesto_9_opcion_si').hide();
 		$('#presupuesto_9 .rango').hide();
-		presupuesto.ocultarNavegacion('8');
+		presupuesto.ocultarNavegacion('9');
 	}
 };
 
@@ -733,11 +742,13 @@ var presupuesto_10 = {
 		presupuesto.agregarItem(rango, true);
 	},
 	opcionNo: function(){
+		presupuesto.items.splice(10, 1);
 		presupuesto.mostrarNavegacion();
 	},
 	reset: function(){
-		$('#presupuesto_10 [data-si]').css('opacity', 1).find('input').prop('checked', false);
-		$('#presupuesto_10 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_10').find('input').prop('checked', false);
+		$('#presupuesto_10 [data-si]').css('opacity', 1);
+		$('#presupuesto_10 [data-no]').css('opacity', 1);
 		$('#presupuesto_10_opcion_no').hide();
 		$('#presupuesto_10_opcion_si').hide();
 		$('#presupuesto_10 .rango').hide();
@@ -767,15 +778,13 @@ var presupuesto_11 = {
 		// Se que esto es sucio, pero hubo muchos cambios en el camino :(
 		var rango_ = $('#presupuesto_11 .rango[data-rango="'+ rango +'"]');
 		if(presupuesto.datosFiesta.tipoFiesta === 'fiesta_graduacion'){
-			var precioGraduacion = $(rango_).find('span[data-precio-graduacion]').text(),
-			precioOriginal = $(rango_).find('span[data-precio]').text();
-			$(rango_).find('span[data-precio-graduacion]').text(precioOriginal);
+			var precioGraduacion = $(rango_).find('span[data-precio-graduacion]').text();
 			$(rango_).find('span[data-precio]').text(precioGraduacion);
 		} else {
-			var precioOriginal = $(rango_).find('span[data-precio-graduacion]').text(),
-			precioGraduacion = $(rango_).find('span[data-precio]').text();
-			$(rango_).find('span[data-precio-graduacion]').text(precioGraduacion);
-			$(rango_).find('span[data-precio]').text(precioOriginal);
+			if($(rango_).find('span[data-precio-original]').length){
+				var precioOriginal = $(rango_).find('span[data-precio-original]').text();
+				$(rango_).find('span[data-precio]').text(precioOriginal);
+			}
 		}
 		presupuesto.mostrarNavegacion();
 		presupuesto.agregarItem(rango, true);
@@ -784,11 +793,13 @@ var presupuesto_11 = {
 		$('#presupuesto_11_opcion_si').slideUp();
 		$('#presupuesto_11 .rango').slideUp();
 		$('#presupuesto_11_opcion_no').slideDown();
+		presupuesto.items.splice(11, 1);
 		presupuesto.mostrarNavegacion();
 	},
 	reset: function(){
-		$('#presupuesto_11 [data-si]').css('opacity', 1).find('input').prop('checked', false);
-		$('#presupuesto_11 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_11').find('input').prop('checked', false);
+		$('#presupuesto_11 [data-si]').css('opacity', 1);
+		$('#presupuesto_11 [data-no]').css('opacity', 1);
 		$('#presupuesto_11_opcion_no').hide();
 		$('#presupuesto_11_opcion_si').hide();
 		$('#presupuesto_11 .rango').hide();
@@ -836,15 +847,13 @@ var presupuesto_12 = {
 		// Se que esto es sucio, pero hubo muchos cambios en el camino :(
 		var rango_ = $('#presupuesto_12 .rango[data-rango="'+ rango +'"]');
 		if(presupuesto.datosFiesta.tipoFiesta === 'fiesta_graduacion'){
-			var precioGraduacion = $(rango_).find('span[data-precio-graduacion]').text(),
-			precioOriginal = $(rango_).find('span[data-precio]').text();
-			$(rango_).find('span[data-precio-graduacion]').text(precioOriginal);
+			var precioGraduacion = $(rango_).find('span[data-precio-graduacion]').text();
 			$(rango_).find('span[data-precio]').text(precioGraduacion);
 		} else {
-			var precioOriginal = $(rango_).find('span[data-precio-graduacion]').text(),
-			precioGraduacion = $(rango_).find('span[data-precio]').text();
-			$(rango_).find('span[data-precio-graduacion]').text(precioGraduacion);
-			$(rango_).find('span[data-precio]').text(precioOriginal);
+			if($(rango_).find('span[data-precio-original]').length){
+				var precioOriginal = $(rango_).find('span[data-precio-original]').text();
+				$(rango_).find('span[data-precio]').text(precioOriginal);
+			}
 		}
 		presupuesto.agregarItem(rango, true);
 	},
@@ -852,11 +861,13 @@ var presupuesto_12 = {
 		$('#presupuesto_12_opcion_si').slideUp();
 		$('#presupuesto_12 .rango').slideUp();
 		$('#presupuesto_12_opcion_no').slideDown();
+		presupuesto.items.splice(12, 1);
 		presupuesto.mostrarNavegacion();
 	},
 	reset: function(){
-		$('#presupuesto_12 [data-si]').css('opacity', 1).find('input').prop('checked', false);
-		$('#presupuesto_12 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_12').find('input').prop('checked', false);
+		$('#presupuesto_12 [data-si]').css('opacity', 1);
+		$('#presupuesto_12 [data-no]').css('opacity', 1);
 		$('#presupuesto_12_opcion_no').hide();
 		$('#presupuesto_12_opcion_si').hide();
 		$('#presupuesto_12 .rango').hide();
@@ -944,7 +955,7 @@ var presupuesto_13 = {
 		var tipoFiesta = presupuesto.datosFiesta.tipoFiesta,
 		slideActual = presupuesto.slides[tipoFiesta][presupuesto.datosFiesta.slideActual];
 		if(presupuesto.items[slideActual] instanceof Array){
-			presupuesto.items.splice(6, 1);
+			presupuesto.items.splice(13, 1);
 		} else {
 			presupuesto.items[slideActual] = [item];
 		}
@@ -1048,7 +1059,7 @@ var presupuesto_14 = {
 				}
 			}
 			if(presupuesto.items[slideActual].length === 0){
-				presupuesto.items.splice(7, 1);
+				presupuesto.items.splice(14, 1);
 			} else {
 				if(!existe){
 					presupuesto.items[slideActual].push(item);
@@ -1097,11 +1108,13 @@ var presupuesto_15 = {
 		$('#presupuesto_15_opcion_si').slideUp();
 		$('#presupuesto_15 .rango').slideUp();
 		$('#presupuesto_15_opcion_no').slideDown();
+		presupuesto.items.splice(15, 1);
 		presupuesto.mostrarNavegacion();
 	},
 	reset: function(){
-		$('#presupuesto_15 [data-si]').css('opacity', 1).find('input').prop('checked', false);
-		$('#presupuesto_15 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_15').find('input').prop('checked', false);
+		$('#presupuesto_15 [data-si]').css('opacity', 1);
+		$('#presupuesto_15 [data-no]').css('opacity', 1);
 		$('#presupuesto_15_opcion_no').hide();
 		$('#presupuesto_15_opcion_si').hide();
 		$('#presupuesto_15 .rango').hide();
@@ -1135,11 +1148,13 @@ var presupuesto_16 = {
 		$('#presupuesto_16_opcion_si').slideUp();
 		$('#presupuesto_16 .rango').slideUp();
 		$('#presupuesto_16_opcion_no').slideDown();
+		presupuesto.items.splice(16, 1);
 		presupuesto.mostrarNavegacion();
 	},
 	reset: function(){
-		$('#presupuesto_16 [data-si]').css('opacity', 1).find('input').prop('checked', false);
-		$('#presupuesto_16 [data-no]').css('opacity', 1).find('input').prop('checked', false);
+		$('#presupuesto_16').find('input').prop('checked', false);
+		$('#presupuesto_16 [data-si]').css('opacity', 1);
+		$('#presupuesto_16 [data-no]').css('opacity', 1);
 		$('#presupuesto_16_opcion_no').hide();
 		$('#presupuesto_16_opcion_si').hide();
 		$('#presupuesto_16 .rango').hide();

@@ -142,22 +142,22 @@ include "_/inc/datos-globales.php";
 						<div class="rango" data-rango="1-100">
 							<img src="imgs/presupuestos/parlante-ev-zx4.jpg" width="148" height="148">
 							<p><span data-cantidad>2</span> <span data-item> parlantes EV ZX4 de 400 watts</span>.</p>
-							<p>Precio: <span data-precio>$50.000</span><span class="hide" data-precio-graduacion>$80.000</span></p>
+							<p>Precio: <span data-precio>$50.000</span><span class="hide" data-precio-graduacion>$80.000</span><span class="hide" data-precio-original>$50.000</span></p>
 						</div>
 						<div class="rango" data-rango="101-150">
 							<img src="imgs/presupuestos/parlante-ev-zx5.jpg" width="148" height="148">
 							<p><span data-cantidad>2</span> <span data-item>parlantes EV ZX5 de 600 watts</span></p>
-							<p>Precio: <span data-precio>$70.000</span><span class="hide" data-precio-graduacion>$120.000</span></p>
+							<p>Precio: <span data-precio>$70.000</span><span class="hide" data-precio-graduacion>$120.000</span><span class="hide" data-precio-original>$70.000</span></p>
 						</div>
 						<div class="rango" data-rango="151-250">
 							<img src="imgs/presupuestos/parlante-ev-zx4.jpg" width="148" height="148">
 							<p><span data-cantidad>4</span> <span data-item>parlantes EV ZX4 de 400 watts</span></p>
-							<p>Precio: <span data-precio>$100.000</span><span class="hide" data-precio-graduacion>$180.000</span></p>
+							<p>Precio: <span data-precio>$100.000</span><span class="hide" data-precio-graduacion>$180.000</span><span class="hide" data-precio-original>$100.000</span></p>
 						</div>
 						<div class="rango" data-rango="251-400">
 							<img src="imgs/presupuestos/parlante-ev-zx5.jpg" width="148" height="148">
 							<p><span data-cantidad>4</span> <span data-item>parlantes EV ZX5 de 600 watts</span></p>
-							<p>Precio: <span data-precio>$150.000</span><span class="hide" data-precio-graduacion>$220.000</span></p>
+							<p>Precio: <span data-precio>$150.000</span><span class="hide" data-precio-graduacion>$220.000</span><span class="hide" data-precio-original>$150.000</span></p>
 						</div>
 						<div class="rango" data-rango="401-550">
 							<img src="imgs/presupuestos/parlante-ev-zx4.jpg" width="148" height="148">
@@ -808,17 +808,17 @@ include "_/inc/datos-globales.php";
 						<div class="rango" data-rango="1-100">
 							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
 							<p><span data-cantidad>2</span> <span data-item>parlantes EV ZX1</span></p>
-							<p><span data-precio>$30.000</span><span class="hide" data-precio-graduacion>$30.000</span></p>
+							<p><span data-precio>$30.000</span><span class="hide" data-precio-graduacion>$30.000</span><span class="hide" data-precio-original>$30.000</span></p>
 						</div>
 						<div class="rango" data-rango="101-250">
 							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
 							<p><span data-cantidad>4</span> <span data-item>parlantes EV ZX1</span></p>
-							<p><span data-precio>$50.000</span><span class="hide" data-precio-graduacion>$50.000</span></p>
+							<p><span data-precio>$50.000</span><span class="hide" data-precio-graduacion>$50.000</span><span class="hide" data-precio-original>$50.000</span></p>
 						</div>
 						<div class="rango" data-rango="251-400">
 							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
 							<p><span data-cantidad>6</span> <span data-item>parlantes EV ZX1</span></p>
-							<p><span data-precio>$70.000</span><span class="hide" data-precio-graduacion>$80.000</span></p>
+							<p><span data-precio>$70.000</span><span class="hide" data-precio-graduacion>$80.000</span><span class="hide" data-precio-original>$70.000</span></p>
 						</div>
 					</div>
 					<div class="presupuesto-navegacion hide">
@@ -868,17 +868,17 @@ include "_/inc/datos-globales.php";
 						<div class="rango" data-rango="1-100">
 							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
 							<p><span data-cantidad>2</span> <span data-item>parlantes EV ZX1</span></p>
-							<p><span data-precio>$30.000</span><span class="hide" data-precio-graduacion>$30.000</span></p>
+							<p><span data-precio>$30.000</span><span class="hide" data-precio-graduacion>$30.000</span><span class="hide" data-precio-original>$30.000</span></p>
 						</div>
 						<div class="rango" data-rango="101-250">
 							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
 							<p><span data-cantidad>4</span> <span data-item>parlantes EV ZX1</span></p>
-							<p><span data-precio>$50.000</span><span class="hide" data-precio-graduacion>$50.000</span></p>
+							<p><span data-precio>$50.000</span><span class="hide" data-precio-graduacion>$50.000</span><span class="hide" data-precio-original>$50.000</span></p>
 						</div>
 						<div class="rango" data-rango="251-400">
 							<img src="imgs/presupuestos/parlante-ev-zx1.jpg" width="148"  height="148">
 							<p><span data-cantidad>6</span> <span data-item>parlantes EV ZX1</span></p>
-							<p><span data-precio>$70.000</span><span class="hide" data-precio-graduacion>$80.000</span></p>
+							<p><span data-precio>$70.000</span><span class="hide" data-precio-graduacion>$80.000</span><span class="hide" data-precio-original>$70.000</span></p>
 						</div>
 					</div>
 					<div class="presupuesto-navegacion hide">
