@@ -751,7 +751,7 @@ include "_/inc/datos-globales.php";
 ?>
 				<div id="presupuesto_10" class="presupuesto-slide hide">
 					<h2 class="tipo-fiesta-seleccionada"></h2>
-					<h3>¿Quieres que JZMusic se haga cargo de la iluminación ambiental de tu fiesta?</h3>
+					<h3>¿Quieres que JZMusic se haga cargo de la iluminación ambiental de tu fiesta? (precio por definir) </h3>
 					<div class="texto-explicacion"><p>Tenemos una gran cantidad y variedad de focos que nos permitirán iluminar y destacar todos los elementos de tu matrimonio.</p><p>En esta pregunta buscamos conocer tu necesidad y no tiene un producto/valor asociado a tu respuesta, ya que se necesita realizar un estudio de factibilidad previo.</p></div>
 					<div class="opciones">
 						<input type="radio" name="presupuesto-10-radio" id="presupuesto-10-radio-si" value="si">
@@ -931,7 +931,7 @@ include "_/inc/datos-globales.php";
 						</div>
 						<div class="grupo">
 								<h4 class="grupo-titulo">Storm Bird</h4>
-							<figure class="grupo-image" data-video="pq3jLGzyr_c" data-bg="sha.jpg">&#9658;</figure>
+							<figure class="grupo-image" data-video="MG7Tj9QpohU" data-bg="storm-bird.jpg">&#9658;</figure>
 							<div class="grupo-contenido">
 								<p class="grupo-descripcion">STORM B - ELC 150 watts | $10.000 c/u</p>
 								<hr>
@@ -1294,7 +1294,8 @@ include "_/inc/datos-globales.php";
 					</table>
 					<p class="monto-minimo hide">Debes tener en cuenta que presupuesto mínimo para este tipo de eventos es de $<span data-monto-minimo></span>.</p>
 					<h2>Envía tu presupuesto</h2>
-					<p>Haremos llegar una copia tanto para nosotros como para ti. ¡Te contactaremos cuanto antes!.</p>
+					<p>El valor entregado en esta cotización es una SUGERENCIA de la mejor alternativa de amplificación e iluminación seleccionada por el cliente para su evento. Pero estas pueden ser modificadas para ajustarse a las posibilidades técnicas y económicas de cada cliente en la medida en que no afecten la calidad del servicio ofrecido por JZMusic.</p>
+					<p>Haremos llegar una copia de este presupuesto a tu email y al nuestro. ¡Te contactaremos cuanto antes!.</p>
 					<form id="form-contacto" method="post">
 						<div class="row">
 							<div class="column">
