@@ -15,6 +15,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) and strtolower($_SERVER['HTTP_X_REQ
 			<p><strong>Teléfono/Celular:</strong> '. $_POST['telefono'] .'</p>
 			<p><strong>Fecha del Evento:</strong> '. $_POST['fecha'] .'</p>
 			<p><strong>Lugar del Evento:</strong> '. $_POST['lugar'] .'</p>
+			<p><strong>Presupuesto:</strong> '. $_POST['presupuesto'] .'</p>
 			<p><strong>Nº de Personas:</strong> '. $_POST['personas'] .'</p>
 			<p><strong>Mensaje:</strong> '. nl2br(strip_tags($_POST['mensaje'])) .'</p>
 		';
@@ -1316,6 +1317,9 @@ include "_/inc/datos-globales.php";
 						<div class="row">
 							<div class="column">
 								<label for="form-lugar">Lugar del Evento</label><input type="text" name="lugar" id="form-lugar">
+							</div>
+							<div class="column">
+								<label for="form-lugar">Presupuesto</label><input type="text" name="presupuesto" id="form-presupuesto" placeholder="$">
 							</div>
 						</div>
 						<div class="row">
