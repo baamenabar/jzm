@@ -44,6 +44,20 @@ class Image {
     }
 
     /**
+     * Valids if a given URL contains a valid GUID.
+     * A GUID must be numeric and must be at the end of the URL.
+     * @param  string $guid e.g http://500px.com/photo/52621296
+     * @return bool
+     */
+    public static function validGuid($guid){
+        $guidParts = explode( '/', $this->guid );
+        if(is_numeric($guidParts[count( $guidParts ) - 1])){
+            return true;
+        }
+        return false;
+    }
+
+    /**
      * Changes the image URL and sets the image format
      * @return void
      */
