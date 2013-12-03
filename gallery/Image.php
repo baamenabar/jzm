@@ -50,7 +50,7 @@ class Image {
      * @return bool
      */
     public static function validGuid($guid){
-        $guidParts = explode( '/', $this->guid );
+        $guidParts = explode( '/', $guid );
         if(is_numeric($guidParts[count( $guidParts ) - 1])){
             return true;
         }
