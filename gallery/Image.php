@@ -29,8 +29,7 @@ class Image {
     private $smallImgNumber = 2;
 
     public function __construct( $guid, $title, $img = null ) {
-        $this->guid = explode('photo_id=', $guid);//ahora el guid viene dentro de un string tremendo
-        $this->guid = $this->guid[1];
+        $this->guid = $guid;
         $this->title = $title;
         $this->normalImgUrl = $img;
         $this->getGuid();
