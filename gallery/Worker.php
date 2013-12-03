@@ -34,12 +34,16 @@ class Worker {
         }
         $this->html = new simple_html_dom();
         $this->linquenImg = new LiquenImg();
-        $this->fetch(); // Fetch RSS
-        $this->diff(); // Checks which images need to be deleted or saved
-        $this->delete(); // Delete images from disk
-        $this->save(); // Save images to disk
-        $this->dom(); // Create the DOM
-        $this->log( 'Ejecutado' );
+        if($this->fetch()){ // Fetch RSS
+            $this->diff(); // Checks which images need to be deleted or saved
+            $this->delete(); // Delete images from disk
+            $this->save(); // Save images to disk
+            $this->dom(); // Create the DOM
+            $this->log( 'Ejecutado normalmente' );
+        } else {
+            $this->log( 'Problemas con el formato del RSS. GUID no válido o cambió de formato.' );
+        }
+
     }
 
     private function fetch() {
@@ -48,12 +52,16 @@ class Worker {
         //RSS Images
         foreach ( $this->rss->items as $entry ) {
             $guid = $entry['guid'];
+            if(!Image::validGuid($guid)){
+                return false;
+            }
             $title = $entry['title'];
             $this->html->load( $entry['description'] );
             $img = $this->html->find( 'img' );
             $img = $img[0]->attr['src'];
             $this->rssImgs[] = new Image( $guid, $title, $img );
         }
+        return true;
     }
 
     private function save() {
