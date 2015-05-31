@@ -23,6 +23,7 @@
                 `````````     
 
 /* TEAM */
+
   Design: Violeta Sánchez Espinoza
   Site: http://medula.cl
   Location: Santiago, Chile
@@ -45,4 +46,6 @@
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, Picturefill, jQuery
-  Software: Notepad++, Sublime Text 2, Compass, Git
+  Software: Notepad++, Sublime Text 2, Compass, Git, Putty
+
+
