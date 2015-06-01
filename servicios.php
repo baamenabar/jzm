@@ -1140,10 +1140,23 @@ include "_/inc/datos-globales.php";
 						<img src="imgs/servicios/efecto-mobile-color-250.jpg" width="200" height="120">
 						<p>Mobile Color 250</p>
 						<div class="servicio-desc">
-							<p>Efecto que permite concentrar un haz de luz muy denso para iluminar espejos murales, bolas disco, etc. Este foco posee más de 10 colores los que responden a un programa automático o bien a un controlador DMX. Esto permite cambiar completamente el color del ambiente al enfrentarlo a una bola disco, lo cual genera mayor dinamismo total de las bases de la ambientación.</p>
+							<p>Efecto que permite concentrar unefecto-cabezal-beam-r5.jpg haz de luz muy denso para iluminar espejos murales, bolas disco, etc. Este foco posee más de 10 colores los que responden a un programa automático o bien a un controlador DMX. Esto permite cambiar completamente el color del ambiente al enfrentarlo a una bola disco, lo cual genera mayor dinamismo total de las bases de la ambientación.</p>
 							<div class="servicio-video"></div>
 							<div class="servicio-desc-imgs">
 								<img src="imgs/servicios/efecto-mobile-color-250-equipo.jpg" width="130" height="130">
+							</div>
+							<div class="close" title="Cerrar">X</div>
+						</div>
+					</div>
+					<div class="servicio-item" data-video="QOkVbt7WGtg">
+						<img src="imgs/servicios/efecto-cabezal-beam-r5.jpg" width="200" height="120">
+						<p>Cabeza Movil Beam R5 ACME Saber</p>
+						<div class="servicio-desc">
+							<p>Cabezal robotizado con múltiples programas que responden a la música con figuras, color y velocidad de movimientos, para producir entretenidos ambientes escénicos coordinados totalmente con la música. Este equipo también puede ser controlado manualmente con escenas prediseñadas bajo DMX 512 para lograr diseñar shows muy específicos. Estas cabezas utilizan una ampolleta R5 que produce una luminosidad de 8000°K, lo que sumado a la óptica del equipo se traduce en haces de muy concentrados de más de 50 mts de distancia que sin duda activarán cualquier lugar, escenario o pista de baile.
+</p>
+							<div class="servicio-video"></div>
+							<div class="servicio-desc-imgs">
+								<img src="imgs/servicios/efecto-cabezal-beam-r5-equipo.jpg" width="130" height="130">
 							</div>
 							<div class="close" title="Cerrar">X</div>
 						</div>
@@ -1332,6 +1345,15 @@ include "_/inc/datos-globales.php";
 						</div>
 					</div>
 					<div class="servicio-item">
+						<img src="imgs/servicios/Line-Array-DVAT12.jpg" width="200" height="120">
+						<p>Line Array DB Technologies DVA T12</p>
+						<div class="servicio-desc">
+							<p>Sistema de sonido de arreglo lineal compuesto por componentes de neodimio capaces de generar una presión sonora de 136db a1500 watts RMS. Gracias a su sistema de amplificación activo clase D y su procesador integrado DSP es capaz de entregar gran potencia y fidelidad de sonido ideal para realizar refuerzos sonoros en recitales, tocatas y eventos masivos.
+							</p>
+							<div class="close" title="Cerrar">X</div>
+						</div>
+					</div>
+					<div class="servicio-item">
 						<img src="imgs/servicios/Line-Array-HDL-20A.jpg" width="200" height="120">
 						<p>RCF Active Line Array</p>
 						<div class="servicio-desc">
@@ -1345,6 +1367,7 @@ include "_/inc/datos-globales.php";
 							<div class="close" title="Cerrar">X</div>
 						</div>
 					</div>
+					
 					<div class="servicio-item">
 						<img src="imgs/servicios/parlante-rcf-espace-800.jpg" width="200" height="120">
 						<p>RCF ESPACE 800</p>
@@ -1362,6 +1385,15 @@ include "_/inc/datos-globales.php";
 						<p>Retorno Yamaha CM15V</p>
 						<div class="servicio-desc">
 							<p>Parlante de 2 vías, especial para utilizarlo como retorno de escenario. Entrega una potencia de 500W RMS continuos hasta 2000W peak con una sensibilidad máxima de 99 dB y de 129 dB en SPL.</p>
+							<div class="close" title="Cerrar">X</div>
+						</div>
+					</div>
+					<div class="servicio-item">
+						<img src="imgs/servicios/Torres-BOSE-L1.jpg" width="200" height="120">
+						<p>Torres Bose L1 Compact</p>
+						<div class="servicio-desc">
+							<p>Sistema de sonido Array Vertical de alta definición y potencia que gracias a su gran elegancia es ideal para amplificar eventos corporativos pequeños y medianos.
+							</p>
 							<div class="close" title="Cerrar">X</div>
 						</div>
 					</div>
