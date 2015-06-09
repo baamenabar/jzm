@@ -994,6 +994,19 @@ include "_/inc/datos-globales.php";
 							<div class="close" title="Cerrar">X</div>
 						</div>
 					</div>
+					<div class="servicio-item" data-video="QOkVbt7WGtg">
+						<img src="imgs/servicios/efecto-cabezal-beam-r5.jpg" width="200" height="120">
+						<p>Cabeza Movil Beam R5 ACME Saber</p>
+						<div class="servicio-desc">
+							<p>Cabezal robotizado con múltiples programas que responden a la música con figuras, color y velocidad de movimientos, para producir entretenidos ambientes escénicos coordinados totalmente con la música. Este equipo también puede ser controlado manualmente con escenas prediseñadas bajo DMX 512 para lograr diseñar shows muy específicos. Estas cabezas utilizan una ampolleta R5 que produce una luminosidad de 8000°K, lo que sumado a la óptica del equipo se traduce en haces de muy concentrados de más de 50 mts de distancia que sin duda activarán cualquier lugar, escenario o pista de baile.
+</p>
+							<div class="servicio-video"></div>
+							<div class="servicio-desc-imgs">
+								<img src="imgs/servicios/efecto-cabezal-beam-r5-equipo.jpg" width="130" height="130">
+							</div>
+							<div class="close" title="Cerrar">X</div>
+						</div>
+					</div>
 					<div class="servicio-item" data-video="jXD3xjEglOo">
 						<img src="imgs/servicios/efecto-laser-ambiental-decorativo.jpg" width="200" height="120">
 						<p>Laser Ambiental Decorativo</p>
@@ -1144,19 +1157,6 @@ include "_/inc/datos-globales.php";
 							<div class="servicio-video"></div>
 							<div class="servicio-desc-imgs">
 								<img src="imgs/servicios/efecto-mobile-color-250-equipo.jpg" width="130" height="130">
-							</div>
-							<div class="close" title="Cerrar">X</div>
-						</div>
-					</div>
-					<div class="servicio-item" data-video="QOkVbt7WGtg">
-						<img src="imgs/servicios/efecto-cabezal-beam-r5.jpg" width="200" height="120">
-						<p>Cabeza Movil Beam R5 ACME Saber</p>
-						<div class="servicio-desc">
-							<p>Cabezal robotizado con múltiples programas que responden a la música con figuras, color y velocidad de movimientos, para producir entretenidos ambientes escénicos coordinados totalmente con la música. Este equipo también puede ser controlado manualmente con escenas prediseñadas bajo DMX 512 para lograr diseñar shows muy específicos. Estas cabezas utilizan una ampolleta R5 que produce una luminosidad de 8000°K, lo que sumado a la óptica del equipo se traduce en haces de muy concentrados de más de 50 mts de distancia que sin duda activarán cualquier lugar, escenario o pista de baile.
-</p>
-							<div class="servicio-video"></div>
-							<div class="servicio-desc-imgs">
-								<img src="imgs/servicios/efecto-cabezal-beam-r5-equipo.jpg" width="130" height="130">
 							</div>
 							<div class="close" title="Cerrar">X</div>
 						</div>
@@ -1371,12 +1371,24 @@ include "_/inc/datos-globales.php";
 					<div class="servicio-item">
 						<img src="imgs/servicios/parlante-rcf-espace-800.jpg" width="200" height="120">
 						<p>RCF ESPACE 800</p>
+						<div class="servicio-desc">
+							<p>Parlante de tecnología Concert de 1200 watts continuos, 3000 watts peak, especial para conseguir un sonido potente y definido.</p>
+							<div class="close" title="Cerrar">X</div>
+						</div>
 					</div>
 					<div class="servicio-item">
 						<img src="imgs/servicios/sub-bajo-rfc-1018.jpg" width="200" height="120">
 						<p>RCF 1018 - Sub-Bajo</p>
 						<div class="servicio-desc">
 							<p>Sub-Bajo de 1.500 Watts</p>
+							<div class="close" title="Cerrar">X</div>
+						</div>
+					</div>
+					<div class="servicio-item">
+						<img src="imgs/servicios/sub-bajos-db30.jpg" width="200" height="120">
+						<p>Sub Bajos DB Technologies S30</p>
+						<div class="servicio-desc">
+							<p>Sistema de Sub bajos Cardiode Omnidireccional compuesto por 2 componentes de 18” que gracias a su amplificación activa clase D y su procesador integrado DSP es capaz de entregar una presión sonora de 141db a 3000 watts en una frecuencia entre 30 y 120 hz ideal para realizar refuerzos sonoros en recitales, tocatas y eventos masivos.</p>
 							<div class="close" title="Cerrar">X</div>
 						</div>
 					</div>
@@ -1545,6 +1557,14 @@ include "_/inc/datos-globales.php";
 						<p>Crest CA9</p>
 						<div class="servicio-desc">
 							<p>Power de 2 canales que entrega la potencia a los parlantes amplificando las señales de los reproductores o instrumentos permitiendo alcanzar grandes presiones sonaras con una gran fidelidad de sonido. Este power es capaz de entregar 600w/8 Ohm 900w/4 Ohm 1000w /2. Bridge 1800w/8 Ohm  Bridge 2000w/ 4 Ohm.</p>
+							<div class="close" title="Cerrar">X</div>
+						</div>
+					</div>
+					<div class="servicio-item">
+						<img src="imgs/servicios/power-crest-ca18.jpg" width="200" height="120">
+						<p>Crest CA18</p>
+						<div class="servicio-desc">
+							<p>Power de 2 canales que entrega la potencia a los parlantes amplificando las señales de los reproductores o instrumentos permitiendo alcanzar grandes presiones sonaras con una gran fidelidad de sonido. Este power es capaz de entregar 1000w/8 Ohm 1800w/4 Ohm 2500w /2. Bridge 3600w/8 Ohm Bridge 5000w/ 4 Ohm.  Gracias a sus excelentes prestaciones es ideal para amplificar sub bajos.</p>
 							<div class="close" title="Cerrar">X</div>
 						</div>
 					</div>
