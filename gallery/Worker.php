@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Worker Version 2
+*/
+
 date_default_timezone_set( 'America/Santiago' );
 
 require( 'rss_fetch.inc' );
@@ -53,6 +57,7 @@ class Worker {
         foreach ( $this->rss->items as $entry ) {
             $guid = $entry['guid'];
             if(!Image::validGuid($guid)){
+                echo 'We don´t have a valid guid';
                 return false;
             }
             $title = $entry['title'];
