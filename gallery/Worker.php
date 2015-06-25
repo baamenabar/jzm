@@ -157,7 +157,10 @@ class Worker {
         $dom = '<ul class="popup-gallery">';
         foreach ( $this->rssImgs as $img ) {
             $url = $currentDir . '/' . $this->imgDir . '/'. $img->guid;
-            $dom .= '<li><a href="'. $url . '.jpg' .'" title="'. utf8_encode($img->title) .'"><img src="'. $url . '_small.jpg" width="'. $this->linquenImgOpts['width'] .'" height="'. $this->linquenImgOpts['height'] .'"><p>'. utf8_encode($img->title) .'</p><div class="imagen-hover"></div></a></li>';
+            $dom .= '
+<li><a href="'. $url . '.jpg' .'" title="'. utf8_encode($img->title) .'">
+<img src="'. $url . '_small.jpg" width="'. $this->linquenImgOpts['width'] .'" height="'. $this->linquenImgOpts['height'] .'">
+<p>'. utf8_encode($img->title) .'</p><div class="imagen-hover"></div></a></li>';
         }
         $file->fwrite( $dom . '</ul>' );
     }

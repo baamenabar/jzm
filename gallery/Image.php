@@ -41,7 +41,7 @@ class Image {
 
     public function getGuid(){
         $guidParts = explode( '/', $this->guid );
-        $this->guid = $guidParts[array_search('photo' $guidParts ) + 1];
+        $this->guid = $guidParts[array_search('photo', $guidParts ) + 1];
     }
 
     /**
@@ -52,7 +52,7 @@ class Image {
      */
     public static function validGuid($guid){
         $guidParts = explode( '/', $guid );
-        if(is_numeric($guidParts[array_search('photo' $guidParts ) + 1])){
+        if(is_numeric($guidParts[array_search('photo', $guidParts ) + 1])){
             return true;
         }
         return false;
@@ -64,7 +64,7 @@ class Image {
      */
     public function changeImgUrl() {
         $urlParts = explode( '/', $this->normalImgUrl );
-        $imgParts = explode('.', $urlParts[array_search('photo' $urlParts ) + 1]);
+        $imgParts = explode('.', $urlParts[array_search('photo', $urlParts ) + 1]);
         $newUrl = ($urlParts[0] == 'http:') ? 'http://' : 'https://';
         //Start after http:// and excluding file name
         for ( $i = 2; $i < count( $urlParts ) - 1; $i++ ) {
